@@ -5,7 +5,7 @@ import logging
 
 from config import Config
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 logging.basicConfig(level=logging.DEBUG, 
                     format='%(asctime)s %(levelname)s %(message)s',
@@ -43,7 +43,7 @@ def Train_NER(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', '-m', default='xlmroberta')
+    parser.add_argument('--model', '-m', default='mbert')
     parser.add_argument('--use-full-train', default=False, 
                         action=argparse.BooleanOptionalAction)
     parser.add_argument('--lang', '-l', default='it')

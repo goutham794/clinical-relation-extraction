@@ -6,6 +6,7 @@ import logging
 import sys
 sys.path.append("../.")
 
+import openai
 from langchain.callbacks import get_openai_callback
 
 from config import Config
@@ -40,7 +41,7 @@ class GPT_Relation_Extractor:
         
         self.docs = []
 
-        with open(f"../{self.args.config.DATASET_PATH}") as file:
+        with open(f"../{self.args.dataset}") as file:
             data = file.readlines()
 
         data = [list(x[1]) for x in itertools.groupby(data, lambda x: x=='\n') if not x[0]] 
@@ -52,25 +53,28 @@ class GPT_Relation_Extractor:
     def extract_relations(self):
         self.relations = []
         cost = 0
-        for doc in tqdm(self.docs[:args.num_of_docs_to_infer]):
-        # for doc in tqdm(self.docs):
+        # for i, doc in enumerate(tqdm(self.docs[78:])):
+        for i, doc in enumerate(tqdm(self.docs)):
             self.args.new_clinical_stmt = doc[1]
             self.args.examples = get_examples_for_prompt(args)
             prompt = get_prompt(self.args)
             logger.info(prompt)
             chain = get_llm_chain(prompt, args)
             with get_openai_callback() as cb:
-                self.relations.append(chain.run(doc))
-                cost += cb.total_cost
+                try:
+                    self.relations.append(chain.run(doc))
+                    cost += cb.total_cost
+                except openai.error.InvalidRequestError as e:
+                    print(f"Failed at doc {i}")
         logger.info(f"Cost = {cost}")
 
     
     @staticmethod
     def check_rml_tst_same_sentence(rml_indexes, tst_indexes, doc_id):
         """
-        Returns indexes of eml and test entity that belong to same sentence or `None` otherwise.
+        Returns indexes of rml and test entity that belong to same sentence or `None` otherwise.
         """
-        with open(f"../{args.config.TOKEN_DATA_PATH}/{doc_id}.tsv") as file:
+        with open(f"../{args.tokens_path}/{doc_id}.tsv") as file:
             tokens = file.readlines()
         sentence_splits = [list(x[1]) for x in itertools.groupby(tokens, lambda x: x=='\n') if not x[0]] 
 
@@ -113,8 +117,8 @@ class GPT_Relation_Extractor:
                 except ValueError:
                     print(f'GPT made an oopsie - {relation}')
                     continue
-                rml_indexes = [(m.start(), m.end()) for m in re.finditer(rml_entity, doc)]
-                tst_indexes = [(m.start(), m.end()) for m in re.finditer(tst_entity, doc)]
+                rml_indexes = [(m.start(), m.end()) for m in re.finditer(re.escape(rml_entity), doc)]
+                tst_indexes = [(m.start(), m.end()) for m in re.finditer(re.escape(tst_entity), doc)]
                 rml_index, tst_index = GPT_Relation_Extractor.check_rml_tst_same_sentence(rml_indexes, tst_indexes, doc_id)
 
                 if rml_index:
@@ -143,7 +147,9 @@ if __name__ == "__main__":
     
     parser = argparse.ArgumentParser()
     parser.add_argument('--lang', '-l', default='it')
-    parser.add_argument('--llm-service', '-s', default='openai')
+    parser.add_argument("--num-examples", '-n', type=int, default = 1)
+    parser.add_argument('--llm-service', '-e', default='openai')
+    parser.add_argument('--split', '-s', default='test')
     args = parser.parse_args()
     assert args.lang in ['it', 'es', 'eu'], "The language must be one of 'it', 'es', 'eu'"
     assert args.llm_service in ['azure', 'openai'], "LLM service must be one of azure or openai"
@@ -155,6 +161,13 @@ if __name__ == "__main__":
 
     args.prompt_config = prompt_config
 
-    args.num_of_docs_to_infer = 3
+    args.num_of_docs_to_infer = 10
+    if args.split == 'test':
+        args.dataset = args.config.TEST_DATASET 
+        args.tokens_path = args.config.TEST_TOKEN_DATA  
+
+    else:
+        args.dataset = args.config.DATASET_PATH  
+        args.tokens_path = args.config.TOKEN_DATA_PATH   
 
     gpt_1 = GPT_Relation_Extractor(args)

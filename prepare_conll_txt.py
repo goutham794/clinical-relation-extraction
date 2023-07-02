@@ -3,8 +3,9 @@ Creating dataset in CoNLL-2003 NER format.
 """
 import itertools
 import random
+import argparse
 
-import config
+from config import Config
 
 random.seed(42)
 
@@ -21,10 +22,10 @@ def check_for_entity_match(entity_list, start_offset, end_offset):
             break
     return match_found, intermediate_state_entity, matching_entity_number
 
-def create_NER_dataset():
+def create_NER_dataset(args):
     bio_ner_data = []
 
-    with open(config.DATASET_PATH) as file:
+    with open(args.config.DATASET_PATH) as file:
         training_data = file.readlines()
 
     training_data = [list(x[1]) for x in itertools.groupby(training_data, lambda x: x=='\n') if not x[0]] 
@@ -37,7 +38,7 @@ def create_NER_dataset():
             _,_,result_offset, test_offset, result_entity, test_entity = relation.split('\t')
             result_entities.append((result_entity, result_offset.split('-')))
             test_entities.append((test_entity.strip(), test_offset.split('-')))
-        with open(f"{config.TOKEN_DATA_PATH}/{statement_id}.tsv") as file:
+        with open(f"{args.config.TOKEN_DATA_PATH}/{statement_id}.tsv") as file:
             tokens = file.readlines()
         
         sentence_splits = [list(x[1]) for x in itertools.groupby(tokens, lambda x: x=='\n') if not x[0]] 
@@ -102,11 +103,16 @@ def create_NER_dataset():
     return bio_ner_data
 
 if __name__ == "__main__":
-    bio_ner_data = create_NER_dataset()
-    with open("train.txt", 'w') as f1, open("valid.txt", "w") as f2:
-        with open("train_offsets.txt", 'w') as t1, open("valid_offsets.txt", "w") as t2:
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--lang', '-l', default='it')
+    args = parser.parse_args()
+    configs = Config(args.lang)
+    args.config = configs
+    bio_ner_data = create_NER_dataset(args)
+    with open(f"data_{args.lang}/train.txt", 'w') as f1, open(f"data_{args.lang}/valid.txt", "w") as f2:
+        with open(f"data_{args.lang}/train_offsets.txt", 'w') as t1, open(f"data_{args.lang}/valid_offsets.txt", "w") as t2:
             for i, (doc_id, sent_num, sentence) in enumerate(bio_ner_data):
-                if doc_id in config.VALID_DOC_IDS:
+                if doc_id in args.config.VALID_DOC_IDS:
                     f = f2
                     t = t2
                 else:
