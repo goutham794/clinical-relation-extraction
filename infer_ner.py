@@ -24,12 +24,15 @@ def Infer_NER(args):
     custom_labels = args.config.NER_CLASSES
 
     model = NERModel(
-        args.model_type, "models_it/mbert_ner", args=model_args, labels=custom_labels
+        args.model_type, 
+        f"models_{args.lang}/{args.model}_ner{'_combined' if args.split == 'test' else ''}",
+          args=model_args, labels=custom_labels
     )
 
     tokens = utils.create_tokens_list_from_file(f"data_{args.lang}/valid_tokens.txt")
     predictions, _ = model.predict(tokens, split_on_space=False)
-    utils.save_predictions_to_file(predictions, args.lang, f'preds_{args.model}_ner')
+    predictions = [[list(d.values())[0] for d in i] for i in predictions]
+    utils.save_predictions_to_file(predictions, args.lang, f'preds_{args.model}_ner.txt')
 
 
 

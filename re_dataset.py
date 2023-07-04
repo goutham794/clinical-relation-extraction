@@ -1,19 +1,38 @@
 import itertools
 import argparse
 import csv
+from dataclasses import dataclass, field
 
 from config import Config
+import utils
+
+
+@dataclass
+class Token_Data:
+    text: str
+    start_offset: int
+    end_offset: int
+    tag: int = field(default=None)
+
 
 class RE_Dataset:
 
     def __init__(self, args):
-        self.tokens_file = args.tokens_file
-        self.offsets_file = args.offsets_file
+        self.tokens_file = f"data_{args.lang}/{args.split}{'_tokens' if args.split != 'train' else ''}.txt"
+        self.offsets_file = f"data_{args.lang}/{args.split}_offsets.txt"
         self.config = args.config
+        self.split = args.split
+        self.lang = args.lang
+        self.model = args.model
 
         self.tokens_set = self.read_tokens()
-        self.relations = self.read_relations()
+        if args.split == 'train':
+            self.relations = self.read_relations()
+        else:
+            self.relations = self.create_relations_from_preds()
+
         self.re_dataset = self.create_dataset()
+        self.write_dataset_to_file()
     
     def read_tokens(self):
 
@@ -29,10 +48,16 @@ class RE_Dataset:
                 doc_id = l2.split()[0]
                 start_offset = int(l2.split()[2])
                 end_offset = int(l2.split()[3])
-                token, tag = l1.strip().split()
-                sentence_tokens.append((token, tag, start_offset, end_offset))
+                if self.split == 'train':
+                    token, tag = l1.strip().split()
+                    sentence_tokens.append(Token_Data(text=token, tag=tag, 
+                            start_offset=start_offset, end_offset=end_offset))
+                else:
+                    token = l1.strip()
+                    sentence_tokens.append(Token_Data(text=token,
+                            start_offset=start_offset, end_offset=end_offset))
 
-        return [x for x in all_tokens if any([t[1]!='O' for t in x[1]])]
+        return [x for x in all_tokens if any([t.tag!='O' for t in x[1]])]
     
     def read_relations(self, train=True):
 
@@ -57,14 +82,14 @@ class RE_Dataset:
     @staticmethod
     def recreate_line(relation, tokens):
         relation = tuple((int(r[0]), int(r[1])) for r in relation)
-        initial_start_offset = tokens[0][2]
+        initial_start_offset = tokens[0].start_offset
         labels_and_offsets = [tuple(['[TST]',r - initial_start_offset]) for r in relation[0]] + [tuple(['[RML]',r - initial_start_offset]) for r in relation[1]]
         labels_and_offsets = sorted(labels_and_offsets, key=lambda x: x[1], reverse=True)
         line = ""
         for token in tokens:
-            line += " "*(token[2] - initial_start_offset - len(line))                    
-            assert token[2] == len(line) + initial_start_offset
-            line += token[0]
+            line += " "*(token.start_offset - initial_start_offset - len(line))                    
+            assert token.start_offset == len(line) + initial_start_offset
+            line += token.text
         line = list(line)
         for label, offset in labels_and_offsets:
             assert 0 <= offset <= len(line)
@@ -72,15 +97,21 @@ class RE_Dataset:
         return ''.join(line)
 
 
+    def create_relations_from_preds(self):
+        entity_offsets = utils.get_predicted_entity_offsets(f'results_{self.lang}/preds_{self.model}_ner.txt', 
+                                           self.offsets_file)
+        for relations, doc in zip(entity_offsets, self.tokens_set):
+            print('lol')
+
+        
+
 
     def create_dataset(self, split='train'):
-        token_set = self.train_set_tokens if split == 'train' else self.valid_set_tokens
-        relations_set = self.train_relations if split == 'train' else self.valid_relations
         re_dataset = []
-        for sentence in token_set:
+        for sentence in self.tokens_set:
             doc_id, tokens = sentence
-            rml_start_offsets = [t[2] for t in tokens if t[1]=='B-RML']
-            positive_relations = [r for r in relations_set[doc_id] if int(r[0][0]) in rml_start_offsets]
+            rml_start_offsets = [t.start_offset for t in tokens if t.tag=='B-RML']
+            positive_relations = [r for r in self.relations[doc_id] if int(r[0][0]) in rml_start_offsets]
             neg_relations = set([(x,y) for y in [i for _,i in positive_relations] for x,_ in positive_relations if (x,y) not in positive_relations])
             for relation in positive_relations:
                 line = RE_Dataset.recreate_line(relation, tokens)
@@ -99,14 +130,9 @@ class RE_Dataset:
         print(len([i for i in re_dataset if i[1]==0])/len(re_dataset))
 
     def write_dataset_to_file(self):
-        with open("data/train_re_dataset.csv", mode='w', newline='', encoding='utf-8') as file:
+        with open(f"data_{args.lang}/{args.split}_{args.model}_{'full_' if args.use_full_train else ''}re_dataset.csv", mode='w', newline='', encoding='utf-8') as file:
             writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-            for line in self.train_re_dataset:
-                writer.writerow(line)
-
-        with open("data/valid_re_dataset.csv", mode='w', newline='', encoding='utf-8') as file:
-            writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-            for line in self.valid_re_dataset:
+            for line in self.re_dataset:
                 writer.writerow(line)
 
 if __name__ == "__main__":
@@ -114,14 +140,14 @@ if __name__ == "__main__":
     parser.add_argument('--model', '-m', default='mbert')
     parser.add_argument('--split', '-s', default='valid')
     parser.add_argument('--lang', '-l', default='it')
+    parser.add_argument('--use-full-train', default=False, 
+                        action=argparse.BooleanOptionalAction)
 
     args = parser.parse_args()
+    if args.use_full_train: assert args.split == 'train'
     assert args.lang in ['it', 'es', 'eu'], "The language must be one of 'it', 'es', 'eu'"
     assert args.model in ['mbert', 'xlmroberta', 'biobert','bert'], "The model must be one of bert, xlmroberta, biobert"
     configs = Config(args.lang)
     args.config = configs
 
-
-    args.tokens_file = f"data_{args.lang}/{args.split}_tokens.txt"
-    args.tokens_file = f"data_{args.lang}/{args.split}_offsets.txt"
     re_data = RE_Dataset(args)

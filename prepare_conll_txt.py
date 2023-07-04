@@ -111,16 +111,21 @@ if __name__ == "__main__":
     bio_ner_data = create_NER_dataset(args)
     with open(f"data_{args.lang}/train.txt", 'w') as f1, open(f"data_{args.lang}/valid.txt", "w") as f2:
         with open(f"data_{args.lang}/train_offsets.txt", 'w') as t1, open(f"data_{args.lang}/valid_offsets.txt", "w") as t2:
-            for i, (doc_id, sent_num, sentence) in enumerate(bio_ner_data):
-                if doc_id in args.config.VALID_DOC_IDS:
-                    f = f2
-                    t = t2
-                else:
-                    f = f1
-                    t = t1
-                for token in sentence:
-                    f.write('{} {}\n'.format(token[0], token[1]))
-                    t.write('{} {} {} {}\n'.format(doc_id, sent_num, token[2], token[3]))
-                f.write('\n')
-                t.write('\n')
+            with open(f"data_{args.lang}/train_tokens.txt", 'w') as x1, open(f"data_{args.lang}/valid_tokens.txt", "w") as x2:
+                for i, (doc_id, sent_num, sentence) in enumerate(bio_ner_data):
+                    if doc_id in args.config.VALID_DOC_IDS:
+                        f = f2
+                        t = t2
+                        x = x2
+                    else:
+                        f = f1
+                        t = t1
+                        x = x1
+                    for token in sentence:
+                        f.write('{} {}\n'.format(token[0], token[1]))
+                        t.write('{} {} {} {}\n'.format(doc_id, sent_num, token[2], token[3]))
+                        x.write('{}\n'.format(token[0]))
+                    f.write('\n')
+                    t.write('\n')
+                    x.write('\n')
 

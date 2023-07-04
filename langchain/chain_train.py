@@ -29,6 +29,7 @@ logger.addHandler(fh)
 class GPT_Relation_Extractor:
     def __init__(self, args) -> None:
         self.lang = args.lang
+        self.num_infer = args.num_infer
         self.args = args
         self.pubtator_data = []
 
@@ -53,8 +54,12 @@ class GPT_Relation_Extractor:
     def extract_relations(self):
         self.relations = []
         cost = 0
-        # for i, doc in enumerate(tqdm(self.docs[78:])):
-        for i, doc in enumerate(tqdm(self.docs)):
+        if self.num_infer == -1:
+            docs_to_infer = self.docs
+        else:
+            docs_to_infer = self.docs[:self.num_infer]
+
+        for i, doc in enumerate(tqdm(docs_to_infer)):
             self.args.new_clinical_stmt = doc[1]
             self.args.examples = get_examples_for_prompt(args)
             prompt = get_prompt(self.args)
@@ -66,6 +71,7 @@ class GPT_Relation_Extractor:
                     cost += cb.total_cost
                 except openai.error.InvalidRequestError as e:
                     print(f"Failed at doc {i}")
+                    print(e)
         logger.info(f"Cost = {cost}")
 
     
@@ -129,8 +135,8 @@ class GPT_Relation_Extractor:
             self.pubtator_data.append((doc_id, doc_relations))
     
     def write_pubtator_data(self):
-        # with open(f"results_{self.lang}/gpt_{args.num_of_docs_to_infer}.pubtator", 'w') as f:
-        with open(f"results_{self.lang}/gpt.pubtator", 'w') as f:
+        with open(f"results_{self.lang}/gpt{self.num_infer if self.num_infer != -1 else ''}.pubtator",
+                   'w') as f:
             for relations, doc in zip(self.pubtator_data, self.docs):
                 # Confirming doc ids match
                 assert relations[0] == doc[0]
@@ -146,9 +152,12 @@ class GPT_Relation_Extractor:
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('--lang', '-l', default='it')
-    parser.add_argument("--num-examples", '-n', type=int, default = 1)
-    parser.add_argument('--llm-service', '-e', default='openai')
+    parser.add_argument('--lang', '-l', default='es')
+    parser.add_argument("--num-examples", '-n', type=int, default = 1, 
+        help='Number of example docs in prompt.')
+    parser.add_argument("--num-infer", '-i', type=int, default = -1, 
+        help='Number of docs to infer. -1 => all documents.')
+    parser.add_argument('--llm-service', '-e', default='azure')
     parser.add_argument('--split', '-s', default='test')
     args = parser.parse_args()
     assert args.lang in ['it', 'es', 'eu'], "The language must be one of 'it', 'es', 'eu'"
