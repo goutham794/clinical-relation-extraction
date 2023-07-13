@@ -3,6 +3,7 @@ import itertools
 import re
 from tqdm import tqdm
 import logging
+from langchain.prompts import PromptTemplate
 import sys
 sys.path.append("../.")
 
@@ -30,6 +31,8 @@ class GPT_Relation_Extractor:
     def __init__(self, args) -> None:
         self.lang = args.lang
         self.num_infer = args.num_infer
+        self.llm_service = args.llm_service
+        self.prompt_config = args.prompt_config 
         self.args = args
         self.pubtator_data = []
 
@@ -62,6 +65,8 @@ class GPT_Relation_Extractor:
         for i, doc in enumerate(tqdm(docs_to_infer)):
             self.args.new_clinical_stmt = doc[1]
             self.args.examples = get_examples_for_prompt(args)
+            self.args.example_prompt = PromptTemplate(input_variables=["Text", "Output"], 
+                    template=self.prompt_config.example_in_prompt_template)
             prompt = get_prompt(self.args)
             logger.info(prompt)
             chain = get_llm_chain(prompt, args)
@@ -135,7 +140,7 @@ class GPT_Relation_Extractor:
             self.pubtator_data.append((doc_id, doc_relations))
     
     def write_pubtator_data(self):
-        with open(f"results_{self.lang}/gpt{self.num_infer if self.num_infer != -1 else ''}.pubtator",
+        with open(f"results_{self.lang}/gpt{self.num_infer if self.num_infer != -1 else ''}_{self.llm_service}.pubtator",
                    'w') as f:
             for relations, doc in zip(self.pubtator_data, self.docs):
                 # Confirming doc ids match
@@ -152,7 +157,7 @@ class GPT_Relation_Extractor:
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('--lang', '-l', default='es')
+    parser.add_argument('--lang', '-l', default='eu')
     parser.add_argument("--num-examples", '-n', type=int, default = 1, 
         help='Number of example docs in prompt.')
     parser.add_argument("--num-infer", '-i', type=int, default = -1, 

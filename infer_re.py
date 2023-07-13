@@ -52,7 +52,7 @@ def Infer_RE(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--lang', '-l', default='it')
-    parser.add_argument('--model', '-m', default='rule_based')
+    parser.add_argument('--model', '-m', default='mbert')
     parser.add_argument('--split', '-s', default='test')
     parser.add_argument("--batch-size", type=int, default = 16)
     parser.add_argument("--epochs", type=int, default = 5)

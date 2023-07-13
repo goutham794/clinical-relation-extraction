@@ -13,7 +13,6 @@ from langchain.embeddings import OpenAIEmbeddings
 
 from util_functions import get_examples_for_prompt
 
-example_prompt = PromptTemplate(input_variables=["Text", "Output"], template="Testo :\n{Text}\n\nOutput :\n{Output}")
 
 
 def get_prompt(args):
@@ -56,7 +55,7 @@ def get_prompt(args):
     prompt = FewShotPromptTemplate(
         # example_selector=example_selector, 
         examples = args.examples[:args.num_examples],
-        example_prompt=example_prompt, 
+        example_prompt=args.example_prompt, 
         prefix = args.prompt_config.prompt_prefix,
         suffix = args.prompt_config.prompt_suffix, 
         input_variables=["Text"]

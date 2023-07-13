@@ -28,10 +28,11 @@ class RE_Dataset:
         self.tokens_set = self.read_tokens()
         if args.split == 'train':
             self.relations = self.read_relations()
+            self.re_dataset = self.create_train_dataset()
         else:
             self.relations = self.create_relations_from_preds()
+            self.re_dataset = self.create_dataset()
 
-        self.re_dataset = self.create_dataset()
         self.write_dataset_to_file()
     
     def read_tokens(self):
@@ -83,7 +84,7 @@ class RE_Dataset:
     def recreate_line(relation, tokens):
         relation = tuple((int(r[0]), int(r[1])) for r in relation)
         initial_start_offset = tokens[0].start_offset
-        labels_and_offsets = [tuple(['[TST]',r - initial_start_offset]) for r in relation[0]] + [tuple(['[RML]',r - initial_start_offset]) for r in relation[1]]
+        labels_and_offsets = [tuple(['[RML]',r - initial_start_offset]) for r in relation[0]] + [tuple(['[TST]',r - initial_start_offset]) for r in relation[1]]
         labels_and_offsets = sorted(labels_and_offsets, key=lambda x: x[1], reverse=True)
         line = ""
         for token in tokens:
@@ -98,15 +99,26 @@ class RE_Dataset:
 
 
     def create_relations_from_preds(self):
-        entity_offsets = utils.get_predicted_entity_offsets(f'results_{self.lang}/preds_{self.model}_ner.txt', 
+        relations = []
+        entity_offsets = utils.get_predicted_entity_offsets(f'results_{self.lang}/preds_{self.model}_{args.split}_ner.txt', 
                                            self.offsets_file)
-        for relations, doc in zip(entity_offsets, self.tokens_set):
-            print('lol')
+        for sent_entity_offsets in entity_offsets:
+            relations.append([(x,y) for x in sent_entity_offsets[0] for y in sent_entity_offsets[1]])
 
-        
+        return relations
 
+    def create_dataset(self):
+        re_dataset = []
+        for sent_relations, sentence in zip(self.relations, self.tokens_set):
+            doc_id, tokens = sentence
+            for relation in sent_relations:
+                line = RE_Dataset.recreate_line(relation, tokens)
+                re_dataset.append((doc_id, line, relation[0][0], relation[0][1],
+                                   relation[1][0], relation[1][1])) 
+        return re_dataset
+    
 
-    def create_dataset(self, split='train'):
+    def create_train_dataset(self):
         re_dataset = []
         for sentence in self.tokens_set:
             doc_id, tokens = sentence
@@ -115,10 +127,12 @@ class RE_Dataset:
             neg_relations = set([(x,y) for y in [i for _,i in positive_relations] for x,_ in positive_relations if (x,y) not in positive_relations])
             for relation in positive_relations:
                 line = RE_Dataset.recreate_line(relation, tokens)
-                re_dataset.append((line,1)) 
+                re_dataset.append((doc_id, line, 1, relation[0][0], relation[0][1],
+                                   relation[1][0], relation[1][1])) 
             for relation in neg_relations:
                 line = RE_Dataset.recreate_line(relation, tokens)
-                re_dataset.append((line,0)) 
+                re_dataset.append((doc_id, line, 0, relation[0][0], relation[0][1],
+                                   relation[1][0], relation[1][1])) 
                 
         return re_dataset
     
@@ -138,7 +152,7 @@ class RE_Dataset:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', default='mbert')
-    parser.add_argument('--split', '-s', default='valid')
+    parser.add_argument('--split', '-s', default='test')
     parser.add_argument('--lang', '-l', default='it')
     parser.add_argument('--use-full-train', default=False, 
                         action=argparse.BooleanOptionalAction)

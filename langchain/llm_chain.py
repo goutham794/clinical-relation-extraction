@@ -1,4 +1,3 @@
-from langchain.prompts import PromptTemplate
 from langchain.llms import OpenAI, AzureOpenAI
 
 
@@ -11,10 +10,6 @@ def get_llm_chain(prompt, args):
         llm = OpenAI(temperature=0)
     else:
         llm = AzureOpenAI(deployment_name="Davinci", model_name="text-davinci-003")
-    # prompt = PromptTemplate(
-    #     input_variables=["Text"],
-    #     template=args.prompt_config.one_shot_prompt_sans_new_text,
-    # )
 
     chain = LLMChain(llm=llm, prompt=prompt)
     return chain

@@ -62,7 +62,6 @@ if __name__ == "__main__":
                         action=argparse.BooleanOptionalAction)
     # parser.add_argument("--lr", default=0.0001, type=float)
     args = parser.parse_args()
-    if args.use_full_train: assert args.split == 'train'
     assert args.model in ['mbert', 'xlmroberta', 'biobert','bert'], "The model must be one of bert, xlmroberta, biobert"
     model_details = {'mbert': ("bert", "bert-base-multilingual-cased"),
                 'xlmroberta': ("xlmroberta", "xlm-roberta-base"), 

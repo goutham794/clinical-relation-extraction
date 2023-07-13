@@ -51,24 +51,16 @@ def get_predicted_entity_offsets(predictions_file, offsets_file):
     for sent_preds, sent_offsets in zip(predictions_sentence_grouped, offsets_sentence_grouped):
         sent_preds = [p.strip() for p  in sent_preds]
         sent_offsets = [tuple(o.strip().split()) for o in sent_offsets]
-        doc_id = sent_offsets[0][0]
         num_rml_entities = Counter(sent_preds)['B-RML']
         num_tst_entities = Counter(sent_preds)['B-TST']
         result_entity_spans = get_entity_spans(sent_preds, 'RML')
         test_entity_spans = get_entity_spans(sent_preds, 'TST')
         assert len(result_entity_spans) == num_rml_entities
         assert len(test_entity_spans) == num_tst_entities
-        try:
-            sent_rml_entity_offsets = [(int(sent_offsets[i][2]), int(sent_offsets[j][3])) for i,j in result_entity_spans]
-        except Exception:
-            print('ji')
-        sent_tst_entity_offsets = [(int(sent_offsets[i][2]), int(sent_offsets[j][3])) for i,j in test_entity_spans]
+        sent_rml_entity_offsets = [(sent_offsets[i][2], sent_offsets[j][3]) for i,j in result_entity_spans]
+        sent_tst_entity_offsets = [(sent_offsets[i][2], sent_offsets[j][3]) for i,j in test_entity_spans]
 
         entity_offsets.append((sent_rml_entity_offsets, sent_tst_entity_offsets))
-        # if doc_id in entity_offsets:
-        #     entity_offsets[doc_id].append((sent_rml_entity_offsets, sent_tst_entity_offsets))
-        # else:
-        #     entity_offsets[doc_id] = [(sent_rml_entity_offsets, sent_tst_entity_offsets)]
         
     return entity_offsets
 

@@ -29,17 +29,17 @@ def Infer_NER(args):
           args=model_args, labels=custom_labels
     )
 
-    tokens = utils.create_tokens_list_from_file(f"data_{args.lang}/valid_tokens.txt")
+    tokens = utils.create_tokens_list_from_file(f"data_{args.lang}/{args.split}_tokens.txt")
     predictions, _ = model.predict(tokens, split_on_space=False)
     predictions = [[list(d.values())[0] for d in i] for i in predictions]
-    utils.save_predictions_to_file(predictions, args.lang, f'preds_{args.model}_ner.txt')
+    utils.save_predictions_to_file(predictions, args.lang, f'preds_{args.model}_{args.split}_ner.txt')
 
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', default='mbert')
-    parser.add_argument('--split', '-s', default='valid')
+    parser.add_argument('--split', '-s', default='test')
     parser.add_argument('--lang', '-l', default='it')
 
     args = parser.parse_args()
