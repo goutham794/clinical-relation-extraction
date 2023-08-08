@@ -14,9 +14,9 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s %(levelname)s %(message)s',
                     handlers=[logging.StreamHandler()])
 
-def Train_RE(args):
+def Train_RC(args):
 
-    logging.info(f"Training RE model {args.model} model for {args.lang} and {'combined' if args.use_full_train else 'split'} train data.")
+    logging.info(f"Training RC model {args.model} model for {args.lang} and {'combined' if args.use_full_train else 'split'} train data.")
 
     df_train = pd.read_csv(f"data_{args.lang}/train_{args.model}_{'full_' if args.use_full_train else ''}re_dataset.csv")
     df_train.columns = ["doc_id", "text", "labels", "rml_s", "rml_e", "tst_s", "tst_e"]
@@ -71,4 +71,4 @@ if __name__ == "__main__":
     args.config = configs
     args.model_type = model_details[args.model][0]
     args.model_name = model_details[args.model][1]
-    Train_RE(args)
+    Train_RC(args)

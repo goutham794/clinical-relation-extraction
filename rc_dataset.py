@@ -15,11 +15,12 @@ class Token_Data:
     tag: int = field(default=None)
 
 
-class RE_Dataset:
+class RC_Dataset:
 
     def __init__(self, args):
         self.tokens_file = f"data_{args.lang}/{args.split}{'_tokens' if args.split != 'train' else ''}.txt"
         self.offsets_file = f"data_{args.lang}/{args.split}_offsets.txt"
+        self.args = args
         self.config = args.config
         self.split = args.split
         self.lang = args.lang
@@ -100,7 +101,7 @@ class RE_Dataset:
 
     def create_relations_from_preds(self):
         relations = []
-        entity_offsets = utils.get_predicted_entity_offsets(f'results_{self.lang}/preds_{self.model}_{args.split}_ner.txt', 
+        entity_offsets = utils.get_predicted_entity_offsets(f'results_{self.lang}/preds_{self.model}_{self.split}_ner.txt', 
                                            self.offsets_file)
         for sent_entity_offsets in entity_offsets:
             relations.append([(x,y) for x in sent_entity_offsets[0] for y in sent_entity_offsets[1]])
@@ -112,9 +113,9 @@ class RE_Dataset:
         for sent_relations, sentence in zip(self.relations, self.tokens_set):
             doc_id, tokens = sentence
             for relation in sent_relations:
-                line = RE_Dataset.recreate_line(relation, tokens)
+                line = RC_Dataset.recreate_line(relation, tokens)
                 re_dataset.append((doc_id, line, relation[0][0], relation[0][1],
-                                   relation[1][0], relation[1][1])) 
+                                relation[1][0], relation[1][1])) 
         return re_dataset
     
 
@@ -126,11 +127,12 @@ class RE_Dataset:
             positive_relations = [r for r in self.relations[doc_id] if int(r[0][0]) in rml_start_offsets]
             neg_relations = set([(x,y) for y in [i for _,i in positive_relations] for x,_ in positive_relations if (x,y) not in positive_relations])
             for relation in positive_relations:
-                line = RE_Dataset.recreate_line(relation, tokens)
-                re_dataset.append((doc_id, line, 1, relation[0][0], relation[0][1],
-                                   relation[1][0], relation[1][1])) 
+                if relation not in self.config.RELATIONS_TO_EXCLUDE:
+                    line = RC_Dataset.recreate_line(relation, tokens)
+                    re_dataset.append((doc_id, line, 1, relation[0][0], relation[0][1],
+                                    relation[1][0], relation[1][1])) 
             for relation in neg_relations:
-                line = RE_Dataset.recreate_line(relation, tokens)
+                line = RC_Dataset.recreate_line(relation, tokens)
                 re_dataset.append((doc_id, line, 0, relation[0][0], relation[0][1],
                                    relation[1][0], relation[1][1])) 
                 
@@ -144,7 +146,8 @@ class RE_Dataset:
         print(len([i for i in re_dataset if i[1]==0])/len(re_dataset))
 
     def write_dataset_to_file(self):
-        with open(f"data_{args.lang}/{args.split}_{args.model}_{'full_' if args.use_full_train else ''}re_dataset.csv", mode='w', newline='', encoding='utf-8') as file:
+        with open(f"data_{self.lang}/{self.split}_{self.model}_{'full_' if (self.args.use_full_train) & (self.split == 'train') else ''}re_dataset.csv",
+                   mode='w', newline='', encoding='utf-8') as file:
             writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             for line in self.re_dataset:
                 writer.writerow(line)
@@ -152,9 +155,9 @@ class RE_Dataset:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', default='mbert')
-    parser.add_argument('--split', '-s', default='test')
-    parser.add_argument('--lang', '-l', default='it')
-    parser.add_argument('--use-full-train', default=False, 
+    parser.add_argument('--split', '-s', default='train')
+    parser.add_argument('--lang', '-l', default='eu')
+    parser.add_argument('--use-full-train', default=True, 
                         action=argparse.BooleanOptionalAction)
 
     args = parser.parse_args()
@@ -164,4 +167,4 @@ if __name__ == "__main__":
     configs = Config(args.lang)
     args.config = configs
 
-    re_data = RE_Dataset(args)
+    re_data = RC_Dataset(args)

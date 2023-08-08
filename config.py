@@ -29,6 +29,7 @@ class Config:
         self.TEST_DATASET = "TEST_IT/test.txt"
         self.TEST_TOKEN_DATA = "TEST_IT/test_tokenized"
         self.VALID_DOC_IDS = ['101165', '100803', '101137', '101146', '101139', '100990', '100759', '101167', '100742', '101073', '100460', '101191']
+        self.RELATIONS_TO_EXCLUDE = []
 
     def set_Spanish_config(self):
         self.DATASET_PATH = "TESTLINK_ES_training_data_v1.1/TESTLINK_training_data/training.txt"
@@ -36,6 +37,7 @@ class Config:
         self.TOKEN_DATA_PATH = "TESTLINK_ES_training_data_v1.1/training_tokenized"
         self.TEST_TOKEN_DATA= "TEST_ES/test_tokenized"
         self.VALID_DOC_IDS = ['100962', '100278', '100775', '100705', '100947', '100280', '100840', '100050', '100284', '100259', '100791', '100789']
+        self.RELATIONS_TO_EXCLUDE = []
 
     def set_Basque_config(self):
         self.DATASET_PATH = "TESTLINK_EU_training_data/training.txt"
@@ -43,6 +45,7 @@ class Config:
         self.TOKEN_DATA_PATH = "TESTLINK_EU_training_data/training_tokenized"
         self.TEST_TOKEN_DATA = "TEST_EU/test_tokenized"
         self.VALID_DOC_IDS = ['100031', '100171', '100078', '100043', '100017', '100103', '100021', '100189', '100024', '100110', '100146', '100126', '100008']
+        self.RELATIONS_TO_EXCLUDE = [(('1975', '1982'), ('1959', '1972')), (('1093', '1102'), ('1076', '1077')), (('1093', '1102'), ('1067', '1075'))]
 
 
     

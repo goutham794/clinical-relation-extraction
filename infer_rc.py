@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 transformers_logger = logging.getLogger("transformers")
 transformers_logger.setLevel(logging.WARNING)
 
-def Infer_RE(args):
+def Infer_RC(args):
 
     df = pd.read_csv(f"data_{args.lang}/{args.split}_{args.model}_re_dataset.csv")
     df.columns = ["doc_id", "text", "rml_s", "rml_e", "tst_s", "tst_e"]
@@ -71,4 +71,4 @@ if __name__ == "__main__":
     else:
         args.dataset = args.config.DATASET_PATH  
 
-    Infer_RE(args)
+    Infer_RC(args)
