@@ -1,3 +1,5 @@
 torch==2.0.0
 simpletransformers==0.63.9
-seqeval==1.2.2 
+seqeval==1.2.2
+langchain==0.0.262
+transformers==4.24.0 

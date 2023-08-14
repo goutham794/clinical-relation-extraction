@@ -43,7 +43,8 @@ def Infer_RC(args):
 
         utils.save_predicted_pubtator(df[np.array(predictions).astype(bool)],args.lang, 
                                 f"{args.model}_predicted_{args.split}_set.pubtator", 
-                                args.dataset)
+                                args.dataset, args.config.TEST_ENTITY_MARKER, 
+                                args.config.RESULT_ENTITY_MARKER)
         
         print(utils.get_pubtator_scores(args.lang, args.model, args.split))
 

@@ -6,8 +6,6 @@ import logging
 from config import Config
 import utils
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-
 logging.basicConfig(level=logging.DEBUG, 
                     format='%(asctime)s %(levelname)s %(message)s',
                     handlers=[logging.StreamHandler()])

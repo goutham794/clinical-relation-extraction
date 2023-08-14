@@ -3,9 +3,6 @@ from collections import Counter
 import re
 import subprocess
 
-import config_old
-
-
 def create_tokens_list_from_file(filename):
     with open(filename) as f:
         data = f.readlines()
@@ -68,15 +65,15 @@ def get_predicted_entity_offsets(predictions_file, offsets_file):
 
 
 def save_predicted_pubtator(df_relations, lang, filename, 
-                            dataset_path):
+                            dataset_path, tst_entity_marker, rml_entity_marker):
 
     with open(f"{dataset_path}") as file:
         training_data = file.readlines()
 
     training_data = [list(x[1]) for x in itertools.groupby(training_data, lambda x: x=='\n') if not x[0]]
 
-    result_entity_regex = f"{re.escape(config_old.RESULT_ENTITY_MARKER)}(.*?){re.escape(config_old.RESULT_ENTITY_MARKER)}"
-    test_entity_regex = f"{re.escape(config_old.TEST_ENTITY_MARKER)}(.*?){re.escape(config_old.TEST_ENTITY_MARKER)}"
+    result_entity_regex = f"{re.escape(rml_entity_marker)}(.*?){re.escape(rml_entity_marker)}"
+    test_entity_regex = f"{re.escape(tst_entity_marker)}(.*?){re.escape(tst_entity_marker)}"
     with open(f"results_{lang}/{filename}", 'w') as f:
         for data in training_data:
             statement_id = data[0].split('|t|')[0]

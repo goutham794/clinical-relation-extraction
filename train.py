@@ -2,6 +2,8 @@
 Training of the Relation Extraction Task. Combines all the modules.
 """
 import argparse
+import os
+
 from train_ner import Train_NER
 from infer_ner import Infer_NER
 from rc_dataset import RC_Dataset
@@ -9,6 +11,8 @@ from train_rc import Train_RC
 from infer_rc import Infer_RC
 
 from config import Config
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
