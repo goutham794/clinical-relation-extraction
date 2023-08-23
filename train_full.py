@@ -3,10 +3,8 @@ Prediction step of the Relation Extraction Task. Combines all the modules.
 """
 import argparse
 from train_ner import Train_NER
-from infer_ner import Infer_NER
 from rc_dataset import RC_Dataset
 from train_rc import Train_RC
-from infer_rc import Infer_RC
 
 from config import Config
 

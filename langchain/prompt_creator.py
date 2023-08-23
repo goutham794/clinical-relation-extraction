@@ -25,7 +25,7 @@ def get_prompt(args):
     # api_type = os.environ['OPENAI_API_TYPE']
     # api_version = os.environ['OPENAI_API_VERSION']
 
-    # os.environ['OPENAI_API_KEY'] = "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"
+    # os.environ['OPENAI_API_KEY'] = ""
     # del os.environ['OPENAI_API_BASE']
     # del os.environ['OPENAI_API_TYPE']
     # del os.environ['OPENAI_API_VERSION']
@@ -40,7 +40,7 @@ def get_prompt(args):
     #             openai_api_base="https://hlt-nlp.openai.azure.com/",
     #             openai_api_type="azure",
     #         ),
-    #     # OpenAIEmbeddings(openai_api_key="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"),
+    #     # OpenAIEmbeddings(openai_api_key=""),
     #     # This is the VectorStore class that is used to store the embeddings and do a similarity search over.
     #     vectorstore_cls = Chroma,
     #     # This is the number of examples to produce.

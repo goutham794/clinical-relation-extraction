@@ -46,7 +46,10 @@ def Infer_RC(args):
                                 args.dataset, args.config.TEST_ENTITY_MARKER, 
                                 args.config.RESULT_ENTITY_MARKER)
         
-        print(utils.get_pubtator_scores(args.lang, args.model, args.split))
+        
+        utils.save_metrics_to_file(str(utils.get_pubtator_scores(args.lang, args.model, 
+                                                             args.split)),
+                            args.lang, f'metrics_{args.model}_{args.split}_rc.txt')
 
         
 

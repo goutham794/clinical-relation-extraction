@@ -1,11 +1,10 @@
 from simpletransformers.ner import NERModel,NERArgs
 import argparse
-import os
+import wandb
 import logging
 
 from config import Config
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 logging.basicConfig(level=logging.DEBUG, 
                     format='%(asctime)s %(levelname)s %(message)s',
@@ -38,8 +37,11 @@ def Train_NER(args):
     # Evaluate the model
     result, model_outputs, predictions = model.eval_model(f"data_{args.lang}/valid.txt")
 
+    wandb.log({"valid_loss": result['eval_loss']})
+    wandb.log({"precision": result['precision']})
+    wandb.log({"recall": result['recall']})
+    wandb.log({"f1_score": result['f1_score']})
 
-    print(result)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -58,4 +60,5 @@ if __name__ == "__main__":
     args.config = configs
     args.model_type = configs.pretrained_model_details[args.model][0]
     args.model_name = configs.pretrained_model_details[args.model][1]
+
     Train_NER(args)

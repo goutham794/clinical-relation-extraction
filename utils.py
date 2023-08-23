@@ -16,6 +16,10 @@ def save_predictions_to_file(preds, lang, filename):
                 f.write(f'{pred}\n')
             f.write('\n')
 
+def save_metrics_to_file(metrics, lang, filename):
+    with open(f'results_{lang}/{filename}', 'w') as f:
+        f.write(metrics)
+
 
 def get_entity_spans(tag_list, entity_type):
     entity_spans = []
@@ -111,6 +115,24 @@ def find_comma_not_decimal(s):
                 return True
                 
     return False
+
+def get_true_entity_labels(lang, split):
+    """
+    For the given lang and split, return list of lists of all the true entity types.
+    """
+    with open(f"data_{lang}/{split}.txt", 'r') as f:
+        all_tags = []
+        sentence_tags = []
+        for row in f.readlines():
+            if row == '\n':
+                all_tags.append(sentence_tags)
+                sentence_tags = []
+                continue
+
+            _, tag = row.strip().split()
+            sentence_tags.append(tag)
+    return all_tags
+
 
 
 

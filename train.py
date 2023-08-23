@@ -1,6 +1,8 @@
 """
 Training of the Relation Extraction Task. Combines all the modules.
 """
+import wandb
+import secrets
 import argparse
 import os
 
@@ -14,20 +16,39 @@ from config import Config
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
+def configure_wandb(args):
+    wandb.login(key=args.wandb_key)
+    wandb.init(
+    project=args.wandb_proj_name,
+        config={"epochs": args.epochs, "batch_size": args.batch_size, 
+                "lr": args.lr}, 
+        name = f"{args.model}_{secrets.token_hex(2)}"
+        )
+
+
 if __name__ == "__main__":
+    
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', default='mbert')
     parser.add_argument('--use-full-train', default=False, 
                         action=argparse.BooleanOptionalAction)
     parser.add_argument('--lang', '-l', default='it')
     parser.add_argument("--batch-size", type=int, default = 16)
-    parser.add_argument("--epochs", '-e', type=int, default = 5)
+    parser.add_argument("--epochs", '-e', type=int, default = 1)
     parser.add_argument("--lr", default=0.0001, type=float)
 
     args = parser.parse_args()
     assert args.lang in ['it', 'es', 'eu'], "The language must be one of 'it', 'es', 'eu'"
     assert args.model in ['mbert', 'xlmroberta', 'biobert','bert'], "The model must be one of bert, xlmroberta, biobert"
+
     configs = Config(args.lang)
+    args.wandb_key = configs.WANDB_API_KEY
+    args.wandb_proj_name = f"{args.lang}_Relation_Extraction"
+
+
+    configure_wandb(args)
+
     args.config = configs
     args.model_type = configs.pretrained_model_details[args.model][0]
     args.model_name = configs.pretrained_model_details[args.model][1]
