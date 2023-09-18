@@ -157,12 +157,12 @@ class GPT_Relation_Extractor:
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('--lang', '-l', default='eu')
+    parser.add_argument('--lang', '-l', default='it')
     parser.add_argument("--num-examples", '-n', type=int, default = 1, 
         help='Number of example docs in prompt.')
     parser.add_argument("--num-infer", '-i', type=int, default = -1, 
         help='Number of docs to infer. -1 => all documents.')
-    parser.add_argument('--llm-service', '-e', default='azure')
+    parser.add_argument('--llm-service', '-e', default='openai')
     parser.add_argument('--split', '-s', default='test')
     args = parser.parse_args()
     assert args.lang in ['it', 'es', 'eu'], "The language must be one of 'it', 'es', 'eu'"
@@ -175,7 +175,6 @@ if __name__ == "__main__":
 
     args.prompt_config = prompt_config
 
-    args.num_of_docs_to_infer = 10
     if args.split == 'test':
         args.dataset = args.config.TEST_DATASET 
         args.tokens_path = args.config.TEST_TOKEN_DATA  

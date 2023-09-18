@@ -20,41 +20,28 @@ def get_prompt(args):
     Get few-shot prompt
     """
 
-    # api_key = os.environ['OPENAI_API_KEY']
-    # api_base = os.environ['OPENAI_API_BASE']
-    # api_type = os.environ['OPENAI_API_TYPE']
-    # api_version = os.environ['OPENAI_API_VERSION']
-
-    # os.environ['OPENAI_API_KEY'] = ""
-    # del os.environ['OPENAI_API_BASE']
-    # del os.environ['OPENAI_API_TYPE']
-    # del os.environ['OPENAI_API_VERSION']
-    
-    # example_selector = SemanticSimilarityExampleSelector.from_examples(
-    #     # This is the list of examples available to select from.
-    #     args.examples,
-    #     # This is the embedding class used to produce embeddings which are used to measure semantic similarity.
-    #     embeddings = OpenAIEmbeddings(
-    #             deployment="text-embedding-ada-002",
-    #             model="text-embedding-ada-002",
-    #             openai_api_base="https://hlt-nlp.openai.azure.com/",
-    #             openai_api_type="azure",
-    #         ),
-    #     # OpenAIEmbeddings(openai_api_key=""),
-    #     # This is the VectorStore class that is used to store the embeddings and do a similarity search over.
-    #     vectorstore_cls = Chroma,
-    #     # This is the number of examples to produce.
-    #     k=2
-    #     )
-    # os.environ['OPENAI_API_KEY'] = api_key 
-    # os.environ['OPENAI_API_BASE'] = api_base 
-    # os.environ['OPENAI_API_TYPE'] = api_type 
-    # os.environ['OPENAI_API_VERSION'] = api_version 
+    example_selector = SemanticSimilarityExampleSelector.from_examples(
+        # This is the list of examples available to select from.
+        args.examples,
+        # This is the embedding class used to produce embeddings which are used to measure semantic similarity.
+        OpenAIEmbeddings(),
+        # embeddings = OpenAIEmbeddings(
+        #         deployment="text-embedding-ada-002",
+        #         model="text-embedding-ada-002",
+        #         openai_api_base="https://hlt-nlp.openai.azure.com/",
+        #         openai_api_type="azure",
+        #     ),
+        # OpenAIEmbeddings(openai_api_key=""),
+        # This is the VectorStore class that is used to store the embeddings and do a similarity search over.
+        vectorstore_cls = Chroma,
+        # This is the number of examples to produce.
+        k=2
+        )
 
 
     prompt = FewShotPromptTemplate(
-        # example_selector=example_selector, 
-        examples = args.examples[:args.num_examples],
+        example_selector=example_selector, 
+        # examples = args.examples[:args.num_examples],
         example_prompt=args.example_prompt, 
         prefix = args.prompt_config.prompt_prefix,
         suffix = args.prompt_config.prompt_suffix, 

@@ -4,6 +4,7 @@ import pandas as pd
 import logging
 import os
 import numpy as np
+import wandb
 
 from config import Config
 import utils
@@ -16,13 +17,33 @@ logging.basicConfig(level=logging.DEBUG,
 
 def Train_RC(args):
 
+    class CustomClassificationModel(ClassificationModel):
+        def eval_model(self, eval_df, multi_label=False, output_dir=None, verbose=True, silent=False, wandb_log=True, **kwargs):
+            predictions, _ = self.predict(list(eval_df.text))
+            utils.save_predicted_pubtator(eval_df[np.array(predictions).astype(bool)],args.lang, 
+                            f"{args.model}_predicted_valid_set.pubtator", 
+                            args.config.DATASET_PATH, args.config.TEST_ENTITY_MARKER, 
+                            args.config.RESULT_ENTITY_MARKER)
+            
+            
+            metrics = utils.get_pubtator_scores(args.lang, args.model, 'valid')
+            metrics = {k: float(v) for k, v in metrics.items()}
+            wandb.log({'re_precision' : metrics['Precision']} )
+            wandb.log({'re_recall' : metrics['Recall']} )
+            wandb.log({'re_f1' : metrics['F-score']} )
+            return metrics, _, _
+
     logging.info(f"Training RC model {args.model} model for {args.lang} and {'combined' if args.use_full_train else 'split'} train data.")
 
-    df_train = pd.read_csv(f"data_{args.lang}/train_{args.model}_{'full_' if args.use_full_train else ''}re_dataset.csv")
+    df_train = pd.read_csv(f"data_{args.lang}/train_{args.model}_{'full_' if args.use_full_train else ''}re_dataset.csv",
+                        #    nrows=100
+                           )
     df_train.columns = ["doc_id", "text", "labels", "rml_s", "rml_e", "tst_s", "tst_e"]
 
-    # df_eval = pd.read_csv(f"data_{args.lang}/valid_re_dataset.csv")
-    # df_eval.columns = ["doc_id", "text", "rml_s", "rml_e", "tst_s", "tst_e"]
+    df_eval = pd.read_csv(f"data_{args.lang}/valid_{args.model}_re_dataset.csv",
+                        #    nrows=100
+                           )
+    df_eval.columns = ["doc_id", "text", "rml_s", "rml_e", "tst_s", "tst_e"]
 
     model_args = ClassificationArgs()
     model_args.num_train_epochs = args.epochs
@@ -35,20 +56,17 @@ def Train_RC(args):
     model_args.train_batch_size = args.batch_size
     model_args.labels_list = [0, 1]
     model_args.use_multiprocessing_for_evaluation = False
-    # model_args.evaluate_during_training = True
+    model_args.evaluate_during_training = True
+    model_args.early_stopping_metric = "F-score"
+    model_args.early_stopping_metric_minimize = False
 
 
-    model = ClassificationModel(
+    model = CustomClassificationModel(
         args.model_type, args.model_name, args=model_args
     )
 
-    model.train_model(df_train[["text", "labels"]])
-
-    # predictions, _ = model.predict(list(df_eval.text))
-
-    # utils.save_predicted_pubtator(df_eval[np.array(predictions).astype(bool)], 
-    #                               args.lang, f"{args.model}_predicted_valid_set.pubtator", 
-    #                         args.config.DATASET_PATH)
+    model.train_model(df_train[["text", "labels"]], 
+                      eval_df=df_eval)
 
         
 

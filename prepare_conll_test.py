@@ -25,7 +25,7 @@ def check_for_entity_match(entity_list, start_offset, end_offset):
 def create_NER_dataset(args):
     bio_ner_data = []
 
-    with open(args.config.DATASET_PATH) as file:
+    with open(args.config.TEST_DATASET) as file:
         training_data = file.readlines()
 
     training_data = [list(x[1]) for x in itertools.groupby(training_data, lambda x: x=='\n') if not x[0]] 
@@ -38,7 +38,7 @@ def create_NER_dataset(args):
             _,_,result_offset, test_offset, result_entity, test_entity = relation.split('\t')
             result_entities.append((result_entity, result_offset.split('-')))
             test_entities.append((test_entity.strip(), test_offset.split('-')))
-        with open(f"{args.config.TOKEN_DATA_PATH}/{statement_id}.tsv") as file:
+        with open(f"{args.config.TEST_TOKEN_DATA}/{statement_id}.tsv") as file:
             tokens = file.readlines()
         
         sentence_splits = [list(x[1]) for x in itertools.groupby(tokens, lambda x: x=='\n') if not x[0]] 

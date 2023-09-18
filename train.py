@@ -35,7 +35,7 @@ if __name__ == "__main__":
                         action=argparse.BooleanOptionalAction)
     parser.add_argument('--lang', '-l', default='it')
     parser.add_argument("--batch-size", type=int, default = 16)
-    parser.add_argument("--epochs", '-e', type=int, default = 1)
+    parser.add_argument("--epochs", '-e', type=int, default = 5)
     parser.add_argument("--lr", default=0.0001, type=float)
 
     args = parser.parse_args()
@@ -66,6 +66,6 @@ if __name__ == "__main__":
 
     Train_RC(args)
 
-    args.model_loc = f"models_{args.lang}/{args.model}_re"
-    args.dataset = args.config.DATASET_PATH  
-    Infer_RC(args)
+    # args.model_loc = f"models_{args.lang}/{args.model}_re"
+    # args.dataset = args.config.DATASET_PATH  
+    # Infer_RC(args)

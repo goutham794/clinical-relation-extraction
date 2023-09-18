@@ -20,6 +20,8 @@ def Train_NER(args):
     model_config['best_model_dir']  = f"models_{args.lang}/{args.model}_ner{'_combined' if args.use_full_train else ''}/"
     # model_config['learning_rate']  = args.lr
     model_config['num_train_epochs']  = args.epochs
+    model_config['evaluate_during_training'] = True
+    model_config['wandb_project'] = args.wandb_proj_name 
 
     model_args = NERArgs()
     model_args.update_from_dict(model_config)
@@ -27,21 +29,12 @@ def Train_NER(args):
     custom_labels = args.config.NER_CLASSES
 
     model = NERModel(
-        args.model_type, args.model_name, args=model_args, labels=custom_labels
+        args.model_type, args.model_name, args=model_args, labels=custom_labels,
     )
 
-    model.train_model(f"data_{args.lang}/train{'_full' if args.use_full_train else ''}.txt", 
+    x = model.train_model(f"data_{args.lang}/train{'_full' if args.use_full_train else ''}.txt", 
                       eval_data=f"data_{args.lang}/valid.txt"
                       )
-
-    # Evaluate the model
-    result, model_outputs, predictions = model.eval_model(f"data_{args.lang}/valid.txt")
-
-    wandb.log({"valid_loss": result['eval_loss']})
-    wandb.log({"precision": result['precision']})
-    wandb.log({"recall": result['recall']})
-    wandb.log({"f1_score": result['f1_score']})
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -50,7 +43,7 @@ if __name__ == "__main__":
                         action=argparse.BooleanOptionalAction)
     parser.add_argument('--lang', '-l', default='it')
     parser.add_argument("--batch-size", type=int, default = 16)
-    parser.add_argument("--epochs", '-e', type=int, default = 5)
+    parser.add_argument("--epochs", '-e', type=int, default = 1)
     parser.add_argument("--lr", default=0.0001, type=float)
 
     args = parser.parse_args()

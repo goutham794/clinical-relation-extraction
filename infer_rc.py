@@ -4,6 +4,7 @@ import pandas as pd
 import logging
 import os
 import numpy as np
+import wandb
 
 from config import Config
 import utils
@@ -13,6 +14,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 logging.basicConfig(level=logging.INFO)
 transformers_logger = logging.getLogger("transformers")
 transformers_logger.setLevel(logging.WARNING)
+
 
 def Infer_RC(args):
 
@@ -47,10 +49,10 @@ def Infer_RC(args):
                                 args.config.RESULT_ENTITY_MARKER)
         
         
-        utils.save_metrics_to_file(str(utils.get_pubtator_scores(args.lang, args.model, 
-                                                             args.split)),
-                            args.lang, f'metrics_{args.model}_{args.split}_rc.txt')
-
+        metrics = utils.get_pubtator_scores(args.lang, args.model, args.split)
+        wandb.log({"rc_precision": float(metrics['Precision'])})
+        wandb.log({"rc_recall": float(metrics['Recall'])})
+        wandb.log({"rc_f1_score": float(metrics['F-score'])})
         
 
 if __name__ == "__main__":
@@ -74,5 +76,6 @@ if __name__ == "__main__":
         args.dataset = args.config.TEST_DATASET 
     else:
         args.dataset = args.config.DATASET_PATH  
+
 
     Infer_RC(args)

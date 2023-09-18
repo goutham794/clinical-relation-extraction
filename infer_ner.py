@@ -3,6 +3,8 @@ import argparse
 import wandb
 import logging
 from seqeval.metrics import classification_report
+import secrets
+import wandb
 
 from config import Config
 import utils
@@ -10,6 +12,13 @@ import utils
 logging.basicConfig(level=logging.DEBUG, 
                     format='%(asctime)s %(levelname)s %(message)s',
                     handlers=[logging.StreamHandler()])
+
+def configure_wandb(args):
+    wandb.login(key=args.wandb_key)
+    wandb.init(
+    project=args.wandb_proj_name,
+        name = f"{args.model}_{secrets.token_hex(2)}"
+        )
 
 def Infer_NER(args):
 
@@ -33,17 +42,18 @@ def Infer_NER(args):
     predictions = [[list(d.values())[0] for d in i] for i in predictions]
     utils.save_predictions_to_file(predictions, args.lang, f'preds_{args.model}_{args.split}_ner.txt')
     true_entities = utils.get_true_entity_labels('it', args.split)
-    metrics = classification_report(true_entities, predictions, output_dict=True)['weighted avg']
-    wandb.log({"precision": metrics['precision']})
-    wandb.log({"recall": metrics['recall']})
-    wandb.log({"f1_score": metrics['f1-score']})
+    if args.split == 'test':
+        metrics = classification_report(true_entities, predictions, output_dict=True)['weighted avg']
+        wandb.log({"ner_precision": metrics['precision']})
+        wandb.log({"ner_recall": metrics['recall']})
+        wandb.log({"ner_f1_score": metrics['f1-score']})
 
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', default='mbert')
-    parser.add_argument('--split', '-s', default='valid')
+    parser.add_argument('--split', '-s', default='test')
     parser.add_argument('--lang', '-l', default='it')
 
     args = parser.parse_args()
@@ -53,4 +63,9 @@ if __name__ == "__main__":
     args.config = configs
     args.model_type = configs.pretrained_model_details[args.model][0]
     args.model_name = configs.pretrained_model_details[args.model][1]
+
+    args.wandb_key = configs.WANDB_API_KEY
+    args.wandb_proj_name = f"Infer_NER_{args.lang}_Relation_Extraction"
+    configure_wandb(args)
+
     Infer_NER(args)

@@ -1,6 +1,9 @@
 torch==2.0.0
 simpletransformers==0.63.9
 seqeval==1.2.2
-langchain==0.0.262
+langchain==0.0.292
 transformers==4.24.0 
 wandb==0.15.8
+openai==0.28.0
+chromadb==0.4.10
+tiktoken==0.5.1
