@@ -41,7 +41,7 @@ def Infer_NER(args):
     predictions, _ = model.predict(tokens, split_on_space=False)
     predictions = [[list(d.values())[0] for d in i] for i in predictions]
     utils.save_predictions_to_file(predictions, args.lang, f'preds_{args.model}_{args.split}_ner.txt')
-    true_entities = utils.get_true_entity_labels('it', args.split)
+    true_entities = utils.get_true_entity_labels(args.lang, args.split)
     if args.split == 'test':
         metrics = classification_report(true_entities, predictions, output_dict=True)['weighted avg']
         wandb.log({"ner_precision": metrics['precision']})

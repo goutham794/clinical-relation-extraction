@@ -21,7 +21,8 @@ Done in 2 stages
 
 - `sh prepare_script.sh` - to prepare required data
 - `python train.py` - entire train and validation
-- `python predict.py` - trains on the entire set(train+valid) and predicts on the test set
+- `python train_full.py` - trains on the entire set(train+valid)
+- `python predict.py` - predicts on the test set
 
 ## LLM Few shot learning
 

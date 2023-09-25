@@ -50,9 +50,9 @@ def Infer_RC(args):
         
         
         metrics = utils.get_pubtator_scores(args.lang, args.model, args.split)
-        wandb.log({"rc_precision": float(metrics['Precision'])})
-        wandb.log({"rc_recall": float(metrics['Recall'])})
-        wandb.log({"rc_f1_score": float(metrics['F-score'])})
+        wandb.log({"re_precision": float(metrics['Precision'])})
+        wandb.log({"re_recall": float(metrics['Recall'])})
+        wandb.log({"re_f1_score": float(metrics['F-score'])})
         
 
 if __name__ == "__main__":
