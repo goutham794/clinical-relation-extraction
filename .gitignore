@@ -1,0 +1,10 @@
+Clinkart_training_data/
+data_it/
+poetry.lock/
+wandb/
+poetry.lock
+outputs_it/
+models_it/
+cache_dir/
+runs/
+__pycache__/
