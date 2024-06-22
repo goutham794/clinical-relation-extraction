@@ -20,7 +20,7 @@ def train():
     model_config = args.config.model_args_ner 
     model_config['train_batch_size'] = args.batch_size
     model_config['output_dir']  = f"outputs_{args.lang}/{args.model}_ner/"
-    model_config['best_model_dir']  = f"models_{args.lang}/{args.model}_ner{'_combined' if args.use_full_train else ''}/"
+    model_config['best_model_dir']  = f"models_{args.lang}/{args.model}_ner/"
     model_config['learning_rate']  = args.learning_rate
     model_config['num_train_epochs']  = args.num_train_epochs
     model_config['scheduler']  = args.scheduler
