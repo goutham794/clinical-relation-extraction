@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.DEBUG,
 def train():
 
 
-    logging.info(f"Training NER model {args.model} model and {'combined' if args.use_full_train else 'split'} train data.")
+    logging.info(f"Training NER model {args.model} model and train data.")
 
     model_config = args.config.model_args_ner 
     model_config['train_batch_size'] = args.batch_size
