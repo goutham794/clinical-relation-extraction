@@ -50,9 +50,7 @@ def train():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', '-m')
-    parser.add_argument('--use-full-train', default=False, 
-                        action=argparse.BooleanOptionalAction)
+    parser.add_argument('--model', '-m', default="mbert")
     parser.add_argument('--lang', '-l', default='it')
     parser.add_argument("--batch_size", type=int)
     parser.add_argument("--num_train_epochs", '-e', type=int)
