@@ -43,7 +43,7 @@ def train():
         args.model_type, args.model_name, args=model_args, labels=custom_labels,
     )
 
-    x = model.train_model(f"data_{args.lang}/train{'_full' if args.use_full_train else ''}.txt", 
+    x = model.train_model(f"data_{args.lang}/train.txt", 
                       eval_data=f"data_{args.lang}/valid.txt"
                       )
 
