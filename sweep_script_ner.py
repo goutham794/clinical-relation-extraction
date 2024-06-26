@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.DEBUG,
 def train():
 
 
-    logging.info(f"Training NER model {args.model} model and train data.")
+    logging.info(f"Training NER model {args.model} model and {args.lang} train data.")
 
     model_config = args.config.model_args_ner 
     model_config['train_batch_size'] = args.batch_size
@@ -30,8 +30,6 @@ def train():
     model_config['warmup_ratio']  = args.warmup_ratio
 
     model_config['wandb_project']  = "ner_training_project"
-    model_config['save_eval_checkpoints']  = False
-    model_config['save_model_every_epoch']  = False
 
 
     model_args = NERArgs()
@@ -51,7 +49,7 @@ def train():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', default="mbert")
-    parser.add_argument('--lang', '-l', default='it')
+    parser.add_argument('--lang', '-l', default='eu')
     parser.add_argument("--batch_size", type=int)
     parser.add_argument("--num_train_epochs", '-e', type=int)
     parser.add_argument("--warmup_ratio", type=float)
