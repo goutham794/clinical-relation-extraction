@@ -1,7 +1,7 @@
 from simpletransformers.ner import NERModel,NERArgs
 import argparse
-import wandb
 import logging
+from utils import fetch_optimal_hyperparams
 
 from config import Config
 
@@ -14,14 +14,17 @@ def Train_NER(args):
 
     logging.info(f"Training NER model {args.model} model and {'combined' if args.use_full_train else 'split'} train data.")
 
+    optimal_hyperparam_dict = fetch_optimal_hyperparams("ner", args.model, args.lang)
+
     model_config = args.config.model_args_ner 
-    model_config['train_batch_size'] = args.batch_size
     model_config['output_dir']  = f"outputs_{args.lang}/{args.model}_ner/"
     model_config['best_model_dir']  = f"models_{args.lang}/{args.model}_ner{'_combined' if args.use_full_train else ''}/"
-    # model_config['learning_rate']  = args.lr
-    model_config['num_train_epochs']  = args.epochs
     model_config['evaluate_during_training'] = True
-    model_config['wandb_project'] = args.wandb_proj_name 
+    model_config['wandb_project'] = f"ner_{args.model}_{args.lang}_final" 
+
+    model_config.update(optimal_hyperparam_dict)
+    # rename wrongly named key.
+    model_config['train_batch_size'] = model_config.pop("batch_size")
 
     model_args = NERArgs()
     model_args.update_from_dict(model_config)
@@ -42,9 +45,6 @@ if __name__ == "__main__":
     parser.add_argument('--use-full-train', default=False, 
                         action=argparse.BooleanOptionalAction)
     parser.add_argument('--lang', '-l', default='it')
-    parser.add_argument("--batch-size", type=int, default = 16)
-    parser.add_argument("--epochs", '-e', type=int, default = 1)
-    parser.add_argument("--lr", default=0.0001, type=float)
 
     args = parser.parse_args()
     assert args.lang in ['it', 'es', 'eu'], "The language must be one of 'it', 'es', 'eu'"

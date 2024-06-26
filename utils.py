@@ -2,6 +2,7 @@ import itertools
 from collections import Counter
 import re
 import subprocess
+import pandas as pd
 
 def create_tokens_list_from_file(filename):
     with open(filename) as f:
@@ -140,3 +141,11 @@ def classify_relation(text):
     indexes = [text.find("[RML]"), text.find("[TST]")]
     indexes.sort()
     return not find_comma_not_decimal(text[indexes[0]: indexes[1]])
+
+
+def fetch_optimal_hyperparams(task: str, model: str, lang: str):
+    df_tuning_results = pd.read_csv(f"./optimal_hyperparams/{task}_{model}_{lang}.csv")
+    opt_values = df_tuning_results.loc[df_tuning_results['f1_score'].idxmax()]
+    del opt_values['Name']
+    del opt_values['f1_score']
+    return opt_values.to_dict()
