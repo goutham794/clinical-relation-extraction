@@ -11,9 +11,11 @@ poetry.lock
 outputs_it/
 outputs_es/
 outputs_eu/
+outputs_multilingual/
 models_it/
 models_es/
 models_eu/
+models_multilingual/
 cache_dir/
 runs/
 __pycache__/
