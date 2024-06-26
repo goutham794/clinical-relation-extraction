@@ -26,6 +26,16 @@ class Config:
             'save_eval_checkpoints' : False,
             'save_model_every_epoch' : False
             }
+        self.model_args_rc = {
+            "manual_seed" : 42,
+            "evaluate_during_training" : True,
+            "overwrite_output_dir" :True,
+            "max_seq_length" : 512,
+            'save_eval_checkpoints' : False,
+            'save_model_every_epoch' : False
+            }
+    
+
     
 
     def set_Italian_config(self):

@@ -155,9 +155,9 @@ class RC_Dataset:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', default='mbert')
-    parser.add_argument('--split', '-s', default='train')
-    parser.add_argument('--lang', '-l', default='eu')
-    parser.add_argument('--use-full-train', default=True, 
+    parser.add_argument('--split', '-s', default='valid')
+    parser.add_argument('--lang', '-l', default='it')
+    parser.add_argument('--use-full-train', default=False, 
                         action=argparse.BooleanOptionalAction)
 
     args = parser.parse_args()
