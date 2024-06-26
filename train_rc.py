@@ -44,9 +44,6 @@ def Train_RC(args):
     df_eval.columns = ["doc_id", "text", "rml_s", "rml_e", "tst_s", "tst_e"]
 
     model_args = ClassificationArgs()
-    model_args.num_train_epochs = args.epochs
-    model_args.manual_seed = 42
-    model_args.overwrite_output_dir =True
     # model_args.output_dir  = f"outputs_{args.lang}/{args.model}_re/"
     model_args.output_dir  = f"models_{args.lang}/{args.model}_re{'_combined' if args.use_full_train else ''}/"
     # model_args.best_model_dir  = f"models_{args.lang}/{args.model}_re/"

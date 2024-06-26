@@ -53,7 +53,7 @@ def Infer_NER(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', default='mbert')
-    parser.add_argument('--split', '-s', default='test')
+    parser.add_argument('--split', '-s', default='valid')
     parser.add_argument('--lang', '-l', default='it')
 
     args = parser.parse_args()

@@ -19,7 +19,6 @@ def Train_NER(args):
     model_config = args.config.model_args_ner 
     model_config['output_dir']  = f"outputs_{args.lang}/{args.model}_ner/"
     model_config['best_model_dir']  = f"models_{args.lang}/{args.model}_ner{'_combined' if args.use_full_train else ''}/"
-    model_config['evaluate_during_training'] = True
     model_config['wandb_project'] = f"ner_{args.model}_{args.lang}_final" 
 
     model_config.update(optimal_hyperparam_dict)

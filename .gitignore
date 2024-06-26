@@ -18,4 +18,5 @@ models_eu/
 models_multilingual/
 cache_dir/
 runs/
+BC5CDR_Evaluation-0.0.3/
 __pycache__/

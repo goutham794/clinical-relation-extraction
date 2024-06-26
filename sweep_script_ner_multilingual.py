@@ -2,6 +2,7 @@ from simpletransformers.ner import NERModel,NERArgs
 import argparse
 import logging
 import torch
+import wandb
 
 from config import Config
 
@@ -13,7 +14,6 @@ logging.basicConfig(level=logging.DEBUG,
 
 
 def train():
-
 
     logging.info(f"Training NER model {args.model} model on multilingual train data.")
 
