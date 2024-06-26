@@ -49,7 +49,6 @@ def train():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', default="mbert")
-    parser.add_argument('--lang', '-l', default='eu')
     parser.add_argument("--batch_size", type=int)
     parser.add_argument("--num_train_epochs", '-e', type=int)
     parser.add_argument("--warmup_ratio", type=float)
@@ -60,9 +59,8 @@ if __name__ == "__main__":
     parser.add_argument("--scheduler")
 
     args = parser.parse_args()
-    assert args.lang in ['it', 'es', 'eu'], "The language must be one of 'it', 'es', 'eu'"
     assert args.model in ['mbert', 'xlmroberta', 'biobert','bert'], "The model must be one of bert, xlmroberta, biobert"
-    configs = Config(args.lang)
+    configs = Config('it')
     args.config = configs
     args.model_type = configs.pretrained_model_details[args.model][0]
     args.model_name = configs.pretrained_model_details[args.model][1]
