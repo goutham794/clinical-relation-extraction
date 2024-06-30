@@ -1,0 +1,537 @@
+100460|t|Uomo 51 aa con cirrosi HCV Child Pough A, TURV per Ca uroteliale in remissione, ricoverato per intensi dolori inguinali bilaterali irradiati agli arti inferiori, insorti da poche ore; febbre la sera prima. All’ingresso apiretico, parametri nella norma, PCR 20 mg/l, leucociti 5.410/mmc, Hb 11,7 g/dl, piastrine 53.000/mmc (come i precedenti), il resto nella norma. EO non lesioni cutanee, né edemi, non iperemia cutanea arti inferiori, non ascite. TC: ipertrofia muscoli ileo-psoas, medio gluteo sx e iperdensità sottocutanea nella regione glutea sx, addensamento polmonare al lobo inferiore sx. RM: edema interstiziale ai muscoli ileo-psoas, otturatori, adduttori, glutei, vasto laterale, retto femorale, tensore della fascia lata bilaterale, edema del tessuto adiposo dello scavo pelvico, non raccolte. Es. 2 ore dopo: PCR 25,6 mg/l, 6.050 gb/mmc, Hb 12,6 g/dl, piastrine stabili, CPK 113.000 U/l, mioglobina 17.204 ug/l, AST 1810 U/l. Dopo emocolture in apiressia, iniziava Vancomicina e Meropenem ev. Per rapido aggravamento trasferito in UTI ma decesso dopo 6 ore (12 ore dal ricovero). Emocolture: Streptococcus Zooepidemicus sensibile a Penicillina, Levofloxacina e Vancomicina, resistente a Clindamicina. Il paziente lavorava in un maneggio, spesso a contatto con deiezioni. Peculiarità del caso: epidemiologia (zoonosi, trasmissione aerea?), clinica (rapida evoluzione a esito infausto con imponente rabdomiolisi, in assenza di evidente stato settico, solo con lieve flogosi) e resistenza dello Streptococco a Clindamicina, farmaco indicato come I scelta nelle gravi infezioni.
+100460	REL	240-251	230-239	nella norma	parametri
+100460	REL	257-264	253-256	20 mg/l	PCR
+100460	REL	276-285	266-275	5.410/mmc	leucociti
+100460	REL	290-299	287-289	11,7 g/dl	Hb
+100460	REL	311-321	301-310	53.000/mmc	piastrine
+100460	REL	825-834	821-824	25,6 mg/l	PCR
+100460	REL	853-862	850-852	12,6 g/dl	Hb
+100460	REL	887-898	883-886	113.000 U/l	CPK
+100460	REL	911-922	900-910	17.204 ug/l	mioglobina
+100460	REL	928-936	924-927	1810 U/l	AST
+
+100742|t|Donna, 56 anni. Anamnesi: rettocolite ulcerosa (RCU). Ricoverata per disordini elettrolitici secondari a diarrea, anche su indicazione del gastroenterologo consulente, veniva sottoposta a colonscopia, con diagnosi di fase attiva di RCU. Dopo 24 ore trascorse in assenza di sintomi, la pz riferiva “mal di gola”. All’esame clinico: evidenza di rigonfiamento alla base del collo, ed alla palpazione: crepitio classicamente suggestivo di enfisema sottocutaneo. Le tecniche di imaging, immediatamente praticate, documentavano pneumomediastino e retropneumoperitoneo, con la ovvia conclusione diagnostica di microperforazione colica in corso di colonscopia. La pz veniva sottoposta ad intervento chirurgico.
+
+100759|t|Uomo 68 aa. In anamnesi valvola meccanica aortica in TAO, ipertensione arteriosa, sindrome ansioso-depressiva. Lamenta epigastralgia e dispnea. ECG: BBSx non noto. Esami: TnI 13000. Rx torace: versamento pleurico bilaterale. Ecocardio TT: EF 20%, dilatazione ventricolare sinistra, acinesia apico-settale, ipocinesia laterale ed infero-posteriore. Inizia amine ev senza beneficio. Si procede a coronarografia con angioplastica di occlusione esclusiva del ramo discendente anteriore. Diagnosi di IMA anteriore esteso in classe Killip IV. Al controllo ecocardiografico shunt sinistro-destro del setto apicale secondario ad ampio difetto interventricolare (DIV), EF 15%. Il paziente viene stabilizzato emodinamicamente con contropulsatore aortico ed amine ev, quindi é sottoposto a correzione chirurgica del DIV con buon esito.
+100759	REL	175-180	171-174	13000	TnI
+100759	REL	242-245	239-241	20%	EF
+100759	REL	663-666	660-662	15%	EF
+
+100803|t|Paziente di 20 anni, con anamnesi di doppia eterozigosi per anemia falciforme e +IVS1-nt110, giunge in PS per dolore agli arti inferiori, febbre, anemia e incremento degli indici di emolisi. La paziente presenta dilatazione calico-pielica destra, splenomegalia e colelitiasi, già note. In PS, la paziente effettua terapia trasfusionale e antidolorifica con paracetamolo e oppioidi. Il quadro clinico e l’RX torace escludono una sindrome toracica acuta. Viene trasferita nel Reparto di Medicina Interna dove prosegue la terapia antidolorifica, l’idratazione e l’HU. La paziente viene dimessa, asintomatica, con l’indicazione a eseguire ECD transcranico per escludere trombosi dei seni cerebrali e infarti cerebrali silenti ed ecocardiogramma per determinare la PAPS.
+
+100990|t|L'ECG di questo numero appartiene ad un signore di 67 anni, il quale accede autonomamente nel nostro Pronto Soccorso di II livello a seguito di un episodio di dolore toracico insorto circa 40 minuti prima. Al momento dell'arrivo in PS il paziente lamenta un dolore retrosternale di intensità 8/10, irradiato ad entrambi gli emitoraci anteriormente, di tipo oppressivo, a carattere ingravescente, non esacerbato dal respiro o dai movimenti del torace, associato a profusa sudorazione algida, non associato a dispnea o cardiopalmo.    L'anamnesi, principalmente rivolta alla ricerca di fattori di rischio cardiovascolari, è positiva per ipertensione arteriosa in trattamento con amlodipina 10 mg die, fumo (circa 15 sigarette/die) e blanda dislipidemia non in terapia. Il paziente nega familiarità per cardiopatia ischemica e diabete mellito. Riferisce inoltre che per un episodio di dolore toracico, circa 8 anni prima ha eseguito un test da sforzo al cicloergometro, del quale riferisce che diede risultato completamente negativo, ma di cui non porta documentazione alcuna.    Ad un iniziale esame obiettivo il paziente si presenta orientato e collaborante, anche se molto sofferente. È presente un marcato pallore cutaneo, associato ad abbondante sudorazione algida. Il restante esame obiettivo cardiopolmonare, addominale e neurologico si presenta nella norma.    I parametri vitali sono i seguenti: PA 148/86, FC 80 R, spO2 98% in aria ambiente, T 36.3°C.  Viene somministrato acido acetilsilicilico 250 mg ev, nitroderivato sublinguale con parziale regressione della sintomatologia e, in seguito, morfina ev, con cui si ottiene un soddisfacente controllo del dolore.
+100990	REL	1021-1029	933-937	negativo	test
+100990	REL	1350-1361	1280-1285	nella norma	esame
+100990	REL	1405-1411	1402-1404	148/86	PA
+100990	REL	1416-1420	1413-1415	80 R	FC
+100990	REL	1427-1430	1422-1426	98%	spO2
+100990	REL	1451-1457	1449-1450	36.3°C	T
+
+101073|t|Il Sig. Enzo, di anni 58, si presenta la sera del sabato in P.S. riferendo emissione di sangue durante l’evacuazione ed ematemesi di scarsa entită Enzo appare lucido e orientato. Il paziente ha una storia di alcoolismo con epatopatia alcolica successivamente evoluta in cirrosi epatica; viene riferito anche un recente ricovero per emorragia da varici esofagee. Enzo è accompagnato dal figlio, che è molto preoccupato per il padre, il quale da un anno ormai vive praticamente da solo, perché la madre è morta di tumore e lui, nonostante sia scapolo, lavora fuori città e torna a casa solo per il fine settimana.
+
+101137|t|K.S., maschio, nasce alla 40° settimana di gestazione da parto eutocico con peso neonatale di 4.290 gr. L’esame obiettivo alla nascita mostra una modesta cianosi traumatica al volto, un tumore da parto a livello del vertice ed importante edema con fovea a livello di entrambi i piedi.    La madre 39enne proveniente dal Marocco, terzigravida, riferisce due gravidanze precedenti decorse fisiologicamente e conclusesi con parti spontanei di neonati fisiologici di circa 3 Kg di peso. I parametri vitali del neonato risultano nella norma, il bambino si attacca bene al seno, diuresi fisiologica, esami ematochimici, esame urine ed eco renale eseguiti nelle prime 24 ore di vita risultano nella norma.    Un’anamnesi familiare più approfondita durante i giorni seguenti rivela la presenza di un edema a livello dei piedi e pretibiale nella madre; un edema del dorso delle mani della nonna materna e un edema delle dita dei piedi e della parte distale degli stessi presente dalla nascita e regredito a circa 2 mesi di vita della sorellina di 6 anni.    Nel fondato sospetto clinico di sindrome di nonne-Milroy viene  eseguito prelievo per la ricerca di mutazioni nel gene VegFr3 al  lattante, al fratellino, alla sorellina ed a entrambi i genitori da effettuarsi presso il laboratorio di diagnostica molecolare del St. george's  hospital di londra.    La crescita del bambino prosegue nei mesi seguenti senza nessuna  particolare problematica di rilievo anche se persiste praticamente  immutato l’edema a livello dei piedi. Ora il bambino ha  24 mesi, cammina, corre, gode di buona salute.    La ricerca della mutazione nel gene VegFr3 ha evidenziato una  delezione della tripletta tCt in posizione 3323-3325 nell’esone 24  in eterozigosi e conseguente perdita di una fenilalanina in posizione  1108 nella proteina matura. La stessa mutazione in eterozigosi è stata dimostrata nella sorella e nella madre. Non è stato possibile studiare la nonna materna (riferita affetta da edema agli arti superiori)  perché non raggiungibile in Marocco.
+101137	REL	94-102	76-80	4.290 gr	peso
+101137	REL	463-473	477-481	circa 3 Kg	peso
+101137	REL	524-535	485-494	nella norma	parametri
+101137	REL	686-697	594-599	nella norma	esami
+101137	REL	686-697	614-619	nella norma	esame
+
+101139|t|Neonata di 13 giorni, nata a termine da parto eutocico, peso alla nascita 3.340 grammi, dimessa dal nido in buone condizioni generali. Giunge alla nostra osservazione per sospetto reflusso gastro esofageo (rge). Nell'anamnesi due episodi di apnea con cianosi secondari ad episodi di rigurgito. La paziente presentava scarso accrescimento, inappetenza e frequenti episodi di rigurgito fin dalla nascita.    L'esame clinico evidenziava un addome teso, non dolente. Gli esami ematochimici di routine sono risultati nella norma, veniva quindi programmata la ph-metria/24ore. In attesa di tale esame, la presenza di addome teso all'esame clinico ci ha indotto ad eseguire l'esame ecografico dell'addome in toto. L'ecografia ha confermato la presenza di rge, ma ha anche evidenziato la possibile causa della sintomatologia: una voluminosa formazione cistica semplice, di 14 centimetri di diametro massimo, che occupava l'emiaddome di destra, comprimendo in basso la vescica, ed in alto il fegato e dislocando verso sinistra lo stomaco e l'intestino. Veniva ipotizzata l'origine ovarica di tale cisti e la piccola paziente veniva sottoposta ad intervento chirurgico. La laparotomia esplorativa evidenziava una voluminosa formazione cistica che originava dall'ovaia destra. La rimozione della cisti ha consentito la decompressione degli organi addominali, soprattutto stomaco ed intestino, che apparivano dislocati verso sinistra dalla cisti ovarica. L'esame istologico ha consentito di porre la diagnosi di cisti follicolare. Il decorso post operatorio non ha presentato complicanze e la piccola paziente ha potuto finalmente alimentarsi adeguatamente. L'incremento ponderale nelle settimane successive è stato regolare e non si sono più verificati episodi di apnea con cianosi, né altri segni o sintomi da riferire a reflusso gastro esofageo.
+101139	REL	74-86	56-60	3.340 grammi	peso
+101139	REL	512-523	467-472	nella norma	esami
+101139	REL	865-878	882-890	14 centimetri	diametro
+
+101146|t|Si tratta di un bambino di 2 anni visto in Pronto Soccorso Pediatrico per dolori addominali crampiformi da alcune ore associati a  numerose scariche diarroiche senza febbre; dopo breve osservazione  clinica veniva dimesso a domicilio con diagnosi di gastroenterite  all’esordio. Il bambino rientrava la notte stessa per la persistenza delle algie addominali con diarrea e comparsa di vomiti, non biliari: clinicamente il piccolo paziente era molto sofferente con aspetto letargico; l’addome era disteso con difesa diffusa, timpanico alla percussione soprattutto in mesogastrio e peristalsi torbida all’ascoltazione.    Gli Indici di flogosi erano caratterizzati da 25,24 x 10/mm³ globuli bianchi e PCR a 0,05 mg/dL. Richiesta un’ecografia addominale  per sospetta invaginazione intestinale, questa non evidenziava immagini dirette o indirette compatibili con una patologia addominale  chirurgica in atto per l’abbondante meteorismo intestinale. Viste le  scadenti condizioni generali del bambino si insisteva con il Collega  Radiologo per la ripetizione dell’ecografia addominale preparando il  bambino con un clistere. La seconda ecografia eseguita due ore più  tardi evidenziava un’immagine a coccarda compatibile con una invaginazione ileo-ileale a livello dei quadranti addominali di sinistra.    Il  bambino, pertanto veniva sottoposto d’urgenza ad una laparotomia  esplorativa mediante un accesso pararettale destra con il riscontro di  un’ernia ileale interna su residuo onfalo mesenterico infiammato con  banda aderenziale al seno ombelicale. Il medio-ileo erniato  ruotava attorno alla banda aderenziale formando un volvolo occludente. Resecata la briglia aderenziale e derotata l’ansa intestinale, l’ileo riprendeva il suo normale flusso vascolare e l’intervento si  concludeva con una resezione del diverticolo di Meckel con anastomosi ileo-ileale termino-terminale. Il cieco appariva particolarmente  mobile. Il decorso post-operatorio è stato regolare con ripresa graduale dell’alimentazione enterale. Il bambino è stato dimesso in 8^  giornata post-operatoria.
+101146	REL	665-679	680-687	25,24 x 10/mm³	globuli
+101146	REL	704-714	698-701	0,05 mg/dL	PCR
+
+101165|t|Riportiamo il caso clinico di una bambina di 4 anni di origine pakistana, figlia di genitori consanguinei (cugini di primo grado). Nata a termine da parto eutocico in gravidanza normodecorsa, ha presentato sofferenza perinatale (apgar ad 1 minuto: 3) e ha necessitato di intubazione orotracheale. In prima giornata di vita riscontro di grave anemia emolitica e moderata piastrinopenia (Hb 7,8 g/dl, Ptl 76 x 109/l, ldH 14501u/l, CPK 778 u/l e ast 429 u/l) per cui la paziente è stata sottoposta a trasfusione di emazie concentrate e piastrine. In seconda giornata di vita grave ittero a bilirubina indiretta (bilirubina totale massima 21,7 mg/dl) che ha richiesto exanguinotrasfusione con rapido miglioramento clinico e normalizzazione degli indici di emolisi. La paziente è stata estubata in terza giornata di vita e non ha presentato ulteriori complicanze respiratorie. Dimessa in benessere a 2 settimane di vita con buona crasi ematica (Hb 11,8 g/dl, MCv 79,2 fl, Ptl 276000/mmc), la famiglia non si è presentata ai successivi controlli programmati per ulteriori approfondimenti e ha soggiornato per diversi mesi in Pakistan. A 45 mesi di vita per comparsa di grave anemia emolitica in corso di febbre (Hb 6,4 g/dl, MCv 81,8 fl, reticolociti 50,9 x 104/μl, ldH 3250u/l, bilirubina totale 2,90 mg/dl, bilirubina indiretta 2 mg/dl) e modesta splenomegalia (milza palpabile a 2 cm dall’arcata costale) la paziente ha effettuato nuova emotrasfusione. I test di Coombs diretto e indiretto sono risultati negativi; la morfologia eritrocitaria e il tracciato cromatografico hanno evidenziato un quadro suggestivo per emoglobinopatia da Hb H, senza evidenza di emoglobine patologiche. Il dosaggio dell’attività del G6PdH, lo studio delle resistenze osmotiche, il test di lisi al glicerolo ed il Pink test, oltre alle sierologie virali (Citmomegalovirus, epstain barr virus, Parvovirus) e alla ricerca del parassita malarico, sono risultati negativi. Si riscontrava una crescita staturo-ponderale al 3° percentile, regolare lungo la curva di crescita. A distanza di 2 mesi da tale evento, la bambina ha presentato sempre in corso di febbre (tampone nasofaringeo positivo per influenza b) un nuovo episodio di emolisi (Hb 6,0 g/dl, MCv 78,4 fl, reticolociti 12% ldH 1888 u/l) che ha necessitato nuovamente di trasfusione di emazie concentrate per lo scadimento delle condizioni generali. L’analisi molecolare dei geni delle catene emoglobiniche ha evidenziato omozigosi per l’emoglobina sallanches. La bambina si presenta attualmente in buone condizioni generali, con obiettività generale negativa eccetto per polo splenico palpabile a circa 1 cm dall’arcata costale. è seguita con cadenza mensile, salvo comparsa di sintomatologia. Si valuterà nei prossimi mesi l’eventuale necessità di un regime trasfusionale cronico in base all’andamento della malattia (all’ultimo emocromo Hb 8,2 g/dl, MCv 77,7 fl, reticolociti 57,85 x 104/μl). Assume terapia di supporto con acido folico e profilassi antibiotica con amoxicillina orale per ridurre gli eventi infettivi. Adeguate raccomandazioni per evitare alimenti o farmaci e sostanze pro-ossidanti sono state fornite alla famiglia. Risultano tuttora in corso accertamenti dei familiari per una corretta consulenza genetica.
+101165	REL	248-249	229-234	3	apgar
+101165	REL	389-397	386-388	7,8 g/dl	Hb
+101165	REL	403-413	399-402	76 x 109/l	Ptl
+101165	REL	419-427	415-418	14501u/l	ldH
+101165	REL	433-440	429-432	778 u/l	CPK
+101165	REL	447-454	443-446	429 u/l	ast
+101165	REL	635-645	609-619	21,7 mg/dl	bilirubina
+101165	REL	943-952	940-942	11,8 g/dl	Hb
+101165	REL	958-965	954-957	79,2 fl	MCv
+101165	REL	971-981	967-970	276000/mmc	Ptl
+101165	REL	1209-1217	1206-1208	6,4 g/dl	Hb
+101165	REL	1223-1230	1219-1222	81,8 fl	MCv
+101165	REL	1245-1258	1232-1244	50,9 x 104/μl	reticolociti
+101165	REL	1264-1271	1260-1263	3250u/l	ldH
+101165	REL	1291-1301	1273-1283	2,90 mg/dl	bilirubina
+101165	REL	1324-1331	1303-1313	2 mg/dl	bilirubina
+101165	REL	1502-1510	1460-1466	negativi	Coombs
+101165	REL	1935-1943	1790-1794	negativi	Pink
+101165	REL	1935-1943	1720-1726	negativi	studio
+101165	REL	1935-1943	1812-1822	negativi	sierologie
+101165	REL	1935-1943	1683-1691	negativi	dosaggio
+101165	REL	1935-1943	1888-1895	negativi	ricerca
+101165	REL	1935-1943	1758-1762	negativi	test
+101165	REL	1991-2007	1964-1972	al 3° percentile	crescita
+101165	REL	2156-2164	2169-2178	positivo	influenza
+101165	REL	2156-2164	2135-2142	positivo	tampone
+101165	REL	2215-2223	2212-2214	6,0 g/dl	Hb
+101165	REL	2229-2236	2225-2228	78,4 fl	MCv
+101165	REL	2251-2254	2238-2250	12%	reticolociti
+101165	REL	2259-2267	2255-2258	1888 u/l	ldH
+101165	REL	2582-2590	2561-2572	negativa	obiettività
+101165	REL	2874-2882	2871-2873	8,2 g/dl	Hb
+101165	REL	2888-2895	2884-2887	77,7 fl	MCv
+101165	REL	2910-2924	2897-2909	57,85 x 104/μl	reticolociti
+
+101167|t|G.b., 11 anni, è giunto alla nostra osservazione per una grossa tumefazione della coscia dx e, dopo biopsia e staging, è stata posta diagnosi di osteosarcoma del femore destro con metastasi polmonari multiple. Dopo inserzione di CvC è stata intrapresa chemioterapia secondo protocollo isG/os-1, con la somministrazione del 1° ciclo di Hd-MtX (18 gr e.v.) in quattro ore, preceduta da idratazione con 3 l/m2/die ed alcalinizzazione con sodio bicarbonato da circa 24 ore. La funzionalità renale pre-chemioterapia era nella norma. La MtXemia della 24° h. ha mostrato valori molto elevati (556,3 μM/l); nelle 24 ore successive, contestualmente all’incremento dei livelli sierici di MtX (944,9 e 1009,5 μM/l rispettivamente alla 36° e 48° ora), il bambino ha cominciato ad accusare progressivo decadimento delle condizioni generali, febbre, dispnea, contrazione della diuresi con segni di insufficienza renale acuta, epatomegalia, ed a seguire mucosite di ii grado al cavo orale e moderata mielosoppressione. Si è provveduto pertanto ad aumentare il dosaggio dell’acido folinico, intensificare l’alcalinizzazione delle urine ed iniziare trattamento emodialitico. Tali provvedimenti, tuttavia, non sono risultati efficaci nella riduzione della MtXemia o nel prevenire la tossicità sistemica. Dopo 5 giorni dall’inizio del MtX, persistendo l’insufficienza renale, nonostante una buona efficienza del trattamento dialitico, ed alla luce dei livelli di MtXemia persistentemente elevati, è stata somministrata una singola dose di 3.000 u.i. di carbossipeptidasi (voraxaze), che ha determinato una riduzione dei livelli sierici di MtX da 66,8 a 8,59 μM/l. Le condizioni cliniche sono peggiorate ulteriormente, aggravate dalla comparsa di insufficienza respiratoria, mucosite grado ii-iii e segni di colestasi. La determinazione della MtXemia è stata proseguita fino alla 312° ora, insieme alla rescue con acido folinico alla dose di 250 mg e.v. ogni sei ore, poi secondo nomogramma, fino a MtXemia <0,20 μM/l. Dopo venti giorni dall’inizio del MtX, 14 sedute di emodialisi e vigorosa terapia di supporto, il paziente ha mostrato un recupero completo clinico e degli esami di laboratorio. Purtroppo, nonostante la ridotta clearance del farmaco e l’importante tossicità sistemica, non abbiamo registrato alcuna risposta alla chemioterapia. la scadente risposta e la progressione della malattia, dopo la somministrazione del previsto ciclo con Cisplatino e adriamicina ed uno schema di seconda linea, ci hanno obbligato ad un intervento di amputazione dell’arto inferiore destro.
+101167	REL	515-526	473-485	nella norma	funzionalità
+101167	REL	586-596	531-538	556,3 μM/l	MtXemia
+101167	REL	683-688	678-681	944,9	MtX
+101167	REL	691-702	678-681	1009,5 μM/l	MtX
+101167	REL	1627-1631	1620-1623	66,8	MtX
+101167	REL	1634-1643	1620-1623	8,59 μM/l	MtX
+101167	REL	1987-1997	1979-1986	<0,20 μM/l	MtXemia
+
+101191|t|AAMC, 18 anni, paziente venezuelana giunta presso il nostro Centro per LAM M1-M2, SNC negativa, esordita 9 mesi prima. Protocollo di I linea BFM 2004 (7+3) induzione e re induzione senza ottenimento di RC. Protocollo di II linea costituito da 3 cicli di CLOVE con porta la paziente in RC. In assenza di un donatore compatibile la paziente viene sottoposta a trapianto allogenico aploidentico da padre. Coppia donor/recipient: positiva per sierologia CMV e EBV. Regime di condizionamento: Busulfano- Thiotepa-Fludarabina e ATG. La paziente riceve 7.6x10^6 CD34+/Kg di peso. Profilassi GVHD con EDX 50 mg/kg ai giorni +3 e +4 per eccesso di cellule TCR/+(7.8x10^6/kg). In giornata +6 febbre, in giornata +13 episodio di insufficienza respiratoria acuta. TC polmonare: fenomeni flogistici con estesa consolidazione al lobo inferiore sinistro e superiore sospetto per infezione batterica o fungina. Terapia: ossigenoterapia a alti flussi, terapia antibiotica e antifungina. In giornata +20 sfebbramento: nei giorni successivi miglioramento radiologico. Nel corso del ricovero si è assistito a calo ponderale severo (da 56 a 43 kg) con massiva deplezione masse muscolari e a mucosite di grado III-IV persistente. Dimissione in giornata +56. Emocolture, galattomannano e monitoraggio di EBV, Adenovirus e CMV eseguito con tecnica di biologia molecolare durante tutto il ricovero sono risultati negativi o debolmente positivi (valore massimo CMVDNA 920 copie/mmc). A domicilio persistenza di febbricola, mucosite e tosse catarrale, nonostante l’evidenza di miglioramento del quadro radiologico. In giornata +70 la paziente viene ricoverata per febbre, decadimento delle condizioni generali e ulteriore calo ponderale (peso 40 kg). Al momento del ricovero galattomannano e emocolture negative, CMV DNA positivo >500 copie/mL, Adenovirus DNA 50000 copie/mL, EBV DNA su siero 250000 copie/mL, 1410 copie/100000 leucociti, IgG 720 mg/dL, IgA 52 mg/dL e le IgM 29 mg/dL. Viene instaurata terapia antibiotica, antifungina e antivirale con Ganciclovir. Viene eseguito un ciclo di terapia con Rituximab 375 mg/mq, con progressiva riduzione della viremia EBV: 130000 copie/mL, 294 copie/100000 leucociti successivamente 60000 copie/mL e 80 copie/100000 leucociti. Le indagini radiologiche mostrano un peggioramento del quadro polmonare con aree di estesa consolidazione al lobo inferiore e medio di sinistra e superiore di destra con la necessità di ricorrere a NIV per ottenere saturazione di ossigeno adeguata. Per la progressiva compromissione della dinamica respiratoria la paziente viene trasferita in UTI e sottoposta a broncoscopia e biopsia polmonare. Gli esami colturali mostrano positività per Enterococcus Faecium e Pseudomonas Aeruginosa su BAL, Enterococcus Faecium su biopsia polmonare. In giornata +115 la paziente decede per estensione massiva dell’impegno polmonare e arresto cardiocircolatorio. L’esame istologico della biopsia polmonare definisce la diagnosi di PTLD polimorfo monotipico monoclonale, EBV+.
+101191	REL	86-94	82-85	negativa	SNC
+101191	REL	426-434	456-459	positiva	EBV
+101191	REL	426-434	450-453	positiva	CMV
+101191	REL	653-664	647-650	7.8x10^6/kg	TCR
+101191	REL	1388-1418	1299-1302	negativi o debolmente positivi	CMV
+101191	REL	1388-1418	1236-1246	negativi o debolmente positivi	Emocolture
+101191	REL	1388-1418	1286-1296	negativi o debolmente positivi	Adenovirus
+101191	REL	1388-1418	1248-1262	negativi o debolmente positivi	galattomannano
+101191	REL	1388-1418	1265-1277	negativi o debolmente positivi	monitoraggio
+101191	REL	1442-1455	1435-1441	920 copie/mmc	CMVDNA
+101191	REL	1716-1721	1711-1715	40 kg	peso
+101191	REL	1776-1784	1765-1775	negative	emocolture
+101191	REL	1776-1784	1748-1762	negative	galattomannano
+101191	REL	1803-1816	1786-1789	>500 copie/mL	CMV
+101191	REL	1833-1847	1818-1828	50000 copie/mL	Adenovirus
+101191	REL	1866-1881	1849-1852	250000 copie/mL	EBV
+101191	REL	1883-1900	1901-1910	1410 copie/100000	leucociti
+101191	REL	1916-1925	1912-1915	720 mg/dL	IgG
+101191	REL	1931-1939	1927-1930	52 mg/dL	IgA
+101191	REL	1949-1957	1945-1948	29 mg/dL	IgM
+101191	REL	2144-2159	2178-2187	130000 copie/mL	leucociti
+101191	REL	2161-2177	2178-2187	294 copie/100000	leucociti
+101191	REL	2204-2218	2237-2246	60000 copie/mL	leucociti
+101191	REL	2221-2236	2237-2246	80 copie/100000	leucociti
+101191	REL	2673-2683	2742-2754	positività	Enterococcus
+101191	REL	2673-2683	2688-2700	positività	Enterococcus
+101191	REL	2673-2683	2711-2722	positività	Pseudomonas
+
+100050|t|Paciente de 19 años de edad, sin antecedentes de interés, que consulta por tumoración ligeramente dolorosa en el testículo derecho, de unos 8 meses de evolución, encontrándose en la exploración clínica un aumento testicular con zonas nodulares. El testículo izquierdo no muestra alteraciones. Alfa-Feto-Proteina: 38,2 y Beta-HGC de 1,48. Ecográficamente se observan tres nódulos tumorales independientes y bien delimitados: dos de ellos heterogéneos, sólidos, de 20 y 33 mm de diámetros, con áreas quísticas y calcificaciones. El tercer nódulo era sólido hipoecoico y homogéneo, de 26 mm de diámetro. Todos los nódulos presentaban un aumento de la vascularización con flujos arteriales de baja resistencia. El estudio de extensión es negativo. Se realiza orquiectomía. Histológicamente los dos primeros nódulos correspondían a teratocarcinomas (teratoma maduro y carcinoma embrionario predominante), siendo macroscópicamente masas pardo-blanquecinas, con cavidades de contenido seroso amarillento, calcificaciones y focos de necrosis. El tercero fué diagnosticado como seminoma clásico, siendo más homogéneo macroscópicamente.
+100050	REL	313-317	293-311	38,2	Alfa-Feto-Proteina
+100050	REL	332-336	320-328	1,48	Beta-HGC
+100050	REL	463-465	424-427	20	dos
+100050	REL	468-486	424-427	33 mm de diámetros	dos
+100050	REL	582-599	537-543	26 mm de diámetro	nódulo
+100050	REL	734-742	710-717	negativo	estudio
+
+100259|t|Presentamos el caso de un varón de 20 años que consultó por crisis hipertensivas de un año de evolución, acompañadas de sudoración profusa, enrojecimiento generalizado, cefalea y, ocasionalmente, dolor lumbar. Las cifras tensionales alcanzaban 230/110 mmHg, desencadenadas a menudo tras un esfuerzo físico. A la exploración física presentaba eritema malar y palmar, que desaparecía con la digitopresión. Las pruebas de laboratorio aportaron una elevación de catecolaminas y metanefrinas en orina de 24 horas: excreción de noradrenalina de 7515,77 nmol/24 h (< 504), dopamina 4298,84 nmol/24 h (< 3237) y normetanefrinas 39676 nmol/24 h (< 2424).  Se realizó ecografía abdominal objetivándose masa retroperitoneal de unos 8 cm, de ecogenicidad heterogénea y marcada vascularización. Ante este hallazgo se realizó tomografía axial computarizada (TAC) abdómino-pélvica, donde se confirmó la existencia de una masa retroperitoneal de 8 x 4 cm por encima de la bifurcación aórtica, que infiltraba la vena cava inferior y bordeaba la aorta en 180o englobando a la arteria mesentérica inferior. Dados los hallazgos del TAC, se realizó cavografía para valorar la resecabilidad, observando un defecto de repleción intracava infrarrenal de 2 cm de diámetro.    Ante la sospecha de paraganglioma del órgano de Zuckerkandl, se procedió a bloqueo beta y alfaadrenérgico y, posteriormente, a intervención quirúrgica realizándose una resección en bloque de la tumoración; se seccionó parcialmente la cara anterior de la cava para extirpar el tumor intracava. El posoperatorio transcurrió sin complicaciones, desapareciendo la clínica y normalizándose las determinaciones en plasma y orina de catecolaminas y metanefrinas.  El diagnóstico anatomopatológico confirmó la sospecha de paraganglioma capsulado bien delimitado, con bajo índice proliferativo (ki 67: 5-7 %). Fue remitido a Oncología Médica, donde solicitaron gammagrafía con 123I-MIBG, que no mostró signos de enfermedad residual ni a distancia. Ante la ausencia de datos que justificaran tratamiento quimioterápico adyuvante, se decidió seguimiento periódico.
+100259	REL	244-256	214-220	230/110 mmHg	cifras
+100259	REL	539-556	509-518	7515,77 nmol/24 h	excreción
+100259	REL	575-592	566-574	4298,84 nmol/24 h	dopamina
+100259	REL	620-635	604-619	39676 nmol/24 h	normetanefrinas
+100259	REL	716-725	692-696	unos 8 cm	masa
+100259	REL	930-938	906-910	8 x 4 cm	masa
+100259	REL	1230-1246	1184-1191	2 cm de diámetro	defecto
+100259	REL	1810-1814	1815-1821	bajo	índice
+100259	REL	1844-1849	1837-1839	5-7 %	ki
+
+100278|t|Varón 40 años que acude a urgencias por la aparición de edemas. Presenta el antecedente familiar de madre con amiloidosis renal no filiada. El informe de la biopsia renal de la madre refiere resistencia al permanganato, lo que parece descartar amiloidosis AA, e induce a considerar, en el momento en el que se hizo el diagnóstico, la posibilidad de una amiloidosis AL.  El paciente no recibe ningún tratamiento farmacológico. A la exploración física destaca presión arterial de 135/75 mmHg y edemas bimaleolares, sin otros datos de interés. Las pruebas de laboratorio confirman la presencia de síndrome nefrótico (albúmina sérica de 2,5 g/dl, colesterolemia de 275 mg/dl y proteinuria de 6 g/24 h), sin alteraciones en el sedimento y filtrado glomerular normal. El espectro electroforético en sangre y orina, el estudio inmunológico y la ecografía renal son normales. Se realiza biopsia renal, observándose 19 glomérulos con una estructura totalmente distorsionada por un depósito hialino en disposición nodular, con positividad para rojo Congo y tioflavina; los túbulos y los vasos no muestran alteraciones significativas, siendo el resultado compatible con amiloidosis. En el estudio sobre muestra en parafina se evidencia marcada positividad para proteína AP, que es una parte de la sustancia amiloide común en todos los tipos de amiloidosis, con negatividad para cadenas ligeras y proteínas AA, B2 microglobulina y transtirretina. Se realiza estudio complementario con anticuerpos frente a fibrinógeno y lisozima, resultando los depósitos de sustancia amiloide positivos para la cadena A alfa del fibrinógeno (Afib). Sin embargo, en el estudio genético no se encuentra ninguna mutación en el gen de la cadena Afib, y sí se demuestra una mutación previamente no descrita en el gen de la apolipoproteína AI (apo AI). Ante esta discrepancia se analiza la biopsia de la madre, que contiene depósito glomerular en la corteza y depósito masivo a nivel medular. El depósito a nivel medular no está descrito en la amiloidosis Afib, siendo muy característico de la apo AI. Se concluye que los primeros resultados de la inmunohistoquímica no son fiables por no haberse hecho en las condiciones adecuadas, confirmándose posteriormente mediante la misma técnica la presencia de apo AI.  Se realiza estudio de extensión, con ecocardiograma y electromiograma, sin evidencia de afectación cardiaca ni neuropatía autonómica. En la evolución se detecta un aumento progresivo de transaminasas, sugerente de afectación hepática. Estos resultados son concordantes con este tipo de amiloidosis familiar, con afectación preferentemente renal y hepática. A pesar de la normalidad inicial, la función renal se deteriora progresivamente hasta requerir terapia renal sustitutiva en un plazo de 2 años. El paciente recibe tratamiento con diálisis peritoneal durante 4 años, hasta que es intervenido realizándose trasplante renal de donante cadáver. Presenta un postoperatorio complicado con rotura esplénica, en el contexto de su enfermedad, con depósito de amiloide en bazo, siendo necesaria una esplenectomía urgente. Finalmente, el paciente es dado de alta en situación estable.
+100278	REL	478-489	458-465	135/75 mmHg	presión
+100278	REL	633-641	614-622	2,5 g/dl	albúmina
+100278	REL	661-670	643-657	275 mg/dl	colesterolemia
+100278	REL	688-696	673-684	6 g/24 h	proteinuria
+100278	REL	754-760	734-742	normal	filtrado
+100278	REL	858-866	765-773	normales	espectro
+100278	REL	858-866	838-847	normales	ecografía
+100278	REL	858-866	812-819	normales	estudio
+100278	REL	1017-1028	1047-1057	positividad	tioflavina
+100278	REL	1017-1028	1034-1038	positividad	rojo
+100278	REL	1225-1244	1250-1258	marcada positividad	proteína
+100278	REL	1350-1361	1385-1394	negatividad	proteínas
+100278	REL	1350-1361	1399-1401	negatividad	B2
+100278	REL	1350-1361	1419-1433	negatividad	transtirretina
+100278	REL	1350-1361	1367-1374	negatividad	cadenas
+100278	REL	1565-1574	1533-1542	positivos	depósitos
+100278	REL	1565-1574	1583-1589	positivos	cadena
+
+100280|t|Varón diagnosticado de glomerulonefritis rápidamente progresiva con anticuerpos antimembrana basal glomerular, tratado con esteroides, ciclofosfamida y plasmaféresis sin resultados. Durante los 5 años que permaneció en DP sufrió 10 peritonitis, 8 por Staphilococcus aureus. La última fue por Candida albicans; por ello se retiró el catéter y se transfirió a HD.  Era un transportador medio-alto inicialmente, transformándose en alto transportador. Seis meses después presentó dolor abdominal y efecto masa en hipogastrio. En la TAC apareció engrosamiento peritoneal, colección líquida pélvica con septos que englobaba asas, y una gran dilatación gástrica e intestinal. El paciente desestimó el tratamiento quirúrgico, necesitó varios ingresos por oclusión intestinal, sufrió progresivo deterioro del estado general y falleció poco después.
+
+100284|t|Una paciente de 25 años acude a la Consulta de Nutrición para monitorización de su estado nutricional; siete meses antes había sido diagnosticada de Colitis Ulcerosa (CU), y durante ese periodo había recibido tratamiento con corticoides: metilprednisolona 1,5 mg/kg/24 h IV durante dos meses de ingreso y 30 mg/24 h de prednisona por vía oral en pauta descendente durante los restantes cinco meses. Refería artralgias en ambas rodillas, y en la exploración mostraba dolor a la rotación posterior en las dos cabezas femorales, más evidente en la derecha, cadera que además presentaba una rotación interna limitada; la rodilla izquierda tenía el movimiento de flexión reducido, y al explorar la marcha se observaba claudicación hacia el lado derecho.  En los análisis realizados no se detectaron marcadores de autoinmunidad, y las concentraciones plasmáticas de calcio, fósforo y vitamina D estaban dentro del rango de nornialidad. La densitometría ósea (DMO) mostró osteoporosis en la columna lumbar (T score - 3, 1) y osteopenia en el cuello femoral (T score - 1,5). Las radiografias simples mostraron datos sugestivos de NA de grado II en ambas cabezas femorales, más evidentes en el lado derecho; en las rodillas se observaba una lesión osteocondral en el cóndilo femoral interno de la rodilla izquierda con irregularidades en su superficie articular. La resonancia nuclear magnética confirmó las lesiones de necrosis en ambas cabezas femorales y en ambas rodillas, tanto en su cara tibial como en la femoral. En la siguiente RNM, realizada tan sólo 3 meses más tarde, ya se evidenciaban datos de hundimiento en la cadera derecha.    La paciente fue tratada con alendronato y suplementos de calcio y vitamina D por su osteoporosis, se suspendieron los corticoides y se aconsejó la descarga de peso de las articulaciones afectadas.
+100284	REL	897-928	829-844	dentro del rango de nornialidad	concentraciones
+100284	REL	1008-1014	1002-1007	- 3, 1	score
+100284	REL	1059-1064	1053-1058	- 1,5	score
+
+100705|t|Se trata de paciente femenino de 5 años de edad, referida a nuestro servicio bajo el diagnóstico de fístula oronasal. Entre sus antecedentes encontramos que se le realizó queiloplastía bilateral y palatoplastía del paladar blando a la edad de 6 meses y palatoplastía del paladar duro a los 4 años, presentando en este último procedimiento una dehiscencia (fístula oronasal) que provocaba rinofonía y reflujo nasal de los alimentos. En la exploración intraoral observamos una fístula oronasal en la unión del paladar primario y secundario del lado izquierdo de aproximadamente 12mm x 25mm.    Se planeó realizar el cierre de la fístula con un colgajo lingual de base anterior debido a las dimensiones del defecto.  Técnica  Bajo anestesia general con intubación nasotraqueal se incide contorneando el defecto palatino tomando un margen de tejido de aproximadamente 8mm. Se desdobla la mucosa que revestía y rodeaba a la fístula y se afrontan sus bordes para crear un piso nasal.  Se realiza una plantilla de aluminio con las dimensiones de la fístula, con la cual se diseña un colgajo ligeramente más grande. Se suturan los bordes laterales de la lengua a una platina acrílica en forma de herradura, que tiene como función estabilizar y dar soporte a la lengua para facilitar la toma del colgajo.    Una vez obtenido el colgajo lingual, se realiza el cierre primario del área lingual cruenta. Posteriormente se posiciona el colgajo sobre la fístula oronasal y se inicia la sutura partiendo de atrás hacia delante.    Veintiún días después de la cirugía se realiza una prueba de perfusión, no se observaron datos de isquemia, por lo que se eliminó el pedículo bajo anestesia local.  Se logró un cierre satisfactorio de la fístula, se presentó una pequeña dehiscencia en el periodo postoperatorio inmediato, que tuvo un cierre espontáneo a los tres meses.
+100705	REL	560-587	475-482	aproximadamente 12mm x 25mm	fístula
+
+100775|t|Mujer, de trece años, que presenta un cuadro de fiebre de 12 días de evolución acompañado de adenopatía axilar izquierda. La exploración inicial fue negativa a excepción de arañazos en mano izquierda. Los datos de laboratorio iniciales incluyeron: leucocitos 4.700 (32% linfocitos; 9% monocitos y 51% granulocitos); VSG 14 mm/h; PCR 2,4 mg/dl; hemocultivo negativo. Ante la persistencia de la fiebre y la presencia de la adenopatía se sospecha Enfermedad por Arañazo de Gato, se realiza serología a Bartonella henselae y se inicia tratamiento con rifampicina, desapareciendo la fiebre después de 3 días de iniciado el tratamiento. Posteriormente se confirma el diagnóstico al resultar positiva la serología a Bartonella henselae.
+100775	REL	149-157	125-136	negativa	exploración
+100775	REL	259-264	248-258	4.700	leucocitos
+100775	REL	266-269	270-280	32%	linfocitos
+100775	REL	282-284	285-294	9%	monocitos
+100775	REL	297-300	301-313	51%	granulocitos
+100775	REL	320-327	316-319	14 mm/h	VSG
+100775	REL	333-342	329-332	2,4 mg/dl	PCR
+100775	REL	356-364	344-355	negativo	hemocultivo
+100775	REL	685-693	697-706	positiva	serología
+
+100789|t|Paciente mujer de 68 años, que acude a la clínica del dolor remitida por su médico de cabecera, diagnosticada de espondiloartrosis grave, sobre todo a expensas de columna vertebral lumbar. Tiene pautado por su médico fentanilo transdérmico genérico de 25 μg/h desde hace 2 semanas, con regular control de dolor (EVA, 7-8).Tras estudio de la paciente, se plantea el intercambio de fentanilo genérico por Durogesic® Matrix 25 μg/h. A las 2 semanas la paciente presenta mejor control del dolor (EVA, 3-4), precisando aisladamente como rescate paracetamol 1 g. A los 3 meses continúa con Durogesic® Matrix 25 μg/h, con aceptable con-trol del dolor(EVA, 3), y esporádicamente, como rescate, paracetamol 1 g.
+100789	REL	317-320	312-315	7-8	EVA
+100789	REL	497-500	492-495	3-4	EVA
+100789	REL	649-650	644-647	3	EVA
+
+100791|t|Paciente mujer de 53 años de edad, diagnosticada de hernia discal, en tratamiento con Durogesic® 50 μg/h durante 6 años, con buena eficacia y seguridad. Se cambia por fentanilo genérico, y se nota un empeoramiento del cuadro doloroso. Se vuelve a cambiar a Durogesic®, y de nuevo se estabiliza la analgesia.
+
+100840|t|Mujer de 39 años con antecedente de bocio difuso normofuncionante, mioma uterino calcificado, periodos menstruales normales, un embarazo sin incidencias y con parto por vía vaginal, que acude a urgencias por dolor abdominal cólico junto con distensión abdominal y varias deposiciones líquidas de 48 horas de evolución. La paciente refiere dos episodios similares en el último año, que se resolvieron espontáneamente en unas horas, sin otra sintomatología acompañante. En la exploración física presentaba buen estado general, con estabilidad hemodinámica, abdomen sin cicatrices, distendido y timpanizado, doloroso a la palpación en hemiabdomen derecho, sobre todo en cuadrante inferior derecho, sin signos de irritación peritoneal y sin palparse masas ni visceromegalias, peristaltismo disminuido. En la analítica solicitada presentaba discreta leucocitosis con predominio granulocítico y PCR 3,7mg/ dl, siendo el resto de la analítica (glucosa, iones, función renal, enzimas hepáticos, amilasa, sistemático de orina...) normal. En las RX abdominales que se le realizaron se aprecia dilatación de asas del intestino delgado (ID), con niveles hidroaéreos y ausencia de gas en colon y ampolla rectal, calcificaciones uterinas sugestivas de mioma. En la ecografía abdominal se observa abundante gas e hiperperistaltismo en ID y mínima cantidad de líquido libre entre las asas intestinales. En la TAC abdominal se evidencia una marcada dilatación de asas de ID que respeta ileon terminal, apreciándose en ileon preterminal, a nivel de FID, cambio del calibre, colon no dilatado con opacificación con el contraste oral, acumulación de líquido libre a nivel del saco de Douglas, útero miomatoso con calcificaciones grumosas.    Inicialmente se aplica tratamiento conservador con sonda nasogástrica, fluidoterapia y analgesia, sin evidenciarse mejoría clínica ni radiológica en las horas siguientes, por lo que se decide intervención quirúrgica. El abordaje se realizó a través de laparotomía media infraumbilical, objetivándose moderada cantidad de líquido libre seroso, dilatación de asas de ID y engrosamiento estenosante en ileon terminal, a unos 10 cm de válvula ileocecal, de aspecto tumoral, con retracción de la superficie serosa y adenopatías mesentéricas. En la exploración pélvica destaca útero miomatoso. Se realizó resección ileocecal y anastomosis látero-lateral mecánica, así como drenaje del líquido del fondo de saco de Douglas. Se remiten muestras a Anatomía Patológica para estudio histológico, informándose de que a nivel de ileon terminal y ciego se observan abundantes adherencias y fibrosis en la pared. En profundidad se objetivan islotes y nidos de epitelio glandular de tipo endometrioide así como estroma endometrial. Focalmente se observa un aumento del infiltrado inflamatorio y fibrosis. La pared intestinal muestra hipertrofia de las capas musculares, ganglios linfáticos sin lesión histológica evidente. Con el diagnóstico de endometriosis ileocecal, y tras un curso postoperatorio favorable y sin complicaciones, se remite a la paciente a consultas de Ginecología y Obstetricia para valorar inicio de tratamiento con análogos de la hormona liberadora de gonadotropinas y seguimiento evolutivo.
+100840	REL	893-902	889-892	3,7mg/ dl	PCR
+100840	REL	1021-1027	996-1007	normal	sistemático
+100840	REL	1021-1027	987-994	normal	amilasa
+100840	REL	1021-1027	953-960	normal	función
+100840	REL	1021-1027	946-951	normal	iones
+100840	REL	1021-1027	937-944	normal	glucosa
+100840	REL	1021-1027	914-919	normal	resto
+100840	REL	1021-1027	968-975	normal	enzimas
+
+100947|t|Hombre de 46 años, sin antecedentes patológicos relevantes, no fumador. Se le realizó una rehabilitación fija sobre un implante unitario ( ITI® SLA. Straumann. Walderburg-Switzerland ) colocado en zona de 3.6. A los 6 meses de cementada la corona, acudió a control sin relatar sintomatología asociada. Al examen clínico se detectó un leve enrojecimiento de la mucosa adyacente al implante y una bolsa periimplantaria de 6 mm de profundidad, con leve sangramiento al sondaje. El papel de articular mostró un contacto prematuro sobre corona protésica. En la radiografía panorámica se observó un área radiotransparente en el hueso marginal a 3.6.  Se realizó el tallado oclusal de la corona protésica. Posteriormente, se levantó un colgajo mucoperióstico desde 3.5 a 3.7, observándose un rodete de tejido blando de aspecto fibroso que ocupaba un defecto óseo periimplantario marginal a 3.6. Se procedió a retirar el tejido patológico con curetas plásticas y fue enviado a estudio anatomopatológico. La superficie del implante se descontaminó con gel de clorhexidina al 0.2% durante 2 minutos e irrigación con suero fisiológico. El colgajo fue ampliado para acceder a un torus mandibular lingual en zona de premolares ipsilateral, el cual se extrajo y particuló para servir de autoinjerto. El colgajo fue reposicionado y se suturó con seda 3.0. El paciente fue reinstruido en higiene oral, se prescibió ibuprofeno 600 mg cada 8 hrs x 4 días y colutorios con digluconato de clorhexidina al 0.12% 2 veces al día x 2 semanas.  El análisis histopatológico evidenció un tejido epitelio-conectivo, con abundante infiltrado linfo-plasmocitario yuxtaepitelial. Bajo la zona superficial, se apreció un tejido fibroconectivo denso con escasa células inflamatorias.  A los 12 meses de realizado el tratamiento quirúrgico, en una radiografía se observó la recuperación ósea marginal y un aspecto clínico de normalidad, con ausencia de sintomatología.
+100947	REL	420-439	395-400	6 mm de profundidad	bolsa
+100947	REL	1891-1901	1872-1879	normalidad	aspecto
+
+100962|t|Presentamos el caso de una paciente de 20 años de edad que acude a la Facultad de Odontología de Sevilla derivada por su ortondoncista. Ante la inadecuada posición del canino inferior izquierdo (incluido en posición horizontal), el canino temporal fue utilizado por el ortodoncista durante el tratamiento ortodóncico como permanente, no considerando apropiado el rescate del diente definitivo. Informó a la paciente de la existencia de la inclusión dentaria y de la necesidad de la extracción o al menos la vigilancia de la misma.  En la exploración radiológica (ortopantomografía) comprobamos la inclusión del canino inferior izquierdo en posición horizontal bajo los ápices de los premolares y caninos inferiores contralaterales (patrón de transmigración 4 de Mupparapu (8)). Ante la evidencia de la transmigración del canino, indicamos la extracción del mismo. Si siguiéramos controlando el caso, al acercarse el diente incluido al agujero mentoniano, se aumentaría innecesariamente los riesgos de la intervención, a la vez que se produciría casi con toda seguridad clínica derivada de la irritación del nervio dentario inferior por parte del diente incluido (9, 10).  Se realizó la extracción a través de una incisión de Neuman parcial, con descarga a nivel del incisivo lateral izquierdo. No se realizó descarga en el cuarto cuadrante por la cercanía del agujero mentoniano, identificando y protegiendo al nervio mentoniano derecho durante la intervención. El diente se extrajo mediante osteotomía coronal y doble odontosección, eliminando también el saco pericoronario.  Finalmente se suturó la herida y se prescribió tratamiento analgésico, antiinflamatorio (Ibuprofeno 600 mgr, 1 comp. / 8 horas durante una semana) y antibiótico (Amoxicilina 875 mgr / Ácido clavulánico 125 mgr, 1 comp. / 8 horas durante una semana) durante el postoperatorio, que transcurrió sin incidencias. Los puntos se retiraron a los diez días. La evolución fue favorable sin detectarse complicación alguna.
+
+100008|t|DERMATOLOGIA  OSPITALERATZEKO/KONTSULTARAKO ARRAZOIA  Larruazaleko lesioak dituen 75 urteko gizonezkoa.  AURREKARIAK  Farmakoekiko alergiak: penizilinari dio alergia.  Larruazaleko minbiziaren aurrekariak ditu.  Erredura-aurrekariak haurtzaroan.  Ohitura toxikorik ez du.  Gizarte-faktoreak: lanbidez baserritarra da.  EGUNGO GAIXOTASUNA  Duela urtebetetik buruan lesioak ditu, baita sabelean kolore eta tamainaz aldatu den lesio bat ere.  Bizkarrean aspaldiko zauri kronikoa dauka eta ezkerreko beheko gorputz-adarrean ere bai.  AZTERKETA FISIKOA  Egoera orokor ona.  Lesio ezkatatsu eta gorrixkak ditu buruko soilguneetan " eguzkiak gehien jotako tokietan ", ukitzean latzak direnak.  Sabelaldeko larruazalean 1,5 zentimetroko lesioa du, hainbat koloretakoa, ertz irregularrak dituena, eta gune batzuetan bolumen gehiago.  Bizkarrean perla-itxurako papula ultzeratua.  Ezkerreko zangoan larruazaleko urradura kronikoa dauka, zarakar gogorrak dituena.  PROBA OSAGARRIAK  Lau lesioetako larruazalaren biopsia egin da.  Biokimika eta hemograma alteraziorik gabeak, LDH altua du.  Toraxeko erradiografia eta abdomeneko ekografia alteraziorik gabeak dira.  Eskuin-besapeko gongoil linfatikoko ekografian adenopatia bat ageri da.  DIAGNOSTIKOA  Keratosi aktinikoak.  Melanoma, biopsian 1,5 mm-ko Breslow-en indizea duena, ultzeratua, eta eremu bakoitzean 2 mitosi dituena.  Kartzinoma basozelular nodularra.  Kartzinoma ezkatatsua.  TRATAMENDUA  Keratosi aktinikoen krioterapia, nitrogeno likidoaren bidez.  Melanomaren ebakuntza, ertzak zentimetro bat zabalduz eta gongoil zelataria atzemanez.  Kartzinoma basozelular eta ezkatatsuaren ebakuntza.
+100008	REL	712-728	729-735	1,5 zentimetroko	lesioa
+100008	REL	1043-1062	1033-1042	alteraziorik gabeak	hemograma
+100008	REL	1068-1073	1064-1067	altua	LDH
+100008	REL	1127-1146	1117-1126	alteraziorik gabeak	ekografia
+100008	REL	1282-1291	1303-1310	1,5 mm-ko	indizea
+100008	REL	1282-1291	1263-1271	1,5 mm-ko	Melanoma
+100008	REL	1334-1359	1263-1271	eremu bakoitzean 2 mitosi	Melanoma
+
+100017|t|NEFROLOGIA  OSPITALERATZEKO ARRAZOIA.  Oinetan edemak dituen 27 urteko gizonezkoa.  EGUNGO HISTORIA  Pazienteak duela bi aste edemak nabaritu zituen zangoetan.  Azken egun hauetan normalean baino pixa gutxiago egiten omen du.  Ez du arnasesturik nabaritu, ezta sukarrik edo beste sintomatologiarik ere.  Ez du katarrorik, ezta eztarriko minik ere azken egunetan, eta ez du karkaxarik botatzen.  Osasun-zentroan egindako analitika dakar: kreatinina 1,34koa da eta sedimentuan 500 mg/dl proteina agertzen dira.  AURREKARIAK  Alergiarik ez.  Ez du hipertentsio, diabetes edo dislipemiaren aurrekaririk.  Eskizofrenia paranoidea du.  Ez du giltzurruneko arazorik izan orain arte.  Ohiko tratamendua: Topamax ®, Zyprexa ®, Motivan ®.  AZTERKETA FISIKOA.  Tentsio arteriala, 120/75 mm Hg; tenperatura, 36,8 ºC, bihotz-maiztasuna, 75 tau/min; arnas maiztasuna, 16 arnas/min; O2Sat basala,% 98.  Kontziente eta orientatua.  Likido-banaketa eraldatua dago.  Eupneiko dago.  Mukosen eta larruazalaren kolorazio normala.  Burua eta lepoa.  Ez dago jugularren ingurgitaziorik, ez eta adenopatia zerbikalik, lepauztai gainekorik edo galtzarbekorik ere.  Toraxa.  Bihotz-auskultazioa: erritmikoa, murmuriorik gabea.  Biriken auskultazioa: biriketako murmurio normala.  Sabela.  Biguna, erraz beheratzen dena, haztatzean ez-minbera, ez dago masa edo megaliarik, heste-soinu normalak.  Gorputz-adarrak.  Fobea eragiten duten edemak ditu orkatiletan eta alde pretibialean.  PROBA OSAGARRIAK.  ANALITIKA.  Biokimika: kreatinina, 1,36; urea, 56; uratoa, 9; kloroa (Cl), 110; sodioa (Na), 141; potasioa (K), 3,7; bilirrubina, 0,70; bikarbonatoa, 27,8.  Kaltzioaren eta fosforoaren metabolismoa: kaltzioa 8,1 eta fosforoa 3,2; hormona paratiroideoa (PTH), 41.  Profil lipidikoa: kolesterola, 342; LDL, 253; HDL, 45; triglizeridoak, 217.  Gibeleko entzima normalak.  Proteinak: 4,6; albumina, 2,32 g/dl; krioglobulinak < 1 mg/dl; C3 konplementua, 0,94 g/l; C4 konplementua, 0,28 g/l; properdina B faktorea, 0,19.  Proteinograma normala.  Immunoglobulinak: A Ig, 2,79 g/l; G Ig, 2,83 g/l; M Ig, 0.78 g/l.  Gernu-jalkina: hematieak, 35 eremuko; leukozitoak, 20 eremuko; proteinak, 500 mg/dl. 24 orduko gernua: diuresia, 2.300 ml; kreatinina, 2,18 g/24 h; urea, 19,9 g/24 h; kloroa, 262 meq/24 h; sodioa, 255 meq/24 h; proteinak, 15,92 g/24 h. Kreatinina-iragazketa, 112 ml/min.  HEMOGRAMA.  Hemoglobina (Hb), 14,9; hematokritoa,% 41,7; leukozitoak, 5.800; plaketak, 156.000.  Koagulazio normala.  Antigorputzak: antinuklearrak DNAren aurkakoak, ANCA eta mintz basalaren aurkakoak negatiboak.  - Serologia: B hepatitisaren birusa, C hepatitisaren birusa eta giza immunoeskasiaren birusa negatiboak.  - Hemolisi-baheketa: negatiboa.  ELEKTROKARDIOGRAMA.  Erritmo sinusala, 75 tau/min.  TORAXEKO ERRADIOGRAFIA normala.  SABELEKO EKOGRAFIA normala.  GILTZURRUNEKO BIOPSIA.  Aldaketa minimoen ondoriozko glomerulonefritisa.  EBOLUZIOA.  Pazienteari ondoko tratamendua jarri zaio: seroalbumina, zain bidezko diuretikoak eta kortikoideak (prednisona miligramo bat kiloko), eta edemak gutxituz joan dira, guztiz desagertu arte.  Ondoren, seroalbumina kendu eta diuretikoak aho bidez jarri zaizkio, eta eboluzioa ona izan da.  AEBIak (angiotentsinaren entzima bihurtzailearen inhibitzaileak) jarri dira proteinuria kontrolatzeko, eta giltzurrunen funtzioa egonkortu egin da.  Alta-egunean 1,3ko kreatinina du.  DIAGNOSTIKOA.  Aldaketa minimoen ondoriozko glomerulonefritisa.  TRATAMENDUA  Motivan ® (1-0-0).  Topamax ® (0-0-2).  Zyprexa ® 5 mg (0-0-2).  Doneka ® 20 mg, (0-1-0).  Dacortin ® 30 mg, 2 + 2/3 pilula gosariarekin.  Omeprazol 20 mg (0-0-1).  Zarator ® 40 mg (0-0-1).  Disgren ® (1-0-1).  Seguril ® (2-1-0).  Aldactone ® 25 mg (0-1-0).
+100017	REL	448-455	437-447	1,34koa	kreatinina
+100017	REL	475-484	463-474	500 mg/dl	sedimentuan
+100017	REL	475-484	485-493	500 mg/dl	proteina
+100017	REL	769-781	750-757	120/75 mm Hg	Tentsio
+100017	REL	796-803	783-794	36,8 ºC	tenperatura
+100017	REL	824-834	805-822	75 tau/min	bihotz-maiztasuna
+100017	REL	854-866	842-852	16 arnas/min	maiztasuna
+100017	REL	881-885	868-873	% 98	O2Sat
+100017	REL	1511-1515	1499-1509	1,36	kreatinina
+100017	REL	1523-1525	1517-1521	56	urea
+100017	REL	1535-1536	1527-1533	9	uratoa
+100017	REL	1551-1554	1546-1548	110	Cl
+100017	REL	1551-1554	1538-1544	110	kloroa
+100017	REL	1569-1572	1564-1566	141	Na
+100017	REL	1569-1572	1556-1562	141	sodioa
+100017	REL	1588-1591	1574-1582	3,7	potasioa
+100017	REL	1588-1591	1584-1585	3,7	K
+100017	REL	1606-1610	1593-1604	0,70	bilirrubina
+100017	REL	1626-1630	1612-1624	27,8	bikarbonatoa
+100017	REL	1684-1687	1675-1683	8,1	kaltzioa
+100017	REL	1701-1704	1692-1700	3,2	fosforoa
+100017	REL	1735-1737	1729-1732	41	PTH
+100017	REL	1735-1737	1706-1713	41	hormona
+100017	REL	1771-1774	1758-1769	342	kolesterola
+100017	REL	1781-1784	1776-1779	253	LDL
+100017	REL	1791-1793	1786-1789	45	HDL
+100017	REL	1811-1814	1795-1809	217	triglizeridoak
+100017	REL	1834-1842	1826-1833	normalak	entzima
+100017	REL	1856-1859	1845-1854	4,6	Proteinak
+100017	REL	1871-1880	1861-1869	2,32 g/dl	albumina
+100017	REL	1897-1906	1882-1896	< 1 mg/dl	krioglobulinak
+100017	REL	1925-1933	1908-1910	0,94 g/l	C3
+100017	REL	1952-1960	1935-1937	0,28 g/l	C4
+100017	REL	1985-1989	1962-1972	0,19	properdina
+100017	REL	2006-2013	1992-2005	normala	Proteinograma
+100017	REL	2040-2048	2036-2038	2,79 g/l	Ig
+100017	REL	2056-2064	2052-2054	2,83 g/l	Ig
+100017	REL	2072-2080	2068-2070	0.78 g/l	Ig
+100017	REL	2109-2119	2098-2107	35 eremuko	hematieak
+100017	REL	2134-2144	2121-2132	20 eremuko	leukozitoak
+100017	REL	2157-2166	2146-2155	500 mg/dl	proteinak
+100017	REL	2196-2204	2186-2194	2.300 ml	diuresia
+100017	REL	2218-2229	2206-2216	2,18 g/24 h	kreatinina
+100017	REL	2237-2248	2231-2235	19,9 g/24 h	urea
+100017	REL	2258-2270	2250-2256	262 meq/24 h	kloroa
+100017	REL	2280-2292	2272-2278	255 meq/24 h	sodioa
+100017	REL	2305-2317	2294-2303	15,92 g/24 h	proteinak
+100017	REL	2342-2352	2319-2340	112 ml/min	Kreatinina-iragazketa
+100017	REL	2385-2389	2367-2378	14,9	Hemoglobina
+100017	REL	2385-2389	2380-2382	14,9	Hb
+100017	REL	2404-2410	2391-2403	% 41,7	hematokritoa
+100017	REL	2425-2430	2412-2423	5.800	leukozitoak
+100017	REL	2442-2449	2432-2440	156.000	plaketak
+100017	REL	2463-2470	2452-2462	normala	Koagulazio
+100017	REL	2556-2566	2488-2502	negatiboak	antinuklearrak
+100017	REL	2556-2566	2546-2555	negatiboak	aurkakoak
+100017	REL	2556-2566	2521-2525	negatiboak	ANCA
+100017	REL	2556-2566	2510-2519	negatiboak	aurkakoak
+100017	REL	2662-2672	2655-2661	negatiboak	birusa
+100017	REL	2662-2672	2598-2604	negatiboak	birusa
+100017	REL	2662-2672	2622-2628	negatiboak	birusa
+100017	REL	2696-2705	2677-2694	negatiboa	Hemolisi-baheketa
+100017	REL	2747-2757	2729-2736	75 tau/min	Erritmo
+100017	REL	2783-2790	2769-2782	normala	ERRADIOGRAFIA
+100017	REL	2812-2819	2802-2811	normala	EKOGRAFIA
+100017	REL	3356-3361	3362-3372	1,3ko	kreatinina
+
+100021|t|ONKOLOGIA MEDIKOA  OSPITALERATZEKO ARRAZOIA.  Sukarra duen 65 urteko gizonezkoa.  AURREKARIAK.  Ez du alergia ezagunik; hipertentsio arteriala du; ez du diabetesik ezta dislipemiarik ere.  Arritmia kronikoa du.  Ohiko tratamendua: Clexane ®, omeprazola, fentanilo-txaplata, Sevredol ®, min akutua tratatzeko.  HISTORIA ONKOLOGIKOA. 2009an hestegorri distaleko minbizia diagnostikatu zitzaion, uT3N1 estadio ekoendoskopikoan.  Kimioterapia eta erradioterapiako tratamendua jarri ondoren, hestegorriko kirurgia erradikala egin zitzaion.   2011ko uztailean berreritze lokala eta biriketarako barreiadura diagnostikatu zitzaizkion.  Orduz gero kimioterapiako tratamendu desberdinak hartu ditu.   2012ko maiatzean hezur-barreiadura zela-eta, erradioterapiako tratamendua jarri genion ezkerreko izterrezur-buruan.  Egun kimioterapia aringarria (paklitaxel) hartzen ari da astero.  EGUNGO GAIXOTASUNA.  Larrialdietako Zerbitzura etorri da, etxean 38 °C baino sukar handiagoa zuelako.  Ez du eztulik ez karkaxa berderik nabaritu; ez du beherakorik ez goragalerik izan.  Minaren kontrola ona da.  AZTERKETA FISIKOA.  Larrialdietako Zerbitzuan: tentsio arteriala, 120/70 mm Hg; tenperatura 38,5 °C; bihotz-maiztasuna 80 tau/min; arnas maiztasuna 16 arnas/min.  Onkologiako zerbitzuan, ez du sukarrik.  Egoera orokorra ona da; ez du deshidratazio-zeinurik.  Aho-faringeak: mihi-ertzean afta bat ikusten da; mukosen hantura eta gorritasuna nabaritzen dira.  Bihotzaren auskultazioa: arritmikoa, ez dago murmuriorik.  Biriken auskultazioa: aireztapena normala da.  Sabelaldea biguna da eta ez du minik sentitzen haztatzean; ez dago ezohiko masarik ukitzean.  Gorputz-adarrak: ez dago edemarik.  PROBA OSAGARRIAK:  ANALITIKA Larrialdietan: kreatinina 1,03; urea, 76; LDH, 220; albumina, 30; hemoglobina, 9,3, plaketak, 98.000, leukozitoak, 1.000; neutrofiloak 450.  BULARREKO ERRADIOGRAFIA: biriketako nodulu ezagunak; gainerakoa normala.  HEMOKULTIBO negatiboak  ANALITIKA Alta-egunean: hemoglobina 10; plaketak 105.000; leukozitoak, 2.600; neutrofiloak, 1.200.  UROKULTIBO negatiboa.  EBOLUZIOA.  Ospitaleratu eta berehala espektro zabaleko antibiotikoekin hasi da tratamendua; egonaldian zehar ez du berriro sukarrik izan.  Analitikak errepikatu ahala neutrofiloen eta plaketen balioak errekuperatuz joan dira, alta-egunean ia normalak izan arte.  Antibiotikoak aho bidez hartzen hasi da arazorik gabe.  Hemokultibo eta urokultiboen emaitzak negatiboak izan dira.  Mina ondo kontrolatuta dago, erreskate-tratamenduaren beharrik gabe.  Sintomen kontrola egokia izan eta sukarrik gabe 48 orduan egin ondoren, alta eman diogu, ohiko jarraipena egiteko.  DIAGNOSTIKO NAGUSIA. 4.  GRADUKO KIMIOTERAPIA ONDOKO NEUTROPENIA, 3.  GRADUKO SUKAR-NEUTROPENIA " ERREKUPERATUA ". 1.  GRADUKO KIMIOTERAPIA ONDOKO TRONBOPENIA, LEHENGORATUA.  BESTE DIAGNOSTIKO BATZUK.  IV. ESTADIOKO HESTEGORRIKO MINBIZIA.  GAINERAKO AURREKARIAK.  TRATAMENDUA. 1.- Amoxizilina-klabulanikoa 875/125: pilula bat 8 orduz behin, bost egunean.  2.- Bere ohiko tratamendua.  Onkologoarekin duen kontsulta-egunean etorri behar du.
+100021	REL	1154-1166	1135-1142	120/70 mm Hg	tentsio
+100021	REL	1180-1187	1168-1179	38,5 °C	tenperatura
+100021	REL	1207-1217	1189-1206	80 tau/min	bihotz-maiztasuna
+100021	REL	1236-1248	1225-1235	16 arnas/min	maiztasuna
+100021	REL	1539-1546	1527-1538	normala	aireztapena
+100021	REL	1737-1741	1726-1736	1,03	kreatinina
+100021	REL	1749-1751	1743-1747	76	urea
+100021	REL	1758-1761	1753-1756	220	LDH
+100021	REL	1773-1775	1763-1771	30	albumina
+100021	REL	1790-1793	1777-1788	9,3	hemoglobina
+100021	REL	1805-1811	1795-1803	98.000	plaketak
+100021	REL	1826-1831	1813-1824	1.000	leukozitoak
+100021	REL	1846-1849	1833-1845	450	neutrofiloak
+100021	REL	1916-1923	1905-1915	normala	gainerakoa
+100021	REL	1938-1948	1926-1937	negatiboak	HEMOKULTIBO
+100021	REL	1986-1988	1974-1985	10	hemoglobina
+100021	REL	1999-2006	1990-1998	105.000	plaketak
+100021	REL	2021-2026	2008-2019	2.600	leukozitoak
+100021	REL	2042-2047	2028-2040	1.200	neutrofiloak
+100021	REL	2313-2324	2241-2253	ia normalak	neutrofiloen
+100021	REL	2313-2324	2258-2266	ia normalak	plaketen
+100021	REL	2431-2441	2393-2404	negatiboak	Hemokultibo
+100021	REL	2431-2441	2409-2421	negatiboak	urokultiboen
+
+100024|t|PREBENTZIO-MEDIKUNTZA ETA OSASUN PUBLIKOA  KONTSULTARAKO ARRAZOIA.  Gernu-sepsia.  AURREKARI PERTSONALAK.  Metizilinarekiko erresistentea den Staphylococcus aureusa (MESA) 2006ko apirilaren 4an; sudur eta perineoko eramaile kronikoa; gernu eta perineoko kolonizazioa Acinetobacter baumannii multirresistentearekin.  EGUNGO GAIXOTASUNA.  Laburpen bakteriologikoa: A) 2006-01-04an MESAren LEHENENGO KULTIBO POSITIBOA aspirazio bronkoalbeolarrean, sudur-zuloetan eta perineoan.  Gernuan ez du izan MESArik.  B) 2012-08-10an A. baumannii multirresistentea gernuan (gernu-zunda iraunkorrean) eta perineoan.  OHARRA: bi daten artean MESAren KULTIBO POSITIBO ANITZ izan ditu, batez ere arnasbideetako laginetan eta batzuetan sudur-zulo, perineo eta ultzera sakroan.  Bi aldiz kendu da alerta epidemiologikoa MESAren hazkuntzak negatiboak izan direlako, baina birkolonizatu egin da.  Antibiograma:   * MESA erresistentea betalaktamiko, eritromizina, fluorkinolona eta mupirozinarekiko.   * A. baumannii sentikorra amikazina eta kolimizinarekiko bakarrik.  EBOLUZIOA.  Ospitaleratu denetik banako gelan isolatua egon da, kontaktu eta tanta bidezko transmisioen aurkako ohiko neurriak hartuta.  Linezolidarekin tratatua izan da.  IRITZI DIAGNOSTIKOA.   1- ARNASBIDEETAKO MESA KRONIKOA.   2- SUDUR ETA PERINEOKO MESA-ERAMAILEA.   3- ACINETOBACTER BAUMANNIIen GERNU ETA PERINEOKO KOLONIZAZIOA.  ZENTRO GERONTOLOGIKOARENTZAKO GOMENDIOAK  JARRAIPEN BAKTERIOLOGIKOA  JARRERA: historial bakteriologikoaren kronifikazioa kontuan hartuta, erresistentzia anitzeko patogeno hauen negatibizazioa arraroa litzateke.  Gutxienez astebeteko tartea utzita hiru kultibo negatibo behar dira.  Bitartean ezin du antibiotikorik hartu.  Karkaxa (eta ezin bada egin, faringearen atzeko paretaren frotisa): 3 kultibo.  Sudurrekoa eta perineokoa: 3 kultibo.  Gernua: 3 kultibo.  Larruazaleko ultzerak: 3 kultibo.  OHARRA:  EGINDAKO KULTIBOREN BAT POSITIBOA BALITZ, itxaron 2 hilabete berriro kultiboak egiteko.  1- Emaitza negatiboa balitz, laginak hartzeko astebete itxaron, 3 negatibo jarraian lortu arte.  OSO OHAR GARRANTZITSUA:  Jarraian hiru kultibo negatibo lortzen badira, bidali emaitzak Prebentzio Medikuntzara, alarma epidemiologikoa kendu ahal izateko, berriro ere ospitaleratuz gero.  Telefonoa edo Faxa: 943 00 71 62.  MESA KULTIBOAK NEGATIBIZATU BITARTEKO JARRAIBIDEAK  A) EGOILIARRENTZAKO ARAU OROKORRAK:  1- ESKU-GARBIKETA: sarri, dosifikatzailea duen xaboi likido neutroarekin, otorduen aurretik, komunera joan ondoren, doministiku egitean edo mukizapia erabiltzean, eta, batez ere, azala edo zauriren bat ukitzerakoan; neurri higieniko garrantzitsuena da.   2- ARNAS HIGIENEA ETA EZTULAREN MANEIUA: eztula edo doministiku egitean.   3- Azaleko edozein zauri apositu lehorrarekin estali, sendatu arte.   4- Ez partekatu tresna pertsonalik (xukadera, arropa...).   5- Familia-medikuarengana, ospitalera edo errehabilitazioko zentrora joz gero, kontsultako azken ordua eskatu behar du.  EREMU ARRUNTAK:  1- Bizitza normala egin, hurrengo oharkizunei kasu eginez; eskuak aurrez garbitu.  Arropa garbia erabili eta oinarrizko neurri higienikoak bete.  2- Ohar espezifikoak: *  Larruazaleko MESA: zauri edo ultzera kolonizatuek ongi estaliak egon behar dute, apositu garbi batekin.  Sendaketak logelan bertan egin behar dira. * Arnasbideetako MESA: egoiliarrak maskara erabili beharko du honako kasu hauetan:  - kolonizatua badago eta ez baditu arnas higieneko neurriak betetzen.  - infektatua dagoen bitartean (medikuaren iritzia kontuan hartuta).  * Gernuko MESA: gernu-inkontinentzia badu, pixa-oihala ez zio aldatu behar eremu amankomunetan.  B) OSASUN-LANGILEAK  ESKU-GARBIKETA: esku-garbiketa higienikoa; dosifikatzailea duen xaboi neutroarekin, eskularruak jarri aurretik, eta xaboi antiseptikoarekin (% 4ko xaboidun klorhexidina), eskularruak kendu ondoren.  ESKULARRUAK:   1- Erabili eskularru garbiak; ez dute esterilak zertan izan, baina pazientea edo gainazal kutsaturen bat ukitu ondoren bota zaborretara.   2- Aldatu eskularruak paziente berari zainketa ezberdinak egitean.   3- Ez erabili eskularru pare bera beste paziente bat ukitzeko.  MANTALA:   1- Erabili mantal garbia, ez du esterila izan beharrik, jantziak pazientearekin edo azalera kutsaturen batekin kontaktuan jar balitezke.  MASKARA:   1- Maskara kirurgikoa behar da, aire bidez kutsatutako MESA duen gaixoarengandik metro batera baino gutxiagora egoteko.  C) GARBIKETA ETA OSASUN-MATERIAL SANITARIO ETA TRESNEN DESINFEKZIOA  1- Material esklusiboa erabili, edo, erabili ondoren, garbitu eta desinfektatu.  2- Gaixoa kontsulta edo osasun-zerbitzuren batera joanez gero:  * Xaboidun disoluzioarekin kontu handiz garbitu, pazientearen larruazalarekin edo jarioekin kontaktuan egon ondoren.   * Garbitu urarekin hezetutako eskutrapu bat erabiliz.   * Ondoren, desinfektatzailea jarriko da azalera guztietan.  Erabil daitezkeen materialak: 70º-ko alkohola eremu metalikoentzat eta ura lixibarekin 1/10eko diluzioan beste materialentzat.  Material esklusiboa erabili ondoren, garbitu eta desinfektatu.  Zalantzarik izanez gero, deitu Donostia Ospitaleko Prebentzio Medikuntzako Zerbitzura (943 00 71 62).  ZENTRO GERONTOLOGIKOETARAKO MESA-RI BURUZKO GIDA EGUNERATUA  Honako helbide honetan lor daiteke: Donostia Ospitaleko webgunea
+100024	REL	405-414	397-404	POSITIBOA	KULTIBO
+100024	REL	643-651	635-642	POSITIBO	KULTIBO
+100024	REL	820-830	809-819	negatiboak	hazkuntzak
+
+100031|t|HEMATOLOGIA  OSPITALERATZEKO ARRAZOIA.  Sukarra duen 60 urteko emakumea.  EGUNGO GAIXOTASUNA.  Duela 12 ordu ondoeza nabaritzen hasi da.  Berehala sukarra eta dardarak izan ditu, antitermikoekin guztiz hobetu ez direnak, eta horregatik etorri da Larrialdietako Zerbitzura.  Dioenez, ez du eztulik, karkaxarik, arnasesturik, bularreko minik, gorakorik, beherakorik edo sabeleko minik izan.  AURREKARIAK.  Ez dauka farmakoekiko alergia ezagunik.  Ez du hipertentsiorik, diabetesik edo dislipemiarik.  Erretzailea duela bi urte arte.   2011ko abuztuan mantuko zelulen linfoma diagnostikatu zioten IV-B estadioan (adenopatiez gain, hezur-muinaren infiltrazioa zuen).  Azken hilabetean gaueko izerdia eta sukarra izan ditu.  Markatzaile immunologikoei dagokienez, CD19 (+), CD20 (+), CD22 (+), CD5 (+), CD23 (-), CD79a (+), CD43 (+), eta D1 ziklina nuklearraren adierazpena biziki positiboa.  Kimioterapiako tratamenduan hasi zen eta lau ziklo Rituximab-CHOP hartu ditu denbora horretan (azkena duela astebete).  Bigarren zikloaren ondoren egindako PET-OTA proban erantzun metaboliko osoa berretsi zen.  Tratamendua: omeprazola, alopurinola, ziprofloxazinoa eta flukonazola.  MIAKETA FISIKOA.  Tenperatura, 38,8 °C; tentsio arteriala, 80/40; bihotz-maiztasuna, 110 tau/min; arnas maiztasuna, 24 arnas/min, O2Sat basala,% 93.  Kontziente, partzialki orientatua.  Kakektiko.  Ahoko lehortasuna.  Mukosa eta larruazalen kolorazio normala.  Burua eta lepoa.  Ez du jugularren ingurgitaziorik, ez adenopatia ukigarririk, ez zeinu meningeorik ere.  Bihotzaren auskultazioa: erritmikoa eta murmuriorik gabea; biriken auskultazioa: aireztapen normala.  Sabelaldea.  Biguna, beheragarria.  Haztapenean ez du minik, ez eta masa edo megaliarik ere.  Heste-soinu normalak.  Gorputz-adarrak.  Ez edemarik, ez eta bena sakonetako tronbosi-zeinurik ere.  PROBA OSAGARRIAK.  ELEKTROKARDIOGRAMA.  Erritmo sinusala, 95 tau/min.  TORAXEKO ERRADIOGRAFIA asaldurik gabea.  ANALITIKA.  Biokimika: kreatinina, 1,03 mg/dl; urea, 43 mg/dl; Cl (kloroa), 103 meq/l; Na (sodioa), 139 meq/l; K (bitamina), 4,3 meq/l; gluzemia, 164 mg/dl; prokaltzitonina, 21; proteina C-erreaktiboa 97.  HEMOGRAMA.  Hemoglobina, 9,7 g/dl; hematokritoa,% 29,1; plaketak 70.000/ï­ l;; leukozitoak, 580/ï­ l;; neutrofiloak, 80/ï­ l;.  GERNUAREN KULTIBOA.  E. colirentzat positiboa.  ANTIBIOGRAMA.  Ziprofloxazino eta amoxizilinarekiko sentikorra.  ODOL-KULTIBOA.  E. colirentzat positiboa.  Antibiograma: ziprofloxazino eta amoxizilinarekiko sentikorra.  EBOLUZIOA.  Ospitalean sartu eta berehala, kultiboak egin ondoren, arrisku baxuko neutropeniarako protokoloan oinarritutako tratamendu antibiotikoarekin hasi ginen.  Horrez gain, hidratazio egokia eta konstanteen jarraipen hertsia mantendu genuen lehenengo orduetan.  Hala ere, pazientearen tentsioak baxu jarraitzen zuen, eta diuresia oso eskasa izan zen lehenengo orduetan.  Hori zela-eta, droga basoaktiboak behar izan zituen 2-3 egunean.  Egoera hemodinamikoa egonkortu ondoren, droga basoaktiboak kendu, eta tratamendu antibiotikoa mantendu genuen 10 egunean.  Eboluzio kliniko egokia izan du, sukarra 24 ordu igaro ondoren desagertu zen.  DIAGNOSTIKOA.  KIMIOTERAPIA BIDEZKO TRATAMENDUAN DAGOEN MANTUKO ZELULEN LINFOMA.  IV. GRADUKO NEUTROPENIA.  GERNU-APARATUKO INFEKZIOA.  SHOCK SEPTIKOA.  TRATAMENDUA ETA BESTE GOMENDIO BATZUK.  Atsedena gomendatzen zaizu.  Dieta arrunta.  Orain arte hartzen ari zen tratamenduarekin jarraitu behar du.  Sukarra edo ondoeza berriro agertuz gero, Larrialdietako Zerbitzura etorri.  LABORATEGIKO PROBEN EMAITZEI BURUZKO TXOSTENA  LAGINA:  Lagina hartzeko data:  Lagin-zk.:  Lagin-mota (testua + kodea), Zehaztapen-taldea, Biokimika orokorra, Gernu-lagin sistematikoak, Hormonak, Tumore-markatzaileak, Medikamentu eta toxikoen mailak, Gasometria, Hematologia, Hemostasia (koagulazioa), Hemoterapia, Hematologia- Koagulazioa (proba bereziak), Immunologia- Alergia, Mikrobiologia, Genetika, Anatomia patologikoa- Biopsiak, Anatomia patologikoa- Zitologiak.  CD POS./NEG.  CD10 POS.  CD19 POS.  CD22 POS.  CD23 POS.  CD43 NEG.  CD79b POS.  FMC7 POS.  CD20 POS.  CD38 POS.  Kappa NEG.  Lambda POS.  CD5 NEG.  POPULAZIOA 19205858_K_L_19_1% absolutua% partziala  Linfozitoak 96,2 96,2  B linfozitoak 69,27 71,86  B linfozito normalak 0 0  B linfozito patologikoak 65,11 93,99  Kappa + 7,94 12,19  Lambda + 53,97 82,89  Diagnostikoa  % 96ko linfozitosia.  B linfozito CD19 + (% 72), ia erabatean (% 94) honako immunofenotipoa: CD19+/CD20+/CD79b/CD5-/CD23+/CD43-/CD10+/CD38+/CD22+/FMC7 + dena  izaera klonaleko lambda kate arinak, intentsitate altukoak.  LINFOMA FOLIKULARRAREKIN BAT DATORREN IMMUNOFENOTIPOA.
+100031	REL	765-766	759-763	+	CD19
+100031	REL	775-776	769-773	+	CD20
+100031	REL	785-786	779-783	+	CD22
+100031	REL	794-795	789-792	+	CD5
+100031	REL	804-805	798-802	-	CD23
+100031	REL	815-816	808-813	+	CD79a
+100031	REL	825-826	819-823	+	CD43
+100031	REL	869-885	857-868	biziki positiboa	adierazpena
+100031	REL	1202-1209	1189-1200	38,8 °C	Tenperatura
+100031	REL	1230-1235	1211-1218	80/40	tentsio
+100031	REL	1256-1267	1237-1254	110 tau/min	bihotz-maiztasuna
+100031	REL	1287-1299	1275-1285	24 arnas/min	maiztasuna
+100031	REL	1314-1318	1301-1306	% 93	O2Sat
+100031	REL	1893-1903	1875-1882	95 tau/min	Erritmo
+100031	REL	1982-1992	1970-1980	1,03 mg/dl	kreatinina
+100031	REL	2000-2008	1994-1998	43 mg/dl	urea
+100031	REL	2023-2032	2014-2020	103 meq/l	kloroa
+100031	REL	2023-2032	2010-2012	103 meq/l	Cl
+100031	REL	2047-2056	2038-2044	139 meq/l	sodioa
+100031	REL	2047-2056	2034-2036	139 meq/l	Na
+100031	REL	2072-2081	2058-2059	4,3 meq/l	K
+100031	REL	2093-2102	2083-2091	164 mg/dl	gluzemia
+100031	REL	2121-2123	2104-2119	21	prokaltzitonina
+100031	REL	2148-2150	2125-2133	97	proteina
+100031	REL	2178-2186	2165-2176	9,7 g/dl	Hemoglobina
+100031	REL	2201-2207	2188-2200	% 29,1	hematokritoa
+100031	REL	2218-2225	2209-2217	70.000/	plaketak
+100031	REL	2246-2249	2233-2244	580	leukozitoak
+100031	REL	2272-2274	2258-2270	80	neutrofiloak
+100031	REL	2320-2329	2305-2306	positiboa	E
+100031	REL	2384-2394	2347-2361	sentikorra	Ziprofloxazino
+100031	REL	2384-2394	2366-2383	sentikorra	amoxizilinarekiko
+100031	REL	2428-2437	2413-2414	positiboa	E
+100031	REL	2491-2501	2473-2490	sentikorra	amoxizilinarekiko
+100031	REL	2491-2501	2454-2468	sentikorra	ziprofloxazino
+100031	REL	4003-4006	4000-4002	POS	CD
+100031	REL	4008-4011	4000-4002	NEG	CD
+100031	REL	4019-4022	4014-4018	POS	CD10
+100031	REL	4030-4033	4025-4029	POS	CD19
+100031	REL	4041-4044	4036-4040	POS	CD22
+100031	REL	4052-4055	4047-4051	POS	CD23
+100031	REL	4063-4066	4058-4062	NEG	CD43
+100031	REL	4075-4078	4069-4074	POS	CD79b
+100031	REL	4086-4089	4081-4085	POS	FMC7
+100031	REL	4097-4100	4092-4096	POS	CD20
+100031	REL	4108-4111	4103-4107	POS	CD38
+100031	REL	4120-4123	4114-4119	NEG	Kappa
+100031	REL	4133-4136	4126-4132	POS	Lambda
+100031	REL	4143-4146	4139-4142	NEG	CD5
+100031	REL	4213-4217	4201-4212	96,2	Linfozitoak
+100031	REL	4218-4222	4201-4212	96,2	Linfozitoak
+100031	REL	4238-4243	4226-4237	69,27	linfozitoak
+100031	REL	4244-4249	4226-4237	71,86	linfozitoak
+100031	REL	4272-4273	4253-4262	0	linfozito
+100031	REL	4274-4275	4253-4262	0	linfozito
+100031	REL	4302-4307	4279-4288	65,11	linfozito
+100031	REL	4308-4313	4279-4288	93,99	linfozito
+100031	REL	4321-4327	4315-4320	+ 7,94	Kappa
+100031	REL	4328-4333	4315-4320	12,19	Kappa
+100031	REL	4342-4349	4335-4341	+ 53,97	Lambda
+100031	REL	4350-4355	4335-4341	82,89	Lambda
+100031	REL	4410-4411	4395-4404	+	linfozito
+100031	REL	4413-4417	4395-4404	% 72	linfozito
+100031	REL	4434-4438	4395-4404	% 94	linfozito
+100031	REL	4468-4469	4464-4468	+	CD19
+100031	REL	4474-4475	4470-4474	+	CD20
+100031	REL	4485-4486	4476-4481	-	CD79b
+100031	REL	4491-4492	4487-4491	+	CD23
+100031	REL	4497-4498	4493-4497	-	CD43
+100031	REL	4503-4504	4499-4503	+	CD10
+100031	REL	4509-4510	4505-4509	+	CD38
+100031	REL	4515-4516	4511-4515	+	CD22
+100031	REL	4522-4523	4517-4521	+	FMC7
+
+100043|t|MEDIKUNTZA INTENTSIBOA  OSPITALERATZEKO ARRAZOIA:  Bularraldeko mina duen 62 urteko gizonezkoa.  AURREKARIAK:  Ez du alergia ezagunik.  Hipertentsio arteriala.  Erretzailea.  Ez du ohiko tratamendurik.  EGUNGO HISTORIA:  Etxean eserita zegoela, bat-batean, bularraldearen erdian mina nabaritu du; mina hertsatzailea da, eztarrira hedatzen da eta ez da aldatzen mugimenduekin eta arnasketarekin.  Mina ospitalera etorri baino hiru ordu lehenago hasi zaio, eta ez zaio tarte horretan arindu, izerdi hotza eta botalarria izan ditu denbora horretan guztian.  AZTERKETA FISIKOA:  Tentsio arteriala, 144/83; bihotz-maiztasuna, 98 tau/min; arnas maiztasuna, 16 arnas/min; O2Sat, % 98.  Kontziente dago, orientatua, ongi hidratatua eta perfusio ona dauka.  Eupneiko dago.  Burua eta lepoa.  Ez dago aurkikuntza patologikorik.  Biriken auskultazioa.  Biriketako murmurio normala.  Bihotzaren auskultazioa.  Erritmikoa, ez da murmuriorik entzuten.  Sabelaldea.  Ez dago aurkikuntza patologikorik.  Gorputz-adarrak.  Ez du edemarik.  Pultsu periferiko normalak.  PROBA OSAGARRIEN LABURPENA:  ELEKTROKARDIOGRAMA (EKG).  Erritmo sinusala, 95 tau/min.  ST segmentuaren igoera II, III eta aVf deribazioetan.  BULARREKO ERRADIOGRAFIA.  Normala.  ANALITIKA.  Kreatinina, 1,03 mg/dl; urea, 43 mg/dl; Cl, 103 meq/l; Na, 139 meq/l; K, 4,3 meq/l; glukosa, 164 mg/dl; T troponina ultrasentsiblea, 1.207,0 ng/l; CPK, 736 U/l; CKMB masa, 58,29 μg/l; kolesterola, 234 mg/dl; LDL kolesterola, 117 mg/dl; HDL kolesterola, 37 mg/dl; triglizeridoak, 193 mg/dl hemoglobina, 14,4 g/dl; hematokritoa, % 41,7; plaketak, 162.000/μl; leukozitoak, 10.580/μl; INR, 1,07; APTT, 31,1 seg.  KORONARIOGRAFIA.  Oinarriko segmentuaren hipokinesia.  Eiekzio-frakzioa, % 45.  Eskuineko arteria koronarioaren % 100eko buxadura.  Angioplastia primarioa, TAXUS stent bat ezarrita.  EKOKARDIOGRAMA.  Eiekzio-frakzioa, % 47.  Hipokinesia basala.  Ez da isuri perikardikorik ikusten.  Balbula normalak.  Ezkerreko aurikula eta aortaren sustraia normalak dira.  EBOLUZIOA ETA IRUZKINAK:  Pazienteari, ospitalera iritsi bezain pronto, angioplastia egin zaio eskuineko arteria koronarioan. Mina joan zaio, eta ez du konplikaziorik  izan eboluzioan.  DIAGNOSTIKO NAGUSIA(K):  ST segmentuaren igoera duen azpialdeko miokardioko infartu akutua.  TRATAMENDUA:  AAS (azido azetilsalizilikoa) 100 mg/24 orduan behin.  Klopidogrel 75 mg/24 orduan behin.  Atenolol 25 mg/12 orduan behin.  Atorbastatina 20 mg/24 orduan behin.  BESTE GOMENDIO BATZUK:  Ariketa fi siko arina; pisu astunak ekidin.  Tabakoa utzi.  Gatzik gabeko dieta.
+100043	REL	594-600	575-582	144/83	Tentsio
+100043	REL	621-631	602-619	98 tau/min	bihotz-maiztasuna
+100043	REL	651-663	639-649	16 arnas/min	maiztasuna
+100043	REL	672-676	665-670	% 98	O2Sat
+100043	REL	1041-1049	1023-1029	normalak	Pultsu
+100043	REL	1126-1136	1108-1115	95 tau/min	Erritmo
+100043	REL	1254-1264	1242-1252	1,03 mg/dl	Kreatinina
+100043	REL	1272-1280	1266-1270	43 mg/dl	urea
+100043	REL	1286-1295	1282-1284	103 meq/l	Cl
+100043	REL	1301-1310	1297-1299	139 meq/l	Na
+100043	REL	1315-1324	1312-1313	4,3 meq/l	K
+100043	REL	1335-1344	1326-1333	164 mg/dl	glukosa
+100043	REL	1375-1387	1348-1357	1.207,0 ng/l	troponina
+100043	REL	1394-1401	1389-1392	736 U/l	CPK
+100043	REL	1414-1419	1408-1412	58,29	masa
+100043	REL	1439-1448	1426-1437	234 mg/dl	kolesterola
+100043	REL	1467-1476	1454-1465	117 mg/dl	kolesterola
+100043	REL	1495-1503	1482-1493	37 mg/dl	kolesterola
+100043	REL	1521-1530	1505-1519	193 mg/dl	triglizeridoak
+100043	REL	1544-1553	1531-1542	14,4 g/dl	hemoglobina
+100043	REL	1569-1575	1555-1567	% 41,7	hematokritoa
+100043	REL	1587-1594	1577-1585	162.000	plaketak
+100043	REL	1612-1618	1599-1610	10.580	leukozitoak
+100043	REL	1628-1632	1623-1626	1,07	INR
+100043	REL	1640-1648	1634-1638	31,1 seg	APTT
+100043	REL	1724-1728	1706-1722	% 45	Eiekzio-frakzioa
+100043	REL	1869-1873	1851-1867	% 47	Eiekzio-frakzioa
+
+100078|t|HARRERAREN MOTIBOA Sukarra eta arnas aparatuko sintomak dituen gaixo transplantatua.    AURREKARIAK 54 urte, nefroangioesklerosiak eragindako giltzurrun gutxiegitasuna, 11 hilabetez dialisi peritonealean egon ondoren giltzurrun transplantea jaso zuena. Transplantea egin zenean ez zitzaion eman Zitomegalobirusaren aurkako profilaxirik, birus horren serologia positiboa zutelako bai emaileak bai hartzaileak. Alta unean Kreatinina 2,5 mg/dl zen. Errefusaren aurkako tratamendurako Takrolimus, Mikofenolatoa eta Prednisona jaso zuen.    BILAKAERA Oraingo gaixotasuna: Transplantetik 3 hilabete igaro eta gero, eztula eta karkaxa zornetsuarekin hasten da, eta 15 egun geroago sukarra, hotzikarak, ondoez orokorra eta eskuineko min pleuritikoa ditu. Miaketa larria zirudien, 38 graduko sukarra, tentsio arteriala 170/100, arnas maiztasuna 26 minutuko, roncus eta txistu-hotsak biriketako aukultazioan eta 2 larruazalpeko nodulu mugikor, 1 cm-koak, bata eskuineko sabelaldeko alboan eta bestea ezkerrekoan. Analisian 11600 leukozito/mm3 (%6 forma gazteak), Hemoglobina 10,3 gr/dl, Fibrinogenoa 845 mg/dl, gernuko sedimentu normala, Kreatinina 3,3 mg/dl, Urea 120 mg/dl, Albumina 2,5 gr/dl, pH 7,45, PO2 84 mmHg, PCO2 27 mmHg, CO3H 19 mEq/l, oxigeno asetasuna %97. Toraxeko X-izpietan 3 nodulu, haietako bat hutsune eta airearekin. OTAn, 4,5 cm-ko irudi bat eskuineko ertaineko lobuluan eta beste antzeko bi beheko eremuetan. Odol, gernu eta gorotz kultiboak negatiboak ziren. Bronkoskopia eta bronkio-albeolo garbiketan eta eskuineko birikako beheko noduluan egindako ziztadan Nocardia asteroides eta Pneumocystis carinii hazi ziren. Abdomeneko nodulua drainatzean Nocardia asteroides-a hazi zen. Odolean Zitomegalobirusaren antigenoa eta hazkuntza positiboak izan ziren. Tratamendurako Trimetroprim-Sulfametoxazol eta Ganziklobir erabili ziren. Nahiz eta hasieran bilakaera egokia izan, hiru aste geroago kateterrak eragindako septizemia bi (Staphylococcus aureus eta Candida albicans) eta aholegarrak (Herpesbirus sinplea 1) izan zituen; hori dela eta Teikoplanina, Flukonazol eta Aziklobir gehitu ziren. Horren ondoren bai sintomak bai X-izpiko irudiak hobetu ziren eta alta jaso zuen. Kreatinina 2,8 mg/dl zen eta tratamenduari Azatioprina gehitu zitzaion.
+100078	REL	360-369	350-359	positiboa	serologia
+100078	REL	431-444	420-430	2,5 mg/dl zen	Kreatinina
+100078	REL	772-782	783-790	38 graduko	sukarra
+100078	REL	810-817	792-799	170/100	tentsio
+100078	REL	836-847	825-835	26 minutuko	maiztasuna
+100078	REL	934-943	918-924	1 cm-koak	nodulu
+100078	REL	1013-1032	1003-1012	11600 leukozito/mm3	Analisian
+100078	REL	1034-1036	1037-1042	%6	forma
+100078	REL	1065-1075	1053-1064	10,3 gr/dl	Hemoglobina
+100078	REL	1090-1099	1077-1089	845 mg/dl	Fibrinogenoa
+100078	REL	1119-1126	1109-1118	normala	sedimentu
+100078	REL	1139-1148	1128-1138	3,3 mg/dl	Kreatinina
+100078	REL	1155-1164	1150-1154	120 mg/dl	Urea
+100078	REL	1175-1184	1166-1174	2,5 gr/dl	Albumina
+100078	REL	1189-1193	1186-1188	7,45	pH
+100078	REL	1199-1206	1195-1198	84 mmHg	PO2
+100078	REL	1213-1220	1208-1212	27 mmHg	PCO2
+100078	REL	1227-1235	1222-1226	19 mEq/l	CO3H
+100078	REL	1255-1258	1245-1254	%97	asetasuna
+100078	REL	1333-1342	1343-1348	4,5 cm-ko	irudi
+100078	REL	1454-1464	1444-1453	negatiboak	kultiboak
+100078	REL	1745-1755	1735-1744	positiboak	hazkuntza
+100078	REL	1745-1755	1721-1730	positiboak	antigenoa
+100078	REL	2196-2205	2185-2195	2,8 mg/dl	Kreatinina
+
+100103|t|Lehen aldiz eta inoren laguntzarik gabe psikiatraren kontsultara zorabioengatik datorren 40 urteko gizona da.   Orain dela 5 urte lana eta bikotekidea utzi zituenetik bakarrik bizi da babes-ofizialeko pisu batean.   Guraso eta anaiarekin erlazionatzen dela dio, baina ez du nahi inork kontsultara laguntzea.    15 urterekin cannabisa kontsumitu zuen baina ordutik hona ez du berriro kontsumitu.   Orain dela 5 urtera arte bikotekidearekin batera anfetaminak kontsumitu zituen.   Alkohola orain ez, ez du uste inoiz gehiegikeriaz hartu duenik.   Ez dago aurrekari psikiatrikorik.   Ez du uste depresio edo herstura-arazorik izan duenik, baina bai bulimia arazoak (ez orain).    Lorazepama eta beste botika batzuk eman zaizkio tratamenduan zehar; lorazepamaren dosia bere kabuz igo du eta beste botikak txarto egiten diotelako utzi ditu.   Ongi egin diezaioketen botikak proposatzen ditu.  Kontsultara bertaratzea irregularra da.  Diagnostiko medikoa: Nahaste Somatomorfoa.  Erizaintzako balorazioan asaldatutako domeinuak.  Osasunaren sustapena: sustantzia desberdinen kontsumoa.  Pertzepzio/kognizioa: ideia handietsiak.  Auto-pertzepzioa: gorputz-irudiaren asaldura.
+
+100110|t|44 urteko gizona, txertatu gabea. Lesio gorri inflamatua zuen izterraren aurreko aldean, zorne jarioarekin. Zelulitisa susmatu eta amoxizilina-klabulaniko orala eta mupirozina topikoarekin tratatu zen.  Kontsultara itzuli zen ondoezik. Adenopatia inginala antzeman genuen. Animaliekin lan egiten zuela historian azpimarratu eta ospitalera igorri genuen. Zelulitisa diagnostikatu eta tratamendua mantendu zuten. Aste baten buruan itzuli zen hobekuntzarik gabe eta legena izan zitekeenez galdezka. Bi medikuk artatu eta tiña corporis bovina izan zitekeelakoan bifonazol kremarekin hasi eta 72h tan hitzordua egin genuen.  Hitzorduaren aurretik heldu zen sukarrarekin. Antrax zelakoan isolatuta ingresatu zuten E.Coli kultiboan ikusita.  Antibiotikoen eraginez, enteritisa garatu zuen Clostridium Difficilengatik. Azkenik, dermatologoek artatu eta tiña corporis inflamatorioa zela konfirmatu eta ahozko terbinafinarekin (250mg egunean) tratatzen hasi eta alta eman zioten.    Hurrengo egunetan hobera egin zuen eta 40 egunen buruan azaleko lesioa sendatu zen.
+
+100126|t|Maria 36 urteko emakume ezkondu bat da.  Bi alaba nerabe ditu.  Medikuarengana doa ez duelako lorik egiten.  Duela urte batzuk arte ez zuen inolako lo-arazorik izan, baina bere loa beti arina izan dela esaten du.  Gauero bi ordu gutxienez ohean bueltaka ibiltzen dela esaten du.  Esaten duenez, gero eta arduratuagoa dago bere loarekin.  Gauean zehar arrazoirik gabe esnatzen da, edo zarata txikiren bat entzuten duelako, edo komunera joaten da modu konpultsiboan.  Gainera, ezin du lorik egin bere etxeko arazo zailetan pentsatzen hasten delako.    Mariak aldizkari batean irakurri duenaren arabera, loa zaintzen saiatzen da, bere senarra baino ordubete beranduago ohera sartuz.  Esnatzen denean, asko kostatzen zaio berriro lo egitea, eta askotan sofan amaitzen du bere senarra ez eragozteko.  Bera goiz esnatzen da, baina nekatuta eta energiarik gabe sentitzen da.  Askotan, zaila egiten zaio altxatzea eta eguna hastea.  "Kafeak laguntzen dit, baina eguerdirako ohera joateko prest nago" esaten du.    Mariak uste du bere seme-alabak arduratuta daudela.  Senarrak batzuetan bere osasunaren inguruan galdetzen dio, eta beste batzuetan berarekin haserre dagoela dirudi.  Aspaldi ez dute sexu-harremanik izan.  Lo egiteko pilulak hartu ditu noizbait, baina Mariak dioenez nekatuago sentitzen da pilulak hartzean; dena dela, inoiz ez du lortu gau osoan zehar lo mantentzea.  Mariak esaten du beti izan duela osasun ona.  Ospitalean ingresaturik egon den aldi bakarrak bi erditzeak izan dira.  Bere ama minbiziaz hil zen 41 urterekin, eta lo-arazoak zituen hark ere.  Mariak uste du bere amaren lo-arazoak minbiziagatik zirela.  Bere neba etxetik irten gabe egon zen urte oso bat ama hiltzean.  Mariak inoiz ez du amaren heriotzaren inguruan hitz egin.    Mariak ez du alkoholik edaten, eta ez du inoiz drogarik hartu.  Ez du beste medikamenturik hartzen.  Elkarrizketaren hasieran urduri dago, eta bere egoeraz galdetzen zaionean negarrez hasten da.  Ama eta emazte bezala porrot egin duela sentitzen du.  Egin beharko lituzkeen betebehar guztiak ez dituela egiten uste du.  Gero eta jarduera gutxiago egiten ditu bere familiarekin.  Mariari korrika egitea gustatzen zitzaion, eta irakurketa-klub batean ere bazegoen; baina bigarren semea jaio zenean, jarduerak egiteari utzi zion.  Hasieran, umea zaintzen ari zelako; baina beranduago, jada gogorik ez zuelako.    Mariak idazkari bezala lan egiten zuen senarra ezagutu baino lehen, baina ezkontzean lana utzi zuen, eta etxerako lanez arduratzen hasi zen.  Bere lana oso gustuko zuen, jendearekin harremanetan egoten zelako.  Mariak harreman sozialak galdu dituela sentitzen du.    Maria guztiz orientaturik dago denboran eta espazioan.  Desanimatuta, negarti eta nekatuta nabaritzen da, baina begi-kontaktua mantentzen du.  "Arduratuta" dagoela esaten du.  Ez dauka narriadura kognitiborik, ezta pentsamenduaren ez pertzepzioaren nahasterik ere.  Ez dauka bere buruaz beste egiteko pentsamendurik.
+
+100146|t|KONTSULTAREN ARRAZOIA  Larrialdietara datorren 80 urteko gizonezkoa; astebeteko iraupeneko astenia gogorreko koadroa, hematoma garrantzitsua beheko gorputz-adarrean eta odol gorriaren arrastoak eginkarietan dira ingresuko sintomarik aipagarrienak, INR maila altuekin batera.  AURREKARI PERTSONALAK  -Ez dauka farmakoekiko alergia ezagunik ezta aztura toxikorik ere.  -HTA, DM tratamendu dietetikoan, dislipemiarik ez.  -Fibrilazio aurikularrak eragindako erabateko arritmia.   Kardiopatia iskemiko kronikoa.   Miokardioko infartu akutua (MIA) 2000. urtean, eta azalean zeharreko angioplastia koronario transluminalarekin (AAKTrekin) 2 stent ezarri zitzaizkion.   Bihotz-gutxiegitasuneko hainbat gertaera.  -BGBK (biriketako gaixotasun buxatzaile kronikoa).  -Giltzurruneko gutxiegitasun kronikoa, 4. mailakoa.   Hiperparatiroidismo sekundarioa.   Osteoporosia.  -Prostatako hipertrofia onbera.   Prostatako adenoma.  -2011. urtean Hematologiako Zerbitzuan baloratua, tronbopenia arinagatik; geroztik ez du beste kontrolik izan.  -Oinarrizko egoera funtzionala (OEF): Ez dauka ezagutzako narriadurarik.   Bere kasa moldatzen da eguneroko bizitzako jardueretan, eta makila baten laguntza behar du ibiltzeko.  -Ohiko tratamendua: Omeprazola; Carbedilola; Rocaltrola; Furosemida; Atorbastatina; Dutasterida/Tamsulosina; Alopurinola; Spiriva; Simtrona.  MIAKETA FISIKOA  TA: 140/70; Bihotz-maiztasuna: 89 tau/min; Tª 36,5 ºC; O2Sat.: % 97  Kontziente eta orientatua dago, ondo hidratatua eta perfunditua, azal eta mukosetako zurbiltasunarekin.  Hematoma ugari ikusten dira goiko gorputz-adarretan, ezkerreko hemitoraxean, barrabil-zorroan, eskuin-iztondoan eta eskuineko zangoan.  Burua eta lepoaldea: begietako ikterizia.   Ez adenopatiarik, ez boziorik.  BULARRALDEA: Bihotzaren auskultazioa: erritmikoa, murmuriorik gabe.   Biriken auskultazioa: krepitatzaileak, bi oinaldeetan.  SABELALDEA: biguna, zanpagarria.   Haztapenean ez du minik sentitzen, ez da masarik ezta megaliarik ere antzematen, eta hesteetako hotsak presente daude.   Giltzurruneko ukabil-perkusioa negatiboa da alde bietan.  BEHEKO GORPUTZ-ADARRAK: eskuineko zangoan tibia aurreko edema arinak ikusten dira, fobearekin.   Pultsu femoralak eta pedioak presente daude eta simetrikoak dira.  ONDESTE-HAZTAPENA.   ez dago kanpo-hemorroiderik.   Hatz-punta kolore normaleko eginkariz zikindua, odol-arrastorik gabe.  PROBA OSAGARRIAK  -Biokimika: urea: 144 mg/dL; kreatinina: 3 mg/dL; bilirrubina totala: 2,3 mg/dL; GPT: 9 U/L; CK: 38 U/L; LDH: 150 U/L; PCR: 9,43 mg/dL.  -Hemograma: hemoglobina: 6,5 g/dL; BBK (batez besteko bolumen korpuskularra): 112, 9 fL; plaketak: 135.000; leukozitoak: 12.900 (neutrofiloak, N: % 76; linfozitoak, L: % 16; monozitoak, M: % 7,5; eosinofiloak, E: % 0,4; basofiloak, B: % 0,2).  -Koagulazioa: protronbina-indizea: % 16; nazioarteko ratio normalizatua (INR): 4,81; TTPA > 180 s.
+100146	REL	252-266	248-251	maila altuekin	INR
+100146	REL	1370-1376	1366-1368	140/70	TA
+100146	REL	1397-1407	1378-1395	89 tau/min	Bihotz-maiztasuna
+100146	REL	1412-1419	1409-1411	36,5 ºC	Tª
+100146	REL	1429-1433	1421-1426	% 97	O2Sat
+100146	REL	2065-2074	2048-2064	negatiboa	ukabil-perkusioa
+100146	REL	2415-2424	2409-2413	144 mg/dL	urea
+100146	REL	2438-2445	2426-2436	3 mg/dL	kreatinina
+100146	REL	2467-2476	2447-2458	2,3 mg/dL	bilirrubina
+100146	REL	2483-2488	2478-2481	9 U/L	GPT
+100146	REL	2494-2500	2490-2492	38 U/L	CK
+100146	REL	2507-2514	2502-2505	150 U/L	LDH
+100146	REL	2521-2531	2516-2519	9,43 mg/dL	PCR
+100146	REL	2559-2567	2546-2557	6,5 g/dL	hemoglobina
+100146	REL	2612-2621	2588-2595	112, 9 fL	bolumen
+100146	REL	2612-2621	2569-2572	112, 9 fL	BBK
+100146	REL	2633-2640	2623-2631	135.000	plaketak
+100146	REL	2655-2661	2642-2653	12.900	leukozitoak
+100146	REL	2680-2684	2663-2675	% 76	neutrofiloak
+100146	REL	2680-2684	2677-2678	% 76	N
+100146	REL	2702-2706	2686-2697	% 16	linfozitoak
+100146	REL	2702-2706	2699-2700	% 16	L
+100146	REL	2723-2728	2708-2718	% 7,5	monozitoak
+100146	REL	2723-2728	2720-2721	% 7,5	M
+100146	REL	2747-2752	2730-2742	% 0,4	eosinofiloak
+100146	REL	2747-2752	2744-2745	% 0,4	E
+100146	REL	2769-2774	2754-2764	% 0,2	basofiloak
+100146	REL	2769-2774	2766-2767	% 0,2	B
+100146	REL	2813-2817	2792-2811	% 16	protronbina-indizea
+100146	REL	2857-2861	2831-2836	4,81	ratio
+100146	REL	2857-2861	2851-2854	4,81	INR
+100146	REL	2868-2875	2863-2867	> 180 s	TTPA
+
+100171|t|AURREKARI PERTSONALAK  -Gizonezkoa, 30 urte. Ez du alergiarirk.  -Dermatitis atopikoa.  -Ez du ebakuntzarik izan.  -Tratamendua: noizbehinka, diprogenta topikoa    EGUNGO GAIXOTASUNA  Azken 3 egunetan gaizki sentitzen da, sukarra (38,2ºC arte) eta izerditzarekin dago eta odinofagia eta eztul sikua (toraxeko min gabe eta disnearik gabe) nabaritu ditu.  Lau egun lehenago Taliandiatik bueltatu zen, han 20 egunetan egon eta gero (hirietan eta hondartzan ibilitakoa, ibai baten bainua hartuta eta urpekaritza eginda).   Ez du artropodoen ziztadarik gogoratzen.   Bidaia baino lehenago Vivotif-a (Salmonella typhi-txertoa) hartu zuen ahotik profilaxi moduan.    AZTERKETA FISIKOA LARRIALDIAN:  TA 126/78, BM 105, AM 20, Tª 38,5ºC, 02 saturazioa (basala) 100%  Egoera orokorra ona.   Kontziente, ondo orientatua, eupneikoa.   Azal eta mukosen kolorazio normala.   Izerdita dago.  Buru eta lepoa: adenopatiarik ez, zeinu meningeorik ez.  Toraxa: Bihotz A.: erritmikoa, murmuriorik ez.   Birika A.: besikula-murmurio mantendua.   Sabela: biguna, ez da mingarria haztapenean.   Ez du peritoneo-narritadurarik.   Heste-hots normalak.  Gorputz-adarrak: edemarik ez, tronbosi sakonaren zeinurik ez.  Azalean ez da lesiorik ikusten.    PROBA OSOGARRIAK  -Analitika Larrialdian: Biokimika: glukosa, U/Kr, albumina, BRT, GPT, LDH, Na eta K normalak.   PCE (Proteina C erreaktiboa) 33,07 mg/dl (330 mg/L), prokaltzitonina 0,65 ng/ml.   Hematimetria: Hb 13,7, leukozitoak eta formula eta plaketak normalak.  -Torax erradiografia: sinu kostofrenikoak libreak eta kondentsazio-irudirik ez.  -Hemokultiboak eta beste Mikrobiologia-probak batzuk ateratzen dira.    EBOLUZIOA  Hemokultiboak atera eta gero, bena-barnetik Zeftriaxona ematen zaio.   Gaixotasun Infekziosoetako solairura eramaten da.  Ingresatu eta ordu gutxitara hipotentsiorako joera azaltzen du (TAS 70-80 mmHg), oligoanuriarekin.   Analitika berri bat ateratzen zaio: Biokimikan, U/Kr 51/3,01 mg/dl, glomeruluen filtrazioa 27ml/min, proteinak 5,7, BRT 1,8mg/dl, BR zuzena 1,75mg/dl, GOT 44, GPT 28,GGT 90, PCE 33,69 mg/dl (336 mg/L), prokaltzitonina 67,2.   Hematimetrian, Hb 12,6, plaketak 220.000, leukozitoak 9200 (PMN %92,7).   VSG 59.  Bizkortze Zerbitzuko balorazioa eskatzen da eta haien Zerbitzura eramaten da gaixoa.
+100171	REL	231-237	222-229	38,2ºC	sukarra
+100171	REL	695-701	692-694	126/78	TA
+100171	REL	706-709	703-705	105	BM
+100171	REL	714-716	711-713	20	AM
+100171	REL	721-727	718-720	38,5ºC	Tª
+100171	REL	752-756	732-742	100%	saturazioa
+100171	REL	1328-1336	1294-1302	normalak	albumina
+100171	REL	1328-1336	1309-1312	normalak	GPT
+100171	REL	1328-1336	1326-1327	normalak	K
+100171	REL	1328-1336	1304-1307	normalak	BRT
+100171	REL	1328-1336	1314-1317	normalak	LDH
+100171	REL	1328-1336	1288-1289	normalak	U
+100171	REL	1328-1336	1279-1286	normalak	glukosa
+100171	REL	1328-1336	1319-1321	normalak	Na
+100171	REL	1369-1380	1340-1343	33,07 mg/dl	PCE
+100171	REL	1369-1380	1345-1353	33,07 mg/dl	Proteina
+100171	REL	1382-1390	1340-1343	330 mg/L	PCE
+100171	REL	1382-1390	1345-1353	330 mg/L	Proteina
+100171	REL	1409-1419	1393-1408	0,65 ng/ml	prokaltzitonina
+100171	REL	1440-1444	1437-1439	13,7	Hb
+100171	REL	1483-1491	1462-1469	normalak	formula
+100171	REL	1483-1491	1474-1482	normalak	plaketak
+100171	REL	1483-1491	1446-1457	normalak	leukozitoak
+100171	REL	1848-1858	1844-1847	70-80 mmHg	TAS
+100171	REL	1934-1947	1929-1930	51/3,01 mg/dl	U
+100171	REL	1972-1980	1961-1971	27ml/min	filtrazioa
+100171	REL	1992-1995	1982-1991	5,7	proteinak
+100171	REL	2001-2009	1997-2000	1,8mg/dl	BRT
+100171	REL	2021-2030	2011-2013	1,75mg/dl	BR
+100171	REL	2036-2038	2032-2035	44	GOT
+100171	REL	2044-2046	2040-2043	28	GPT
+100171	REL	2051-2053	2047-2050	90	GGT
+100171	REL	2059-2070	2055-2058	33,69 mg/dl	PCE
+100171	REL	2072-2080	2055-2058	336 mg/L	PCE
+100171	REL	2099-2103	2083-2098	67,2	prokaltzitonina
+100171	REL	2125-2129	2122-2124	12,6	Hb
+100171	REL	2140-2147	2131-2139	220.000	plaketak
+100171	REL	2161-2165	2149-2160	9200	leukozitoak
+100171	REL	2171-2176	2167-2170	%92,7	PMN
+100171	REL	2185-2187	2181-2184	59	VSG
+
+100189|t|AURREKARI PERTSONALAK:  -Alergia ezagunik ez.  -Erretzailea (10 zigarro/egun)  -Hiperkolesterolemia  -Behçet sindromea (2001).   Neurobehçet (2002) eta ubeitisa ere baditu.   Neurobehçet-a irudi bidez diagnostikatu zen eta egunerarte ez du inolako sintomatologiarik azaldu.  -Ohiko tratamendua: errosubastatina 20 mg, adiro 100mg, azatioprina 50 mg, golimumab 50 mg/hilean.    EGUNGO GAIXOTASUNA  54 urteko emakumezkoa.   Azken 3 egunetan amnesia gertaera gorabeheratsuak izan ditu eta bere senarrak esaldi desberdinak behin eta berriz errepikatzen dituela dio.   Ez du beste klinika neurologikorik azaltzen.   Ez du klinika infekziosorik eztabeste klinika garrantzitsurik ere.    ARAKETA FISIKOA  TA 180/100 mmHg; BM 92; Tª 36.8ºC  * Miaketa orokorra: normala  *Miaketa neurologikoa: kontziente eta orientatuta.   Atentzioa mantentzen du. Ondo errepikatzen eta izendatzen du eta agindu konplexuak ondo betetzen ditu.   Hitz fluentzia kaltetuta (10 hitz minutu batean).   Anamnesiaren momenturen batean hizketaren haria galtzen du.   Amnesia anterogradoa ondo mantentzen du.   Pentagonoa ondo.   Erlojua 7/10.   Afektu desegokia (arrazoi gabeko irribarrea).   Ez du nahaste konduktual edo esfera psikotikoko aldaketarik azaltzen.   Pupila egokiak.   Kanpimetria egokia.   Pare kranealak ondo.   Asimetriarik ez.   Indar eta sentsibilitate aldaketarik ez.   Azal-oin zolako flexiozko erreflexua.   Erreflexu muskularrak ondo.   Koordinazio arazorik ez.   Martxa egokia.    PROBA OSAGARRIAK  *Odol analitika: aldaketa nabarmenik ez.  *Likido zefalorrakideoaren azterketa: itxura argikoa, hematie 0/μL, leukozito 1/μL, glukosa 95 mg/dl (50-80 mg/dl), proteinak 28 mg/dl (15-40mg/dl) eta ADA 1.8 U/L(<10 U/L).  *Gernu-azterketa: aldaketa nabarmenik ez.  *Garuneko eskanerra: leukopatia zeinuak (aldez aurretik ezagunak).   Lesio hipodentso berri bat eskuineko barruko kapsulako aurreko besoan.
+100189	REL	701-713	698-700	180/100 mmHg	TA
+100189	REL	718-720	715-717	92	BM
+100189	REL	725-731	722-724	36.8ºC	Tª
+100189	REL	753-760	735-742	normala	Miaketa
+100189	REL	1088-1092	1077-1087	ondo	Pentagonoa
+100189	REL	1104-1108	1096-1103	7/10	Erlojua
+100189	REL	1287-1291	1272-1276	ondo	Pare
+100189	REL	1419-1423	1397-1406	ondo	Erreflexu
+100189	REL	1594-1598	1586-1593	0/μL	hematie
+100189	REL	1610-1614	1600-1609	1/μL	leukozito
+100189	REL	1624-1632	1616-1623	95 mg/dl	glukosa
+100189	REL	1658-1666	1648-1657	28 mg/dl	proteinak
+100189	REL	1688-1695	1684-1687	1.8 U/L	ADA
+

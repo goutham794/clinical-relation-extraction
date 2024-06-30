@@ -4,7 +4,6 @@ TESTLINK_EU_training_data/
 data_it/
 data_es/
 data_eu/
-data_multilingual/
 poetry.lock/
 wandb/
 poetry.lock
