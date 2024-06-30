@@ -144,8 +144,12 @@ def classify_relation(text):
 
 
 def fetch_optimal_hyperparams(task: str, model: str, lang: str):
+    if task == "rc":
+        objective = "F-score"
+    else:
+        objective = "f1_score"
     df_tuning_results = pd.read_csv(f"./optimal_hyperparams/{task}_{model}_{lang}.csv")
-    opt_values = df_tuning_results.loc[df_tuning_results['f1_score'].idxmax()]
+    opt_values = df_tuning_results.loc[df_tuning_results[objective].idxmax()]
     del opt_values['Name']
-    del opt_values['f1_score']
+    del opt_values[objective]
     return opt_values.to_dict()
