@@ -16,6 +16,10 @@ models_it/
 models_es/
 models_eu/
 models_multilingual/
+results_it/
+results_es/
+results_eu/
+results_multilingual/
 cache_dir/
 runs/
 BC5CDR_Evaluation-0.0.3/
