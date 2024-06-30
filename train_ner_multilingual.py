@@ -19,7 +19,7 @@ def Train_NER(args):
     model_config = args.config.model_args_ner 
     model_config['output_dir']  = f"outputs_multilingual/{args.model}_ner/"
     model_config['best_model_dir']  = f"models_multilingual/{args.model}_ner{'_combined' if args.use_full_train else ''}/"
-    model_config['wandb_project'] = f"ner_{args.model}_multilingual_{args.lang}_final" 
+    model_config['wandb_project'] = f"ner_{args.model}_multilingual_final" 
 
     model_config.update(optimal_hyperparam_dict)
     # rename wrongly named key.
@@ -40,15 +40,13 @@ def Train_NER(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', '-m', default='mbert')
+    parser.add_argument('--model', '-m', default='biobert')
     parser.add_argument('--use-full-train', default=False, 
                         action=argparse.BooleanOptionalAction)
-    parser.add_argument('--lang', '-l', default='it')
 
     args = parser.parse_args()
-    assert args.lang in ['it', 'es', 'eu'], "The language must be one of 'it', 'es', 'eu'"
     assert args.model in ['mbert', 'xlmroberta', 'biobert','bert'], "The model must be one of bert, xlmroberta, biobert"
-    configs = Config(args.lang)
+    configs = Config("multilingual")
     args.config = configs
     args.model_type = configs.pretrained_model_details[args.model][0]
     args.model_name = configs.pretrained_model_details[args.model][1]
