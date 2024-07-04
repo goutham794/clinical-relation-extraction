@@ -146,7 +146,7 @@ class RC_Dataset:
         print(len([i for i in re_dataset if i[1]==0])/len(re_dataset))
 
     def write_dataset_to_file(self):
-        with open(f"data_{self.lang}/{self.split}_{self.model}_{'full_' if (self.args.use_full_train) & (self.split == 'train') else ''}re_dataset.csv",
+        with open(f"data_{self.lang}/{self.split}_{self.model}_re_dataset.csv",
                    mode='w', newline='', encoding='utf-8') as file:
             writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             for line in self.re_dataset:
@@ -156,12 +156,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', default='mbert')
     parser.add_argument('--split', '-s', default='valid')
-    parser.add_argument('--lang', '-l', default='it')
-    parser.add_argument('--use-full-train', default=False, 
-                        action=argparse.BooleanOptionalAction)
+    parser.add_argument('--lang', '-l', default='es')
 
     args = parser.parse_args()
-    if args.use_full_train: assert args.split == 'train'
     assert args.lang in ['it', 'es', 'eu'], "The language must be one of 'it', 'es', 'eu'"
     assert args.model in ['mbert', 'xlmroberta', 'biobert','bert'], "The model must be one of bert, xlmroberta, biobert"
     configs = Config(args.lang)

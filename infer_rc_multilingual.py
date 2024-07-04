@@ -49,7 +49,7 @@ def Infer_RC(args):
         predictions, _ = model.predict(list(df.text))
 
         utils.save_predicted_pubtator(df[np.array(predictions).astype(bool)],args.lang, 
-                                f"{args.model}_predicted_{args.split}_set.pubtator", 
+                                f"{args.model}_multilingual_predicted_{args.split}_set.pubtator", 
                                 args.dataset, args.config.TEST_ENTITY_MARKER, 
                                 args.config.RESULT_ENTITY_MARKER)
         
@@ -64,7 +64,7 @@ def Infer_RC(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--lang', '-l', default='it')
-    parser.add_argument('--model', '-m', default='biobert')
+    parser.add_argument('--model', '-m', default='mbert')
     parser.add_argument('--split', '-s', default='test')
     args = parser.parse_args()
     assert args.model in ['mbert', 'xlmroberta', 'biobert','bert', 'rule_based'], "The model must be one of bert, xlmroberta, biobert"
@@ -73,8 +73,7 @@ if __name__ == "__main__":
     args.config = configs
     
     args.model_type = configs.pretrained_model_details[args.model][0]
-    # args.model_loc = f"models_{args.lang}/{args.model}_rc{'_combined' if args.split!='valid' else ''}"
-    args.model_loc = f"models_{args.lang}/{args.model}_rc"
+    args.model_loc = f"models_multilingual/{args.model}_rc"
     
     if args.split == 'test':
         args.dataset = args.config.TEST_DATASET 

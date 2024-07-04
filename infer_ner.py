@@ -33,7 +33,7 @@ def Infer_NER(args):
 
     model = NERModel(
         args.model_type, 
-        f"models_{args.lang}/{args.model}_ner{'_combined' if args.split == 'test' else ''}",
+        f"models_{args.lang}/{args.model}_ner",
           args=model_args, labels=custom_labels
     )
 
@@ -43,7 +43,9 @@ def Infer_NER(args):
     utils.save_predictions_to_file(predictions, args.lang, f'preds_{args.model}_{args.split}_ner.txt')
     true_entities = utils.get_true_entity_labels(args.lang, args.split)
     if args.split == 'test':
-        metrics = classification_report(true_entities, predictions, output_dict=True)['weighted avg']
+        metrics = classification_report(true_entities, predictions, output_dict=True)
+        print(metrics)
+        metrics = metrics['macro avg']
         wandb.log({"ner_precision": metrics['precision']})
         wandb.log({"ner_recall": metrics['recall']})
         wandb.log({"ner_f1_score": metrics['f1-score']})
@@ -52,9 +54,9 @@ def Infer_NER(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', '-m', default='mbert')
-    parser.add_argument('--split', '-s', default='valid')
-    parser.add_argument('--lang', '-l', default='it')
+    parser.add_argument('--model', '-m', default='biobert')
+    parser.add_argument('--split', '-s', default='test')
+    parser.add_argument('--lang', '-l', default='es')
 
     args = parser.parse_args()
     assert args.lang in ['it', 'es', 'eu'], "The language must be one of 'it', 'es', 'eu'"

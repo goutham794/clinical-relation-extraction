@@ -12,13 +12,13 @@ logging.basicConfig(level=logging.DEBUG,
 
 def Train_NER(args):
 
-    logging.info(f"Training NER model {args.model} model and {'combined' if args.use_full_train else 'split'} train data.")
+    logging.info(f"Training NER model {args.model} model and train data.")
 
     optimal_hyperparam_dict = fetch_optimal_hyperparams("ner", args.model, args.lang)
 
     model_config = args.config.model_args_ner 
     model_config['output_dir']  = f"outputs_{args.lang}/{args.model}_ner/"
-    model_config['best_model_dir']  = f"models_{args.lang}/{args.model}_ner{'_combined' if args.use_full_train else ''}/"
+    model_config['best_model_dir']  = f"models_{args.lang}/{args.model}_ner/"
     model_config['wandb_project'] = f"ner_{args.model}_{args.lang}_final" 
 
     model_config.update(optimal_hyperparam_dict)
@@ -34,16 +34,14 @@ def Train_NER(args):
         args.model_type, args.model_name, args=model_args, labels=custom_labels,
     )
 
-    x = model.train_model(f"data_{args.lang}/train{'_full' if args.use_full_train else ''}.txt", 
+    x = model.train_model(f"data_{args.lang}/train.txt", 
                       eval_data=f"data_{args.lang}/valid.txt"
                       )
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', '-m', default='mbert')
-    parser.add_argument('--use-full-train', default=False, 
-                        action=argparse.BooleanOptionalAction)
-    parser.add_argument('--lang', '-l', default='it')
+    parser.add_argument('--model', '-m', default='biobert')
+    parser.add_argument('--lang', '-l', default='es')
 
     args = parser.parse_args()
     assert args.lang in ['it', 'es', 'eu'], "The language must be one of 'it', 'es', 'eu'"

@@ -18,8 +18,12 @@ class Token_Data:
 class RC_Dataset:
 
     def __init__(self, args):
-        self.tokens_file = f"data_multilingual/{args.split}{'_tokens' if args.split != 'train' else ''}.txt"
-        self.offsets_file = f"data_multilingual/{args.split}_offsets.txt"
+        if args.lang:
+            self.tokens_file = f"data_{args.lang}/{args.split}{'_tokens' if args.split != 'train' else ''}.txt"
+            self.offsets_file = f"data_{args.lang}/{args.split}_offsets.txt"
+        else:
+            self.tokens_file = f"data_multilingual/{args.split}{'_tokens' if args.split != 'train' else ''}.txt"
+            self.offsets_file = f"data_multilingual/{args.split}_offsets.txt"
         self.args = args
         self.config = args.config
         self.split = args.split
@@ -100,7 +104,11 @@ class RC_Dataset:
 
     def create_relations_from_preds(self):
         relations = []
-        entity_offsets = utils.get_predicted_entity_offsets(f'results_multilingual/preds_{self.model}_multilingual_{self.split}_ner.txt', 
+        if args.lang:
+            entity_offsets = utils.get_predicted_entity_offsets(f'results_multilingual/preds_{self.model}_multilingual_{args.lang}_{self.split}_ner.txt', 
+                                           self.offsets_file)
+        else:
+            entity_offsets = utils.get_predicted_entity_offsets(f'results_multilingual/preds_{self.model}_multilingual_{self.split}_ner.txt', 
                                            self.offsets_file)
         for sent_entity_offsets in entity_offsets:
             relations.append([(x,y) for x in sent_entity_offsets[0] for y in sent_entity_offsets[1]])
@@ -145,21 +153,27 @@ class RC_Dataset:
         print(len([i for i in re_dataset if i[1]==0])/len(re_dataset))
 
     def write_dataset_to_file(self):
-        with open(f"data_multilingual/{self.split}_{self.model}_multilingual_{'full_' if (self.args.use_full_train) & (self.split == 'train') else ''}re_dataset.csv",
-                   mode='w', newline='', encoding='utf-8') as file:
-            writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-            for line in self.re_dataset:
-                writer.writerow(line)
+        if args.lang:
+            with open(f"data_multilingual/{self.split}_{self.model}_{args.lang}_multilingual_re_dataset.csv",
+                    mode='w', newline='', encoding='utf-8') as file:
+                writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                for line in self.re_dataset:
+                    writer.writerow(line)
+        else:
+            with open(f"data_multilingual/{self.split}_{self.model}_multilingual_re_dataset.csv",
+                    mode='w', newline='', encoding='utf-8') as file:
+                writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                for line in self.re_dataset:
+                    writer.writerow(line)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', default='mbert')
     parser.add_argument('--split', '-s', default='valid')
-    parser.add_argument('--use-full-train', default=False, 
-                        action=argparse.BooleanOptionalAction)
+    parser.add_argument('--lang', '-l', default=None)
+    # parser.add_argument('--lang', '-l', default='it')
 
     args = parser.parse_args()
-    if args.use_full_train: assert args.split == 'train'
     assert args.model in ['mbert', 'xlmroberta', 'biobert','bert'], "The model must be one of bert, xlmroberta, biobert"
     configs = Config("multilingual")
     args.config = configs

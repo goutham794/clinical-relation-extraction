@@ -34,7 +34,9 @@ class Config:
             "overwrite_output_dir" :True,
             "max_seq_length" : 512,
             'save_eval_checkpoints' : False,
-            'save_model_every_epoch' : False
+            'save_model_every_epoch' : False,
+            'use_multiprocessing_for_evaluation' : False,
+            'use_multiprocessing' : False
             }
     
 

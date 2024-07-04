@@ -19,6 +19,9 @@ results_it/
 results_es/
 results_eu/
 results_multilingual/
+TEST_IT/
+TEST_ES/
+TEST_EU/
 cache_dir/
 runs/
 BC5CDR_Evaluation-0.0.3/

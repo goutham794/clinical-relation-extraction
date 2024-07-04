@@ -33,17 +33,20 @@ def Infer_NER(args):
 
     model = NERModel(
         args.model_type, 
-        f"models_multilingual/{args.model}_ner{'_combined' if args.split == 'test' else ''}",
+        f"models_multilingual/{args.model}_ner",
           args=model_args, labels=custom_labels
     )
 
-    tokens = utils.create_tokens_list_from_file(f"data_multilingual/{args.split}_tokens.txt")
+    # tokens = utils.create_tokens_list_from_file(f"data_multilingual/{args.split}_tokens.txt")
+    tokens = utils.create_tokens_list_from_file(f"data_{args.lang}/{args.split}_tokens.txt")
     predictions, _ = model.predict(tokens, split_on_space=False)
     predictions = [[list(d.values())[0] for d in i] for i in predictions]
-    utils.save_predictions_to_file(predictions, "multilingual", f'preds_{args.model}_multilingual_{args.split}_ner.txt')
-    true_entities = utils.get_true_entity_labels("multilingual", args.split)
+    utils.save_predictions_to_file(predictions, "multilingual", f'preds_{args.model}_multilingual_{args.lang}_{args.split}_ner.txt')
+    true_entities = utils.get_true_entity_labels(args.lang, args.split)
     if args.split == 'test':
-        metrics = classification_report(true_entities, predictions, output_dict=True)['weighted avg']
+        metrics = classification_report(true_entities, predictions, output_dict=True)
+        print(metrics)
+        metrics = metrics['macro avg']
         wandb.log({"ner_precision": metrics['precision']})
         wandb.log({"ner_recall": metrics['recall']})
         wandb.log({"ner_f1_score": metrics['f1-score']})
@@ -53,11 +56,14 @@ def Infer_NER(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', default='mbert')
-    parser.add_argument('--split', '-s', default='valid')
+    parser.add_argument('--split', '-s', default='test')
+    parser.add_argument('--lang', '-l', default='it')
 
     args = parser.parse_args()
     assert args.model in ['mbert', 'xlmroberta', 'biobert','bert'], "The model must be one of bert, xlmroberta, biobert"
-    configs = Config("multilingual")
+    assert args.lang in ['it', 'es', 'eu', 'multilingual'], "The language must be one of 'it', 'es', 'eu'"
+    # configs = Config("multilingual")
+    configs = Config(args.lang)
     args.config = configs
     args.model_type = configs.pretrained_model_details[args.model][0]
     args.model_name = configs.pretrained_model_details[args.model][1]
