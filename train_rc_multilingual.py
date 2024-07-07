@@ -38,18 +38,23 @@ def Train_RC(args):
 
     df_train.columns = ["doc_id", "text", "labels", "rml_s", "rml_e", "tst_s", "tst_e"]
 
-    df_eval = pd.read_csv(f"data_multilingual/valid_{args.model}_multilingual_re_dataset.csv")
+    df_it = pd.read_csv(f"data_multilingual/valid_{args.model}_it_multilingual_re_dataset.csv")
+    df_it.columns = ["doc_id", "text", "rml_s", "rml_e", "tst_s", "tst_e"]
+    df_es = pd.read_csv(f"data_multilingual/valid_{args.model}_es_multilingual_re_dataset.csv")
+    df_es.columns = ["doc_id", "text", "rml_s", "rml_e", "tst_s", "tst_e"]
+    df_eu = pd.read_csv(f"data_multilingual/valid_{args.model}_eu_multilingual_re_dataset.csv")
+    df_eu.columns = ["doc_id", "text", "rml_s", "rml_e", "tst_s", "tst_e"]
 
-    df_eval.columns = ["doc_id", "text", "rml_s", "rml_e", "tst_s", "tst_e"]
+    # Combine all DataFrames into one
+    df_eval  = pd.concat([df_it, df_es, df_eu], ignore_index=True)
 
     model_config = args.config.model_args_rc 
-    # optimal_hyperparam_dict = fetch_optimal_hyperparams("rc", args.model, "multilingual")
-    # model_config.update(optimal_hyperparam_dict)
+    optimal_hyperparam_dict = fetch_optimal_hyperparams("rc", args.model, "multilingual")
+    model_config.update(optimal_hyperparam_dict)
     # rename wrongly named key.
-    # model_config['train_batch_size'] = model_config.pop("batch_size")
-    model_config['num_train_epochs'] = 5
-    model_config['output_dir']  = f"outputs_multilingual/{args.model}_rc/"
-    model_config['best_model_dir']  = f"models_multilingual/{args.model}_rc/"
+    model_config['train_batch_size'] = model_config.pop("batch_size")
+    model_config['output_dir']  = f"outputs_multilingual/{args.model}_re/"
+    model_config['best_model_dir']  = f"models_multilingual/{args.model}_re/"
     model_config['wandb_project'] = f"rc_{args.model}_multilingual_final" 
 
     model_args = ClassificationArgs()
@@ -71,7 +76,7 @@ def Train_RC(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', '-m', default='mbert')
+    parser.add_argument('--model', '-m', default='biobert')
     args = parser.parse_args()
     assert args.model in ['mbert', 'xlmroberta', 'biobert','bert'], "The model must be one of bert, xlmroberta, biobert"
     model_details = {'mbert': ("bert", "bert-base-multilingual-cased"),

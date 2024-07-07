@@ -16,6 +16,7 @@ logging.basicConfig(level=logging.DEBUG,
 def train():
 
     wandb.init()
+
     class CustomClassificationModel(ClassificationModel):
         def eval_model(self, eval_df, multi_label=False, output_dir=None, verbose=True, silent=False, wandb_log=True, **kwargs):
             predictions, _ = self.predict(list(eval_df.text))
@@ -27,7 +28,6 @@ def train():
             
             metrics = utils.get_pubtator_scores("multilingual", args.model, 'valid')
             metrics = {k: float(v) for k, v in metrics.items()}
-            logging.info(metrics)
             wandb.log({'re_precision' : metrics['Precision']} )
             wandb.log({'re_recall' : metrics['Recall']} )
             wandb.log({'re_f1' : metrics['F-score']} )
@@ -35,13 +35,20 @@ def train():
 
     logging.info(f"Training RC model {args.model} model for multilingual train data.")
 
-    df_train = pd.read_csv(f"data_multilingual/train_{args.model}_multilingual_re_dataset.csv",
-                           )
+    df_train = pd.read_csv(f"data_multilingual/train_{args.model}_multilingual_re_dataset.csv")
+
     df_train.columns = ["doc_id", "text", "labels", "rml_s", "rml_e", "tst_s", "tst_e"]
 
-    df_eval = pd.read_csv(f"data_multilingual/valid_{args.model}_multilingual_re_dataset.csv",
-                           )
-    df_eval.columns = ["doc_id", "text", "rml_s", "rml_e", "tst_s", "tst_e"]
+    df_it = pd.read_csv(f"data_multilingual/valid_{args.model}_it_multilingual_re_dataset.csv")
+    df_it.columns = ["doc_id", "text", "rml_s", "rml_e", "tst_s", "tst_e"]
+    df_es = pd.read_csv(f"data_multilingual/valid_{args.model}_es_multilingual_re_dataset.csv")
+    df_es.columns = ["doc_id", "text", "rml_s", "rml_e", "tst_s", "tst_e"]
+    df_eu = pd.read_csv(f"data_multilingual/valid_{args.model}_eu_multilingual_re_dataset.csv")
+    df_eu.columns = ["doc_id", "text", "rml_s", "rml_e", "tst_s", "tst_e"]
+
+    # Combine all DataFrames into one
+    df_eval  = pd.concat([df_it, df_es, df_eu], ignore_index=True)
+
     
     model_config = args.config.model_args_rc 
     model_config['train_batch_size'] = args.batch_size
@@ -75,7 +82,7 @@ def train():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', '-m', default="mbert")
+    parser.add_argument('--model', '-m', default="biobert")
     parser.add_argument("--batch_size", type=int)
     parser.add_argument("--num_train_epochs", '-e', type=int)
     parser.add_argument("--warmup_ratio", type=float)
