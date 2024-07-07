@@ -54,7 +54,8 @@ def Infer_RC(args):
                                 args.config.RESULT_ENTITY_MARKER)
         
         
-        metrics = utils.get_pubtator_scores(args.lang, args.model, args.split)
+        metrics = utils.get_pubtator_scores(args.lang, args.model, args.split,
+                                            multilingual=True)
         print(metrics)
         wandb.log({"re_precision": float(metrics['Precision'])})
         wandb.log({"re_recall": float(metrics['Recall'])})
@@ -63,8 +64,8 @@ def Infer_RC(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--lang', '-l', default='it')
-    parser.add_argument('--model', '-m', default='mbert')
+    parser.add_argument('--lang', '-l', default='es')
+    parser.add_argument('--model', '-m', default='biobert')
     parser.add_argument('--split', '-s', default='test')
     args = parser.parse_args()
     assert args.model in ['mbert', 'xlmroberta', 'biobert','bert', 'rule_based'], "The model must be one of bert, xlmroberta, biobert"
@@ -73,7 +74,7 @@ if __name__ == "__main__":
     args.config = configs
     
     args.model_type = configs.pretrained_model_details[args.model][0]
-    args.model_loc = f"models_multilingual/{args.model}_rc"
+    args.model_loc = f"models_multilingual/{args.model}_re"
     
     if args.split == 'test':
         args.dataset = args.config.TEST_DATASET 
