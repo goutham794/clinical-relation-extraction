@@ -91,12 +91,12 @@ def save_predicted_pubtator(df_relations, lang, filename,
             f.write('\n')
 
 
-def get_pubtator_scores(lang, model, split):
+def get_pubtator_scores(lang, model, split, multilingual=False):
     shell_script = "./eval_relation.sh"
 
     arg1 = "PubTator"
     arg2 = f"../data_{lang}/gold_{split}_set.pubtator"
-    arg3 = f"../results_{lang}/{model}_predicted_{split}_set.pubtator"
+    arg3 = f"../results_{lang}/{model}_{'multilingual_' if multilingual else ''}predicted_{split}_set.pubtator"
 
     directory = "BC5CDR_Evaluation-0.0.3/"
 
