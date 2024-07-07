@@ -153,6 +153,8 @@ class RC_Dataset:
         print(len([i for i in re_dataset if i[1]==0])/len(re_dataset))
 
     def write_dataset_to_file(self):
+        self.re_dataset = list(set(self.re_dataset))
+        
         if args.lang:
             with open(f"data_multilingual/{self.split}_{self.model}_{args.lang}_multilingual_re_dataset.csv",
                     mode='w', newline='', encoding='utf-8') as file:
@@ -168,12 +170,16 @@ class RC_Dataset:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', '-m', default='mbert')
-    parser.add_argument('--split', '-s', default='valid')
+    parser.add_argument('--model', '-m', default='biobert')
+    parser.add_argument('--split', '-s', default='train')
     parser.add_argument('--lang', '-l', default=None)
-    # parser.add_argument('--lang', '-l', default='it')
+    # parser.add_argument('--lang', '-l', default='eu')
+
+
+    
 
     args = parser.parse_args()
+    if args.split=='valid': assert args.lang != None
     assert args.model in ['mbert', 'xlmroberta', 'biobert','bert'], "The model must be one of bert, xlmroberta, biobert"
     configs = Config("multilingual")
     args.config = configs
