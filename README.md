@@ -27,6 +27,7 @@ In Fine-Tuning-Transformers/
 - `rc_dataset*.py` - to create the Relation Classification dataset.
 - `train_rc*.py` - to train on the RC task.
 - `infer_rc*.py` - to infer on the RC task.
+- sweep scripts are for hyperparameter tuning using wandb sweeps.
 
 ## LLM Few shot learning
 
