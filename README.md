@@ -21,6 +21,7 @@ Done in 2 stages
 
 In Fine-Tuning-Transformers/
 - `sh prepare_script.sh` - to prepare required data
+- `create_multilingual_data.py` - to create multilingual data from each language dataset.
 - `train_ner*.py` - to train on the NER task.
 - `infer_ner*.py` - to infer on the NER task.
 - `rc_dataset*.py` - to create the Relation Classification dataset.
