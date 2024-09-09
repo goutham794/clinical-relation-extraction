@@ -26,14 +26,6 @@ Done in 2 stages
 
 ## LLM Few shot learning
 
-Used langchain with GPT 3.5 API
-GPT 4 to be tested
+Few shot learning with gpt-4-turbo, gpt-4 and gpt-3.5-turbo
 
-Files inside `langchain\`
-
-- `python chain_train.py` 
-
-## LLM Fine-tuning with QLORA 
-
-WIP. 
-Working on fine-tuning Llama2 7B and Falcon 7B
+Files inside `LLMs\`
